@@ -28,6 +28,16 @@
         document.body.style.overflow = '';
       }
     });
+    // ✅ ADD THIS BLOCK
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      });
+    });
+
   }
 
   // FAQ accordion
