@@ -1,0 +1,2925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Diet Plans | Diet_Solver — Fully Personalised Nutrition for Every Body</title>
+  <meta name="description"
+    content="Get a completely bespoke diet plan built around your unique body, lifestyle, culture & health conditions. Diet_Solver" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.dietsolver.in/services/custom-diet.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dietsolver.in/services/custom-diet.php" />
+  <meta property="og:title" content="Custom Diet Plans | Diet_Solver — Fully Personalised Nutrition for Every Body" />
+  <meta property="og:description"
+    content="Get a completely bespoke diet plan built around your unique body, lifestyle, culture & health conditions. Diet_Solver" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom Diet Plans | Diet_Solver — Fully Personalised Nutrition for Every Body" />
+  <meta name="twitter:description"
+    content="Get a completely bespoke diet plan built around your unique body, lifestyle, culture & health conditions. Diet_Solver" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home",              "item": "https://www.dietsolver.in/" },
+          { "@type": "ListItem", "position": 2, "name": "Services",          "item": "https://www.dietsolver.in/services.php" },
+          { "@type": "ListItem", "position": 3, "name": "Custom Diet Plans", "item": "https://www.dietsolver.in/services/custom-diet.php" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Custom Diet Plans",
+        "description": "Get a completely bespoke diet plan built around your unique body, lifestyle, culture & health conditions. Diet_Solver",
+        "provider": { "@type": "Organization", "name": "Diet_Solver", "url": "https://www.dietsolver.in/" },
+        "areaServed": "India",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "description": "Free first consultation" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Can you create a plan for multiple health conditions simultaneously?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is one of the most important features of our Custom Diet Plan service. We regularly create plans that manage multiple conditions simultaneously, such as PCOS + thyroid + weight gain, or diabetes + hypertension + kidney disease. Each condition's dietary requirements are carefully balanced into one cohesive, practical plan." } },
+          { "@type": "Question", "name": "Can you accommodate Jain, vegan, or other strict dietary restrictions?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We have created plans for Jain (no root vegetables), strict vegan, raw food, Sattvic, and every regional Indian dietary variation. Your cultural and ethical food choices are respected and built around — never compromised." } },
+          { "@type": "Question", "name": "How is a Custom Diet Plan different from your other services?", "acceptedAnswer": { "@type": "Answer", "text": "Our other services address specific health goals (weight loss, PCOS, diabetes, sports). The Custom Diet Plan is for people whose situation doesn't fit neatly into one category — those with multiple conditions, unique dietary requirements, or highly specific goals that require a fully bespoke approach rather than an adapted template." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --green-dark: #1a5c2e;
+      --green-mid: #2d8653;
+      --green-light: #4caf7d;
+      --green-pale: #e8f5ee;
+      --green-xpale: #f4fbf6;
+      --accent: #f4a024;
+      --accent-dark: #d4880f;
+      --white: #ffffff;
+      --off-white: #fafaf8;
+      --text-dark: #1a1a1a;
+      --text-mid: #3d4a3e;
+      --text-muted: #6b7c6e;
+      --border: #d6e9dc;
+      /* Custom plan — rich forest green */
+      --cd-dark: #0d3d20;
+      --cd-mid: #1a6632;
+      --cd-light: #2d9448;
+      --cd-pale: #e0f2e8;
+      --cd-xpale: #f0faf4;
+      --shadow-sm: 0 2px 12px rgba(13, 61, 32, .08);
+      --shadow-md: 0 8px 32px rgba(13, 61, 32, .14);
+      --shadow-lg: 0 20px 60px rgba(13, 61, 32, .2);
+      --radius: 14px;
+      --radius-lg: 24px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+      --transition: .3s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--cd-mid);
+      background: var(--cd-pale);
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1.22;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--cd-dark);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--cd-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(13, 61, 32, .35);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn-accent:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--cd-dark);
+      border: 2px solid var(--cd-dark);
+    }
+
+    .btn-outline:hover {
+      background: var(--cd-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--cd-dark);
+    }
+
+    .btn-white:hover {
+      background: var(--cd-pale);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, .5);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--white);
+      background: rgba(255, 255, 255, .1);
+      transform: translateY(-2px);
+    }
+
+    /* ── Top Bar ────────── */
+    .topbar {
+      background: var(--green-dark);
+      color: rgba(255, 255, 255, .88);
+      font-size: .82rem;
+      padding: 8px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .topbar-contacts {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-contacts a {
+      color: rgba(255, 255, 255, .88);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .topbar-contacts a:hover {
+      color: var(--accent);
+    }
+
+    .topbar-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .topbar-socials a {
+      color: rgba(255, 255, 255, .7);
+      font-size: .9rem;
+      transition: color var(--transition);
+    }
+
+    .topbar-socials a:hover {
+      color: var(--accent);
+    }
+
+    /* ── Header ─────────── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition);
+    }
+
+    .header.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--green-dark);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.3rem;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+
+    .logo-name span {
+      color: var(--green-light);
+    }
+
+    .logo-tagline {
+      font-size: .68rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      font-size: .9rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--green-dark);
+      background: var(--green-pale);
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item .dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      min-width: 230px;
+      padding: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition);
+      z-index: 200;
+    }
+
+    .nav-item:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-size: .87rem;
+      color: var(--text-mid);
+      width: 100%;
+    }
+
+    .dropdown a:hover,
+    .dropdown a.current {
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+
+    .dropdown a i {
+      font-size: .8rem;
+      color: var(--green-mid);
+      width: 16px;
+    }
+
+    .nav-cta {
+      margin-left: 8px;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 6px;
+      border: none;
+      background: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--green-dark);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--white);
+      z-index: 999;
+      padding: 80px 24px 40px;
+      overflow-y: auto;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-nav a:hover {
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+
+    .mobile-nav .btn {
+      margin-top: 16px;
+      justify-content: center;
+    }
+
+    /* ── Breadcrumb ──────── */
+    .breadcrumb {
+      background: var(--cd-xpale);
+      border-bottom: 1px solid #b8e0c8;
+      padding: 12px 0;
+      font-size: .82rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb a {
+      color: var(--cd-mid);
+      transition: color var(--transition);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--cd-dark);
+    }
+
+    /* ── Hero ─────────────── */
+    .hero {
+      background: linear-gradient(135deg, #071a0d 0%, #0d3d20 50%, #1a6632 100%);
+      padding: 76px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Organic leaf pattern overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(76, 175, 125, .1) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      left: -60px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(244, 160, 36, .09) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-service-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 50px;
+      padding: 6px 16px;
+      margin-bottom: 18px;
+      font-size: .8rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .hero-service-badge i {
+      color: #90e8b8;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.12;
+      margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .82);
+      line-height: 1.78;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+
+    .hero-perks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .hero-perk {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255, 255, 255, .88);
+      font-size: .9rem;
+    }
+
+    .hero-perk i {
+      color: #90e8b8;
+      width: 16px;
+      flex-shrink: 0;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Hero card */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-main-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 60px rgba(13, 61, 32, .3);
+      overflow: hidden;
+    }
+
+    .hero-thumb {
+      width: 100%;
+      aspect-ratio: 4/3.2;
+      background: linear-gradient(135deg, #d8f4e0, #90d8a8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+    }
+
+    .hero-card-body {
+      padding: 22px 24px;
+    }
+
+    .hero-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .h-stat {
+      text-align: center;
+      padding: 12px 8px;
+      background: var(--cd-pale);
+      border-radius: 10px;
+    }
+
+    .h-stat-num {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--cd-dark);
+      display: block;
+      line-height: 1;
+    }
+
+    .h-stat-label {
+      font-size: .68rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+      display: block;
+    }
+
+    .hero-float {
+      position: absolute;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-float.f1 {
+      top: -16px;
+      right: -16px;
+    }
+
+    .hero-float.f2 {
+      bottom: 100px;
+      left: -18px;
+    }
+
+    .float-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .95rem;
+      flex-shrink: 0;
+    }
+
+    .float-icon.g {
+      background: var(--cd-pale);
+      color: var(--cd-dark);
+    }
+
+    .float-icon.o {
+      background: #fef3e2;
+      color: var(--accent);
+    }
+
+    .float-card-text strong {
+      display: block;
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .float-card-text span {
+      font-size: .72rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Why Custom? ─────── */
+    .why-custom {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .why-custom-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .why-text p {
+      font-size: .96rem;
+      color: var(--text-mid);
+      line-height: 1.82;
+      margin-bottom: 18px;
+    }
+
+    .highlight-box {
+      background: var(--cd-pale);
+      border-left: 4px solid var(--cd-dark);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      font-size: .9rem;
+      font-style: italic;
+      color: var(--cd-dark);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* Who needs custom */
+    .need-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .need-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--cd-xpale);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      transition: var(--transition);
+    }
+
+    .need-card:hover {
+      border-color: var(--cd-mid);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .need-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--cd-pale);
+      color: var(--cd-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .95rem;
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .need-card:hover .need-icon {
+      background: var(--cd-dark);
+      color: var(--white);
+    }
+
+    .need-card h4 {
+      font-family: var(--font-display);
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 3px;
+    }
+
+    .need-card p {
+      font-size: .8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── Dietary Modes ────── */
+    .dietary-section {
+      padding: 90px 0;
+      background: var(--cd-xpale);
+    }
+
+    .dietary-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .dietary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .dietary-card {
+      background: var(--white);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .dietary-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--cd-mid);
+    }
+
+    .dietary-emoji {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .dietary-card h3 {
+      font-family: var(--font-display);
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--cd-dark);
+      margin-bottom: 6px;
+    }
+
+    .dietary-card p {
+      font-size: .8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .dietary-tag {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      background: var(--cd-pale);
+      color: var(--cd-mid);
+      padding: 2px 8px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+
+    /* ── Conditions Handled ── */
+    .conditions {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .conditions-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .conditions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .condition-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--cd-xpale);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      transition: var(--transition);
+    }
+
+    .condition-card:hover {
+      border-color: var(--cd-mid);
+      box-shadow: var(--shadow-sm);
+      transform: translateX(4px);
+    }
+
+    .condition-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--cd-pale);
+      color: var(--cd-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .condition-card:hover .condition-icon {
+      background: var(--cd-dark);
+      color: var(--white);
+    }
+
+    .condition-card h4 {
+      font-family: var(--font-display);
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 2px;
+    }
+
+    .condition-card p {
+      font-size: .76rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* "And more" card */
+    .condition-more {
+      background: linear-gradient(135deg, var(--cd-dark), var(--cd-mid));
+      color: var(--white);
+      border-color: transparent;
+    }
+
+    .condition-more .condition-icon {
+      background: rgba(255, 255, 255, .15);
+      color: var(--white);
+    }
+
+    .condition-more h4 {
+      color: var(--white);
+    }
+
+    .condition-more p {
+      color: rgba(255, 255, 255, .75);
+    }
+
+    /* ── Process Deep-Dive ── */
+    .process {
+      padding: 90px 0;
+      background: var(--cd-xpale);
+    }
+
+    .process-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .process-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .process-card {
+      background: var(--white);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: var(--transition);
+    }
+
+    .process-card:hover {
+      border-color: var(--cd-mid);
+      box-shadow: var(--shadow-md);
+    }
+
+    .process-step-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--cd-pale);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .process-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--cd-dark);
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      font-size: .87rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .process-icon {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    /* ── What's Included ─── */
+    .included {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .included-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .included-card {
+      background: var(--cd-xpale);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .included-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cd-dark), var(--cd-light));
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+
+    .included-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .included-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .inc-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: var(--cd-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      transition: var(--transition);
+    }
+
+    .included-card:hover .inc-icon {
+      background: var(--cd-dark);
+      color: var(--white);
+    }
+
+    .included-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+
+    .included-card p {
+      font-size: .85rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ── Sample Customisations ── */
+    .samples {
+      padding: 90px 0;
+      background: var(--cd-xpale);
+    }
+
+    .samples-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .sample-cases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .sample-case {
+      background: var(--white);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .sample-case:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .sample-case-head {
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .case-emoji {
+      font-size: 1.5rem;
+    }
+
+    .case-head-text h3 {
+      font-family: var(--font-display);
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 2px;
+    }
+
+    .case-head-text p {
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .75);
+    }
+
+    .sample-case-body {
+      padding: 18px 22px;
+    }
+
+    .case-challenge {
+      font-size: .82rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+
+    .case-approach {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+
+    .case-approach-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: .82rem;
+      color: var(--text-mid);
+    }
+
+    .case-approach-item i {
+      color: var(--cd-mid);
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: .75rem;
+    }
+
+    .case-result {
+      background: var(--cd-pale);
+      border-radius: 8px;
+      padding: 9px 14px;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--cd-dark);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    /* ── Testimonials ────── */
+    .testimonials {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .testi-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testi-card {
+      background: var(--cd-xpale);
+      border: 1px solid #b8e0c8;
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      transition: var(--transition);
+    }
+
+    .testi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .testi-stars {
+      color: var(--accent);
+      font-size: .9rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+
+    .testi-text {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.72;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testi-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--cd-mid);
+      color: var(--white);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .testi-author strong {
+      display: block;
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .testi-author span {
+      font-size: .78rem;
+      color: var(--text-muted);
+    }
+
+    .result-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cd-pale);
+      color: var(--cd-dark);
+      border: 1px solid rgba(26, 102, 50, .25);
+      border-radius: 50px;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      margin-bottom: 14px;
+    }
+
+    /* ── FAQ ─────────────── */
+    .faq {
+      padding: 90px 0;
+      background: var(--off-white);
+    }
+
+    .faq-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .faq-item.open {
+      border-color: var(--cd-light);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: left;
+    }
+
+    .faq-q i {
+      color: var(--cd-mid);
+      font-size: .75rem;
+      transition: transform var(--transition);
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .3s ease;
+      font-size: .86rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 250px;
+      padding: 0 20px 16px;
+    }
+
+    /* ── Related ─────────── */
+    .related {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .related-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .related-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      transition: var(--transition);
+    }
+
+    .related-card:hover {
+      transform: translateX(4px);
+      border-color: var(--cd-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .related-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .related-card h4 {
+      font-family: var(--font-display);
+      font-size: .92rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 3px;
+    }
+
+    .related-card p {
+      font-size: .78rem;
+      color: var(--text-muted);
+    }
+
+    /* ── CTA ─────────────── */
+    .cta-banner {
+      background: linear-gradient(135deg, #071a0d 0%, #0d3d20 55%, #1a6632 100%);
+      padding: 90px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 320px;
+      height: 320px;
+      background: rgba(255, 255, 255, .04);
+      border-radius: 50%;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-banner h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .cta-banner p {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, .82);
+      margin-bottom: 36px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── Footer ──────────── */
+    .footer {
+      background: #0f3d1e;
+      color: rgba(255, 255, 255, .8);
+      padding: 70px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px;
+      margin-bottom: 50px;
+    }
+
+    .footer-logo .logo-name {
+      color: var(--white);
+      font-size: 1.5rem;
+    }
+
+    .footer-logo .logo-name span {
+      color: var(--green-light);
+    }
+
+    .footer-logo .logo-tagline {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .footer-about {
+      font-size: .88rem;
+      color: rgba(255, 255, 255, .6);
+      line-height: 1.7;
+      margin: 0 0 24px;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-socials a {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .85rem;
+      color: rgba(255, 255, 255, .7);
+      transition: var(--transition);
+    }
+
+    .footer-socials a:hover {
+      background: var(--green-mid);
+      border-color: var(--green-mid);
+      color: var(--white);
+    }
+
+    .footer h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      font-size: .87rem;
+      color: rgba(255, 255, 255, .6);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--green-light);
+      padding-left: 4px;
+    }
+
+    .footer-contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: .87rem;
+      color: rgba(255, 255, 255, .6);
+    }
+
+    .footer-contact-item i {
+      color: var(--accent);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .newsletter-form input {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-family: var(--font-body);
+      font-size: .88rem;
+      color: var(--white);
+      outline: none;
+    }
+
+    .newsletter-form input::placeholder {
+      color: rgba(255, 255, 255, .4);
+    }
+
+    .newsletter-form button {
+      background: var(--green-light);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      font-family: var(--font-body);
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .newsletter-form button:hover {
+      background: var(--green-mid);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .45);
+    }
+
+    .footer-bottom a {
+      color: rgba(255, 255, 255, .55);
+    }
+
+    .footer-bottom a:hover {
+      color: var(--green-light);
+    }
+
+    /* ── Float / Scroll ───── */
+    .float-btns {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 900;
+    }
+
+    .float-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .float-btn:hover {
+      transform: scale(1.12);
+    }
+
+    .float-wa {
+      background: #25D366;
+      color: var(--white);
+    }
+
+    .float-call {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    #scrollTop {
+      position: fixed;
+      left: 20px;
+      bottom: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--cd-dark);
+      color: var(--white);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: var(--transition);
+      z-index: 900;
+    }
+
+    #scrollTop.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #scrollTop:hover {
+      background: var(--cd-mid);
+    }
+
+    /* ── Animations ──────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive ──────── */
+    @media (max-width: 1024px) {
+      .dietary-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .conditions-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .included-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .hero-float.f1 {
+        right: 0;
+      }
+
+      .hero-float.f2 {
+        left: 0;
+      }
+
+      .why-custom-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .dietary-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .conditions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .included-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sample-cases {
+        grid-template-columns: 1fr;
+      }
+
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .dietary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+   .logo-img {
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+}
+.footer-logo-img { height: 100px; width: auto; filter: brightness(1.2); }
+.hero-img { width: 100%; height: 500px; object-fit: cover; object-position: center top; }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar" role="banner">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-contacts">
+          <a href="mailto:hello@dietsolver.in"><i class="fas fa-envelope"></i> hello@dietsolver.in</a>
+          <a href="tel:+919999000000"><i class="fas fa-phone"></i> +91-9999-000000</a>
+        </div>
+        <div class="topbar-socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <!-- <a href="/" class="logo" aria-label="Diet_Solver Home">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <div class="logo-text">
+            <span class="logo-name">Diet<span>_Solver</span></span>
+            <span class="logo-tagline">Your Diet. Your Rules.</span>
+          </div>
+        </a> -->
+        <a href="/" class="logo">
+  <img src="../img/logo_01.png" alt="Diet Solver Logo" class="logo-img">
+</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li class="nav-item">
+            <a href="/services.html" class="active">Services <i class="fas fa-chevron-down"
+                style="font-size:.65rem;margin-left:4px;"></i></a>
+            <ul class="dropdown">
+            <li><a href="weight-loss.html"><i class="fas fa-weight"></i> Weight Loss & Management</a></li>
+            <li><a href="diabetes-diet.html"><i class="fas fa-heartbeat"></i> Diabetes Management</a></li>
+            <li><a href="pcos-pcod.html"><i class="fas fa-female"></i> PCOS / PCOD Management</a></li>
+            <li><a href="custom-diet.html"><i class="fas fa-utensils"></i> Diet for Women</a></li>
+            <li><a href="pre-wedding-diet.html"><i class="fas fa-running"></i> Pre-Wedding Diet</a></li>
+            <li><a href="online-consultation.html"><i class="fas fa-heartbeat"></i> Cholesterol Management</a></li>
+            <li><a href="sports-nutrition.html"><i class="fas fa-child"></i>Sports Nutrition</a></li>
+          </ul>
+          </li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="/book-appointment.html?service=Custom+Diet+Plan" class="btn btn-accent nav-cta">
+          <i class="fas fa-calendar-check"></i> Book Free Consult
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="/">Home</a>
+    <a href="/about.html">About Us</a>
+    <a href="/services.html">Services</a>
+    <a href="/services/weight-loss.html" style="padding-left:32px;font-size:.9rem;">↳ Weight Loss</a>
+    <a href="/services/diabetes-diet.html" style="padding-left:32px;font-size:.9rem;">↳ Diabetes Diet</a>
+    <a href="/services/pcos-pcod.html" style="padding-left:32px;font-size:.9rem;">↳ PCOS / PCOD</a>
+    <a href="/services/sports-nutrition.html" style="padding-left:32px;font-size:.9rem;">↳ Sports Nutrition</a>
+    <a href="/services/custom-diet.html" style="padding-left:32px;font-size:.9rem;">↳ Custom Diet Plans</a>
+    <a href="/services/online-consultation.html" style="padding-left:32px;font-size:.9rem;">↳ Online Consultations</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/book-appointment.html?service=Custom+Diet+Plan" class="btn btn-accent"><i
+        class="fas fa-calendar-check"></i> Book Free Consultation</a>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-inner">
+        <a href="/"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right" style="font-size:.65rem;"></i>
+        <a href="/services.html">Services</a>
+        <i class="fas fa-chevron-right" style="font-size:.65rem;"></i>
+        <span aria-current="page">Custom Diet Plans</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── HERO ──────────────────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="cd-hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="fade-up">
+            <div class="hero-service-badge">
+              <i class="fas fa-utensils"></i> Custom Diet Plans
+            </div>
+            <h1 class="hero-title" id="cd-hero-heading">
+              A Plan Built Around <span>You</span> —<br>Not a Template.
+            </h1>
+            <p class="hero-desc">
+              When your situation doesn't fit neatly into one category, you need a plan that's built from the ground up
+              — completely around your body, your conditions, your culture, and your life. That's exactly what our
+              Custom Diet Plan service delivers.
+            </p>
+            <div class="hero-perks">
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Handles multiple health conditions
+                simultaneously</div>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Accommodates Jain, vegan, Sattvic & all dietary
+                preferences</div>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> 60-minute deep-dive assessment session</div>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Quarterly revisions as your body & goals evolve
+              </div>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Recipe cards & shopping lists included</div>
+            </div>
+            <div class="hero-ctas">
+              <a href="/book-appointment.html?service=Custom+Diet+Plan" class="btn btn-accent">
+                <i class="fas fa-calendar-check"></i> Book Free Consultation
+              </a>
+              <a href="#who-needs" class="btn btn-ghost">
+                <i class="fas fa-arrow-down"></i> Is This For You?
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual fade-up" aria-hidden="true">
+            <div class="hero-main-card">
+              <div class="hero-img-wrap">
+          <!-- LEAVE PATH FOR IMAGE -->
+          <img src="../img/Diet.png" alt="Dr. Anjani - Best Dietician Noida" class="hero-img" onerror="this.parentElement.classList.add('hero-img-fallback')"/>
+        </div>
+              <!-- <div class="hero-thumb">🍽️</div> -->
+              <div class="hero-card-body">
+                <div class="hero-stats-row">
+                  <div class="h-stat">
+                    <span class="h-stat-num">60 min</span>
+                    <span class="h-stat-label">Deep-dive assessment</span>
+                  </div>
+                  <div class="h-stat">
+                    <span class="h-stat-num">24 hrs</span>
+                    <span class="h-stat-label">Plan delivery</span>
+                  </div>
+                  <div class="h-stat">
+                    <span class="h-stat-num">Any</span>
+                    <span class="h-stat-label">Condition handled</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-float f1">
+              <div class="float-icon o"><i class="fas fa-star"></i></div>
+              <div class="float-card-text">
+                <strong>Fully bespoke</strong>
+                <span>No templates, ever</span>
+              </div>
+            </div>
+            <div class="hero-float f2">
+              <div class="float-icon g"><i class="fas fa-layer-group"></i></div>
+              <div class="float-card-text">
+                <strong>Multi-condition</strong>
+                <span>All handled in one plan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY CUSTOM? ────────────────────────────────────────────────────── -->
+    <section class="why-custom" id="who-needs" aria-labelledby="why-custom-heading">
+      <div class="container">
+        <div class="why-custom-inner">
+          <div class="why-text fade-up">
+            <div class="section-label">Why Custom?</div>
+            <h2 class="section-title" id="why-custom-heading">Not Everyone Fits a Standard Programme — and That's
+              Perfectly Fine</h2>
+            <p>Our other services address specific, well-defined health goals. But many of our clients come to us with
+              situations that are more complex — or more unique — than a single-focus programme can address.</p>
+            <p>Perhaps you have three health conditions, each with different dietary requirements. Perhaps your cultural
+              and religious eating restrictions are highly specific. Perhaps you've tried every standard approach and
+              nothing has worked. Perhaps your goal is unusual enough that no existing programme addresses it.</p>
+            <div class="highlight-box">
+              <p>"Every human being is unique. Their diet plan should be too. We've never created two identical custom
+                plans — not once in ten years."</p>
+            </div>
+            <p>The Custom Diet Plan starts with a 60-minute deep-dive assessment — the most comprehensive intake we
+              offer. We leave no stone unturned. The result is a plan that fits you so precisely that it stops feeling
+              like a diet and starts feeling like just the way you eat.</p>
+          </div>
+
+          <!-- Who needs it -->
+          <div class="fade-up" id="who-needs-cards">
+            <div class="section-label">Who Is This For?</div>
+            <h3
+              style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--green-dark);margin-bottom:20px;">
+              You Need a Custom Plan If…</h3>
+            <div class="need-cards">
+
+              <div class="need-card">
+                <div class="need-icon"><i class="fas fa-layer-group"></i></div>
+                <div>
+                  <h4>You have multiple health conditions</h4>
+                  <p>E.g. PCOS + hypothyroid + weight gain, or diabetes + hypertension + kidney disease. Standard
+                    programmes can't balance these safely.</p>
+                </div>
+              </div>
+
+              <div class="need-card">
+                <div class="need-icon"><i class="fas fa-pray"></i></div>
+                <div>
+                  <h4>Your diet has strict restrictions</h4>
+                  <p>Jain (no root veg, no eating after sunset), strict vegan, Sattvic (no onion/garlic), raw food, or
+                    very specific religious fasting requirements.</p>
+                </div>
+              </div>
+
+              <div class="need-card">
+                <div class="need-icon"><i class="fas fa-child"></i></div>
+                <div>
+                  <h4>You're planning for a child or elderly person</h4>
+                  <p>Paediatric nutrition, senior citizen diets, or eating plans during pregnancy require highly
+                    specialised approaches.</p>
+                </div>
+              </div>
+
+              <div class="need-card">
+                <div class="need-icon"><i class="fas fa-globe-asia"></i></div>
+                <div>
+                  <h4>Your cultural cuisine is unusual</h4>
+                  <p>NRIs with access only to Western ingredients, regional Indian cuisines with very specific
+                    ingredients, or cross-cultural cooking situations.</p>
+                </div>
+              </div>
+
+              <div class="need-card">
+                <div class="need-icon"><i class="fas fa-puzzle-piece"></i></div>
+                <div>
+                  <h4>Your goal is highly unique</h4>
+                  <p>E.g. preparing for Ironman while managing hypothyroid, or building muscle on a Jain diet at 65 — no
+                    standard service covers this.</p>
+                </div>
+              </div>
+
+              <div class="need-card">
+                <div class="need-icon"><i class="fas fa-times-circle"></i></div>
+                <div>
+                  <h4>Standard programmes haven't worked</h4>
+                  <p>If you've tried multiple diets and nothing has worked long-term, a fully bespoke assessment often
+                    reveals the specific pattern that was missing.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIETARY MODES ──────────────────────────────────────────────────── -->
+    <section class="dietary-section" aria-labelledby="dietary-heading">
+      <div class="container">
+        <div class="dietary-header fade-up">
+          <div class="section-label">Dietary Preferences We Support</div>
+          <h2 class="section-title" id="dietary-heading">Every Dietary Identity — Respected & Optimised</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:560px;margin:0 auto;">Your food choices are part of
+            who you are. We never ask you to compromise them — we build around them.</p>
+        </div>
+        <div class="dietary-grid">
+
+          <div class="dietary-card fade-up" style="transition-delay:0.00s">
+            <div class="dietary-tag">Vegetarian</div>
+            <span class="dietary-emoji">🫘</span>
+            <h3>Lacto-Vegetarian</h3>
+            <p>India's most common dietary style — expertly balanced for full nutrition without meat or eggs.</p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.07s">
+            <div class="dietary-tag">Vegan</div>
+            <span class="dietary-emoji">🌱</span>
+            <h3>Plant-Based / Vegan</h3>
+            <p>Complete vegan nutrition with full protein, B12, iron, and omega-3 strategies from plant sources only.
+            </p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.14s">
+            <div class="dietary-tag">Flexible</div>
+            <span class="dietary-emoji">🥚</span>
+            <h3>Eggetarian</h3>
+            <p>Vegetarian with eggs — flexible and protein-rich. We maximise the nutritional advantage of this choice.
+            </p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.21s">
+            <div class="dietary-tag">Omnivore</div>
+            <span class="dietary-emoji">🍗</span>
+            <h3>Non-Vegetarian</h3>
+            <p>Chicken, fish, eggs, meat — all used strategically for maximum nutritional value within your health
+              goals.</p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.00s">
+            <div class="dietary-tag">Jain</div>
+            <span class="dietary-emoji">⛩️</span>
+            <h3>Jain Diet</h3>
+            <p>No root vegetables, no eating after sunset, specific fasting protocols — all accommodated precisely and
+              nutritionally.</p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.07s">
+            <div class="dietary-tag">Islamic</div>
+            <span class="dietary-emoji">🕌</span>
+            <h3>Halal Diet</h3>
+            <p>100% halal food sources, Ramadan fasting nutrition, and culturally sensitive meal planning throughout.
+            </p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.14s">
+            <div class="dietary-tag">Sattvic</div>
+            <span class="dietary-emoji">☀️</span>
+            <h3>Sattvic / No Onion-Garlic</h3>
+            <p>Sattvic dietary principles respected — including yoga-complementary foods and Brahmin cooking traditions.
+            </p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.21s">
+            <div class="dietary-tag">Therapeutic</div>
+            <span class="dietary-emoji">🌾</span>
+            <h3>Gluten-Free / Low-FODMAP</h3>
+            <p>Coeliac disease, gluten sensitivity, IBS, or SIBO — specific therapeutic dietary modes handled carefully.
+            </p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.00s">
+            <div class="dietary-tag">Regional</div>
+            <span class="dietary-emoji">🍱</span>
+            <h3>Regional Indian Cuisine</h3>
+            <p>Tamil, Bengali, Gujarati, Punjabi, Keralite, Marathi and more — your regional food traditions built into
+              your plan.</p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.07s">
+            <div class="dietary-tag">NRI</div>
+            <span class="dietary-emoji">✈️</span>
+            <h3>Indian Abroad</h3>
+            <p>Planning for clients in the UK, US, UAE, Singapore, Canada and more — using local market ingredients
+              thoughtfully.</p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.14s">
+            <div class="dietary-tag">Geriatric</div>
+            <span class="dietary-emoji">👴</span>
+            <h3>Senior Citizen Diet</h3>
+            <p>Specific nutritional needs of those 60+ — calcium, B12, protein for muscle preservation, and easy
+              digestion.</p>
+          </div>
+
+          <div class="dietary-card fade-up" style="transition-delay:0.21s">
+            <div class="dietary-tag">Paediatric</div>
+            <span class="dietary-emoji">👶</span>
+            <h3>Children's Nutrition</h3>
+            <p>Growth, brain development, immunity, and healthy eating habits for children at every stage of
+              development.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONDITIONS HANDLED ─────────────────────────────────────────────── -->
+    <!-- <section class="conditions" aria-labelledby="conditions-heading">
+      <div class="container">
+        <div class="conditions-header fade-up">
+          <div class="section-label">Health Conditions We Manage</div>
+          <h2 class="section-title" id="conditions-heading">If Your Doctor Has Diagnosed It, We Can Build Around It</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:560px;margin:0 auto;">Our Custom Diet Plans can
+            accommodate any combination of the conditions below — in a single, cohesive, practical plan.</p>
+        </div>
+        <div class="conditions-grid">
+          ?php
+          $conditions = [
+          ['icon'=>'fas fa-heartbeat', 'title'=>'Diabetes (Type 1, 2 & Pre)', 'desc'=>'GI-calibrated plans, insulin
+          timing, blood sugar management.'],
+          ['icon'=>'fas fa-female', 'title'=>'PCOS / PCOD', 'desc'=>'Anti-inflammatory, hormone-balancing,
+          insulin-sensitising.'],
+          ['icon'=>'fas fa-weight', 'title'=>'Obesity & Weight Management', 'desc'=>'Evidence-based caloric and
+          metabolic strategies.'],
+          ['icon'=>'fas fa-heart', 'title'=>'Hypertension', 'desc'=>'DASH-based low-sodium planning with heart-healthy
+          foods.'],
+          ['icon'=>'fas fa-tachometer-alt','title'=>'Hypothyroidism', 'desc'=>'Thyroid-supportive nutrients, iodine
+          balance, selenium focus.'],
+          ['icon'=>'fas fa-child', 'title'=>'Hyperthyroidism', 'desc'=>'Goitrogen management, caloric support, nutrient
+          replenishment.'],
+          ['icon'=>'fas fa-kidneys', 'title'=>'Kidney Disease (CKD)', 'desc'=>'Low-potassium, low-phosphorus,
+          protein-controlled plans.'],
+          ['icon'=>'fas fa-liver', 'title'=>'Fatty Liver (NAFLD/NASH)', 'desc'=>'Hepatoprotective nutrition — reduce
+          fat, restore liver health.'],
+          ['icon'=>'fas fa-virus', 'title'=>'Gut Health & IBS', 'desc'=>'Low-FODMAP, probiotic-rich, gut-healing
+          protocols.'],
+          ['icon'=>'fas fa-lungs', 'title'=>'Uric Acid & Gout', 'desc'=>'Low-purine diet planning with hydration and pH
+          strategies.'],
+          ['icon'=>'fas fa-capsules', 'title'=>'High Cholesterol', 'desc'=>'Heart-healthy fats, plant sterols,
+          fibre-first approach.'],
+          ['icon'=>'fas fa-plus', 'title'=>'Many More Conditions', 'desc'=>'Anaemia, Osteoporosis, Cancer recovery,
+          Post-surgery & beyond.'],
+          ];
+          foreach ($conditions as $i => $c):
+          $isLast = ($i === count($conditions) - 1);
+          ?>
+          <div class="condition-card fade-up " style="transition-delay:0s">
+            <div class="condition-icon"><i class=""></i></div>
+            <div>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ── THE PROCESS ────────────────────────────────────────────────────── -->
+    <section class="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="process-header fade-up">
+          <div class="section-label">Our Deep-Dive Process</div>
+          <h2 class="section-title" id="process-heading">How We Build Your Custom Plan</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">Our custom plan process is
+            the most thorough assessment we offer — because your situation deserves more than a quick questionnaire.</p>
+        </div>
+        <div class="process-wrap">
+
+          <div class="process-card fade-up" style="transition-delay:0.00s">
+            <div class="process-step-num">01</div>
+            <div class="process-icon">📋</div>
+            <h3>60-Minute Deep-Dive Assessment</h3>
+            <p>A comprehensive video or in-person session covering your complete medical history, all diagnoses, current
+              medications, blood reports, food allergies, cultural dietary restrictions, eating schedule, cooking
+              habits, lifestyle, stress, sleep, and goals.</p>
+          </div>
+
+          <div class="process-card fade-up" style="transition-delay:0.10s">
+            <div class="process-step-num">02</div>
+            <div class="process-icon">🔬</div>
+            <h3>Medical & Nutritional Analysis</h3>
+            <p>We review all your blood reports and medical documents. If reports are missing, we recommend which ones
+              to get. We identify nutritional deficiencies, metabolic patterns, and condition-specific dietary
+              requirements that must be balanced.</p>
+          </div>
+
+          <div class="process-card fade-up" style="transition-delay:0.00s">
+            <div class="process-step-num">03</div>
+            <div class="process-icon">🍽️</div>
+            <h3>Bespoke Plan Construction</h3>
+            <p>Your plan is built from scratch — not adapted from a template. Every meal, every food choice, every
+              timing recommendation is determined by your specific data. This typically takes 24–48 hours to complete
+              with the depth it deserves.</p>
+          </div>
+
+          <div class="process-card fade-up" style="transition-delay:0.10s">
+            <div class="process-step-num">04</div>
+            <div class="process-icon">📱</div>
+            <h3>Plan Walkthrough Session</h3>
+            <p>A follow-up call to walk through your plan in detail — explaining why each food is included, how to
+              prepare it, what to substitute if needed, and how to apply it to your real daily life.</p>
+          </div>
+
+          <div class="process-card fade-up" style="transition-delay:0.00s">
+            <div class="process-step-num">05</div>
+            <div class="process-icon">🔄</div>
+            <h3>Weekly Reviews & Adjustments</h3>
+            <p>Your plan is reviewed every week based on your feedback, blood sugar readings, weight changes, or any
+              symptom updates. Nothing is static — your plan evolves as you do.</p>
+          </div>
+
+          <div class="process-card fade-up" style="transition-delay:0.10s">
+            <div class="process-step-num">06</div>
+            <div class="process-icon">📅</div>
+            <h3>Quarterly Full Revisions</h3>
+            <p>Every 3 months, we conduct a full reassessment — reviewing updated blood reports, body composition
+              changes, and evolving goals — and rebuild your plan for the next phase.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHAT'S INCLUDED ────────────────────────────────────────────────── -->
+    <section class="included" aria-labelledby="cd-included-heading">
+      <div class="container">
+        <div class="included-header fade-up">
+          <div class="section-label">What's Included</div>
+          <h2 class="section-title" id="cd-included-heading">Everything in Your Custom Diet Plan</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">The most comprehensive
+            nutrition package we offer — built specifically for those whose situation demands more.</p>
+        </div>
+        <div class="included-grid">
+
+          <div class="included-card fade-up" style="transition-delay:0.00s">
+            <div class="inc-icon"><i class="fas fa-clock"></i></div>
+            <h3>60-Min Deep-Dive Assessment</h3>
+            <p>Our most detailed intake — covering every medical, dietary, lifestyle, and cultural factor relevant to
+              your plan design.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.08s">
+            <div class="inc-icon"><i class="fas fa-file-medical"></i></div>
+            <h3>Blood Report Analysis</h3>
+            <p>Full review of all available reports: HbA1c, lipid profile, thyroid, hormones, kidney function, liver
+              enzymes, vitamins, and minerals.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.16s">
+            <div class="inc-icon"><i class="fas fa-utensils"></i></div>
+            <h3>100% Bespoke Meal Plans</h3>
+            <p>Zero templates. Every food, every portion, every timing is determined by your individual data. Rebuilt
+              fresh every week.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.00s">
+            <div class="inc-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Detailed Recipe Cards</h3>
+            <p>Step-by-step recipes for every meal in your plan — with ingredient quantities, preparation instructions,
+              and substitution options.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.08s">
+            <div class="inc-icon"><i class="fas fa-shopping-cart"></i></div>
+            <h3>Weekly Shopping Lists</h3>
+            <p>Precise shopping lists synced to your meal plan — organised by vegetable, grain, protein, and dairy
+              sections for easy market shopping.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.16s">
+            <div class="inc-icon"><i class="fas fa-comments"></i></div>
+            <h3>WhatsApp Support</h3>
+            <p>Direct dietitian access for questions about substitutions, eating out, symptom changes, lab result
+              interpretation, and daily support.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.00s">
+            <div class="inc-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Weekly Plan Adjustments</h3>
+            <p>Your plan evolves every week based on your progress, feedback, and any changes in your health status or
+              circumstances.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.08s">
+            <div class="inc-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Quarterly Full Reassessments</h3>
+            <p>Every 3 months, a full plan rebuild based on updated blood reports, body composition, and evolving health
+              goals.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.16s">
+            <div class="inc-icon"><i class="fas fa-globe"></i></div>
+            <h3>Festival & Travel Planning</h3>
+            <p>Custom eating strategies for all religious festivals, family events, travel, and special occasions — no
+              derailing, ever.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SAMPLE CASE STUDIES ────────────────────────────────────────────── -->
+    <!-- <section class="samples" aria-labelledby="samples-heading">
+      <div class="container">
+        <div class="samples-header fade-up">
+          <div class="section-label">Real Custom Plan Examples</div>
+          <h2 class="section-title" id="samples-heading">See How We've Solved Complex Nutrition Challenges</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">Every custom plan is unique —
+            but here are anonymised examples showing how we approach complex, multi-condition cases.</p>
+        </div>
+        <div class="sample-cases">
+
+          <div class="sample-case fade-up" style="transition-delay:0.00s">
+            <div class="sample-case-head" style="background:linear-gradient(90deg,#0d3d20,#2d9448)">
+              <span class="case-emoji">👩‍⚕️</span>
+              <div class="case-head-text">
+                <h3>PCOS + Hypothyroidism + Weight Gain</h3>
+                <p>Female, 29, Jain vegetarian, no root vegetables</p>
+              </div>
+            </div>
+            <div class="sample-case-body">
+              <p class="case-challenge">"My PCOS diet said to eat sweet potato — my thyroid diet said to avoid it. My
+                Jain restrictions ruled out most protein sources I was advised to add. Every plan contradicted itself."
+              </p>
+              <p
+                style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--cd-mid);margin-bottom:8px;">
+                Our Approach</p>
+              <div class="case-approach">
+
+                <div class="case-approach-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span></span>
+                </div>
+
+                <div class="sample-case fade-up" style="transition-delay:0.10s">
+                  <div class="sample-case-head" style="background:linear-gradient(90deg,#1a3d6e,#2870d8)">
+                    <span class="case-emoji">👴</span>
+                    <div class="case-head-text">
+                      <h3>Type 2 Diabetes + CKD Stage 3 + Hypertension</h3>
+                      <p>Male, 68, south Indian non-vegetarian, lives alone</p>
+                    </div>
+                  </div>
+                  <div class="sample-case-body">
+                    <p class="case-challenge">"My diabetic diet says eat high-protein. My kidney disease says restrict
+                      protein. My blood pressure plan says no salt. And I live alone and can barely cook — I need simple
+                      meals."</p>
+                    <p
+                      style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--cd-mid);margin-bottom:8px;">
+                      Our Approach</p>
+                    <div class="case-approach">
+
+                      <div class="case-approach-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span></span>
+                      </div>
+
+                      <div class="sample-case fade-up" style="transition-delay:0.00s">
+                        <div class="sample-case-head" style="background:linear-gradient(90deg,#3d1060,#9040b8)">
+                          <span class="case-emoji">🏋️</span>
+                          <div class="case-head-text">
+                            <h3>Muscle Building + PCOS + Strict Jain Vegan</h3>
+                            <p>Female, 26, competitive powerlifter, Jain + vegan</p>
+                          </div>
+                        </div>
+                        <div class="sample-case-body">
+                          <p class="case-challenge">"Every sports nutritionist told me it's impossible to build
+                            competitive strength on a Jain vegan diet without supplements. I refused to accept that."
+                          </p>
+                          <p
+                            style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--cd-mid);margin-bottom:8px;">
+                            Our Approach</p>
+                          <div class="case-approach">
+
+                            <div class="case-approach-item">
+                              <i class="fas fa-check-circle"></i>
+                              <span></span>
+                            </div>
+
+                            <div class="sample-case fade-up" style="transition-delay:0.10s">
+                              <div class="sample-case-head" style="background:linear-gradient(90deg,#7a3010,#d4680a)">
+                                <span class="case-emoji">🌍</span>
+                                <div class="case-head-text">
+                                  <h3>Fatty Liver + High Uric Acid + Post-Cancer Recovery</h3>
+                                  <p>Male, 55, Indian in the UK, omnivore, recently completed chemotherapy</p>
+                                </div>
+                              </div>
+                              <div class="sample-case-body">
+                                <p class="case-challenge">"I'm recovering from colorectal cancer treatment and have
+                                  developed fatty liver and gout as side effects. I'm in London with limited access to
+                                  Indian ingredients I'm used to."</p>
+                                <p
+                                  style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--cd-mid);margin-bottom:8px;">
+                                  Our Approach</p>
+                                <div class="case-approach">
+
+                                  <div class="case-approach-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span></span>
+                                  </div>
+
+                                </div>
+                                <div class="case-result">
+                                  <i class="fas fa-trophy" style="color:var(--cd-mid);"></i>
+
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+    </section> -->
+
+    <!-- ── TESTIMONIALS ───────────────────────────────────────────────────── -->
+    <section class="testimonials" aria-labelledby="cd-testi-heading">
+      <div class="container">
+        <div class="testi-header fade-up">
+          <div class="section-label">Client Stories</div>
+          <h2 class="section-title" id="cd-testi-heading">When Nothing Else Worked — Custom Did.</h2>
+        </div>
+        <div class="testi-grid">
+
+          <article class="testi-card fade-up" style="transition-delay:0.00s">
+            <div class="result-pill"><i class="fas fa-star"></i> First regular cycle in 6 years</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"I'd been told by two nutritionists that my combination of Jain restrictions, PCOS,
+              and thyroid made it impossible to optimise nutrition. Diet_Solver proved them wrong. The custom plan was
+              the most comprehensive thing I've ever seen — and it worked."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">L</div>
+              <div>
+                <strong>Leena S.</strong>
+                <span>Jain + PCOS + Hypothyroid</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.08s">
+            <div class="result-pill"><i class="fas fa-star"></i> All three stabilised in 4 months</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Three separate doctors gave me three contradicting diets. Diet_Solver was the only
+              person who sat down and built one cohesive plan that addressed all three simultaneously. I have not had a
+              hospitalisation since I started."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div>
+                <strong>Arun M.</strong>
+                <span>CKD + Diabetes + Hypertension</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.16s">
+            <div class="result-pill"><i class="fas fa-star"></i> Full recovery, 12kg regained healthily</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"After my surgery, I lost dangerous amounts of weight. I needed to gain back muscle
+              and fat healthily, within halal guidelines, with a restricted swallowing ability. The custom plan was
+              perfectly calibrated for every constraint I had."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">S</div>
+              <div>
+                <strong>Shirin F.</strong>
+                <span>Halal + Post-surgery recovery</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.00s">
+            <div class="result-pill"><i class="fas fa-star"></i> Liver enzymes normal in 3 months</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Living in the US made everything harder — the Indian foods I'm used to aren't all
+              available. Diet_Solver built my plan entirely around what I can actually buy here, while managing two
+              serious conditions. The detail level was extraordinary."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">R</div>
+              <div>
+                <strong>Rajan K.</strong>
+                <span>Fatty liver + Gout + NRI (USA)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.08s">
+            <div class="result-pill"><i class="fas fa-star"></i> Gained 4kg muscle, cycles restored</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Everyone said it couldn't be done — build muscle on a vegan diet while managing PCOS.
+              My custom plan from Diet_Solver proved every single one of them wrong. Six months later I'm at my
+              strongest, my cycles are regular, and I've never felt better."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">P</div>
+              <div>
+                <strong>Pooja D.</strong>
+                <span>Vegan + Athlete + PCOS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.16s">
+            <div class="result-pill"><i class="fas fa-star"></i> Simple, manageable, life-changing plan</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"At 72, with five health conditions, I'd given up on ever having a proper diet plan.
+              My family found Diet_Solver. The plan was so simple — minimal cooking, familiar foods, easy to follow
+              alone. My health markers have improved more in 3 months than in the previous 5 years."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">M</div>
+              <div>
+                <strong>Mahesh T.</strong>
+                <span>Elderly (72), multiple conditions</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────────────────────────────────── -->
+    <section class="faq" aria-labelledby="cd-faq-heading">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="fade-up">
+            <div class="section-label">FAQs</div>
+            <h2 class="section-title" id="cd-faq-heading">Custom Plan Questions — Answered</h2>
+            <p style="color:var(--text-muted);font-size:.93rem;line-height:1.75;margin-top:12px;">If you're unsure
+              whether the Custom Diet Plan is right for your situation — just ask. We'll tell you honestly whether it's
+              the right fit or if one of our standard programmes would serve you better.</p>
+            <a href="https://wa.me/919999000000?text=Hi!%20I%20have%20a%20question%20about%20the%20Custom%20Diet%20Plan."
+              class="btn btn-primary" style="margin-top:24px;" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> Ask on WhatsApp
+            </a>
+          </div>
+          <div class="faq-list fade-up">
+
+            <div class="faq-item" id="cdfaq-0">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-0')" aria-expanded="false" aria-controls="cdfaq-ans-0">
+                How is a Custom Plan different from your other services?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-0">Our other services address specific, well-defined goals (weight loss,
+                PCOS, diabetes, sports). The Custom Plan is for situations that don't fit neatly into one category —
+                multiple conditions, unique dietary restrictions, unusual goals, or repeated failure with standard
+                approaches.</div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-1">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-1')" aria-expanded="false" aria-controls="cdfaq-ans-1">
+                Can you manage multiple health conditions in one plan?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-1">Yes — this is the primary strength of our Custom Plan service. We
+                regularly create plans balancing 3–5 conditions simultaneously. Examples include PCOS + hypothyroid +
+                weight gain, or diabetes + CKD + hypertension. Each condition's requirements are carefully prioritised
+                and balanced.</div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-2">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-2')" aria-expanded="false" aria-controls="cdfaq-ans-2">
+                Can you accommodate Jain, vegan, or other strict restrictions?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-2">Absolutely. We have created plans for Jain (no root vegetables, no
+                eating after sunset), strict vegan, raw food, Sattvic (no onion/garlic), halal, and every major regional
+                Indian dietary tradition. Your cultural and ethical food choices are built around — never compromised.
+              </div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-3">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-3')" aria-expanded="false" aria-controls="cdfaq-ans-3">
+                I live outside India — can you still help?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-3">Yes. We work with NRI clients across the UK, US, UAE, Canada,
+                Singapore, Australia and more. Your plan is built using ingredients available in your local
+                supermarkets, with specific guidance on Indian ingredient substitutes and where to find them.</div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-4">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-4')" aria-expanded="false" aria-controls="cdfaq-ans-4">
+                How long does it take to receive my custom plan?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-4">After your 60-minute assessment, your custom plan is delivered within
+                24–48 hours. Complex multi-condition plans may take up to 48 hours to ensure the level of detail they
+                deserve.</div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-5">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-5')" aria-expanded="false" aria-controls="cdfaq-ans-5">
+                Do I need to share all my medical reports?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-5">Yes — for the Custom Plan, we need as much medical information as
+                possible. The more detailed the input, the more precise the output. If you're missing reports, we'll
+                advise which ones to get before your assessment session.</div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-6">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-6')" aria-expanded="false" aria-controls="cdfaq-ans-6">
+                Is this more expensive than your other services?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-6">The Custom Diet Plan investment reflects the significantly greater
+                depth of assessment, plan construction, and ongoing revision involved. We offer a free initial
+                consultation where we can discuss your situation, assess your needs, and advise on the most
+                cost-effective option for you.</div>
+            </div>
+
+            <div class="faq-item" id="cdfaq-7">
+              <button class="faq-q" onclick="toggleFaq('cdfaq-7')" aria-expanded="false" aria-controls="cdfaq-ans-7">
+                What if my conditions change during the programme?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="cdfaq-ans-7">Your plan adapts as your health evolves. If you're hospitalised,
+                change medication, receive a new diagnosis, or your lab results shift significantly — we rebuild your
+                plan accordingly. Dynamic adaptation is built into the programme.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RELATED SERVICES ───────────────────────────────────────────────── -->
+    <section class="related" aria-labelledby="cd-related-heading">
+      <div class="container">
+        <div class="related-header">
+          <div>
+            <div class="section-label">Also Explore</div>
+            <h2 class="section-title" id="cd-related-heading" style="margin-bottom:0;">Related Services</h2>
+          </div>
+          <a href="/services.html" class="btn btn-outline">View All Services</a>
+        </div>
+        <div class="related-grid">
+
+          <a href="/services/weight-loss.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#c8ead5,#88c8a4)">⚖️</div>
+            <div>
+              <h4>Weight Loss</h4>
+              <p>Focused weight loss without complex conditions.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/pcos-pcod.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#ede0fc,#c4a0e8)">🌸</div>
+            <div>
+              <h4>PCOS / PCOD</h4>
+              <p>Dedicated hormonal nutrition programme.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/diabetes-diet.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#fce4b4,#f4c068)">🩺</div>
+            <div>
+              <h4>Diabetes Diet</h4>
+              <p>Focused diabetes management through food.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/sports-nutrition.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#dde8fc,#9ab8f0)">🏃</div>
+            <div>
+              <h4>Sports Nutrition</h4>
+              <p>Performance nutrition for athletes.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/online-consultation.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#fde8d8,#f8b88a)">💻</div>
+            <div>
+              <h4>Online Consultation</h4>
+              <p>Expert guidance from anywhere in India.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ─────────────────────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cd-cta-heading">
+      <div class="container">
+        <div class="cta-content">
+          <h2 id="cd-cta-heading">Your Situation Is Unique. Your Diet Plan Should Be Too.</h2>
+          <p>Book your free 30-minute consultation with Dr. Aisha. Tell us what makes your situation complex — and we'll
+            show you exactly how a custom plan can solve it.</p>
+          <div class="cta-btns">
+            <a href="/book-appointment.html?service=Custom+Diet+Plan" class="btn btn-white">
+              <i class="fas fa-calendar-check"></i> Book Free Consultation
+            </a>
+            <a href="https://wa.me/919999000000?text=Hi!%20I'm%20interested%20in%20a%20Custom%20Diet%20Plan."
+              class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo logo">
+            <!-- <div class="logo-icon"><i class="fas fa-leaf"></i></div> -->
+            <div class="logo-text">
+              <img src="../img/logo_02.png" alt="DietSolver" class="footer-logo-img"/>
+              <!-- <span class="logo-name">Diet<span>_Solver</span></span>
+              <span class="logo-tagline">Your Diet. Your Rules.</span> -->
+            </div>
+          </div>
+          <p class="footer-about">We believe in the power of real food, personalised plans, and consistent support to
+            transform your health — naturally and sustainably.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">All Services</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/book-appointment.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="/services/weight-loss.html">Weight Loss</a></li>
+            <li><a href="/services/diabetes-diet.html">Diabetes Diet</a></li>
+            <li><a href="/services/pcos-pcod.html">PCOS / PCOD</a></li>
+            <li><a href="/services/sports-nutrition.html">Sports Nutrition</a></li>
+            <li><a href="/services/custom-diet.html">Custom Diet Plans</a></li>
+            <li><a href="/services/online-consultation.html">Online Consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919999000000">+91-9999-000000</a>
+            </li>
+            <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                href="mailto:hello@dietsolver.in">hello@dietsolver.in</a></li>
+            <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Connaught Place, New Delhi –
+                110001</span></li>
+          </ul>
+          <h4 style="margin-top:24px;">Newsletter</h4>
+          <form class="newsletter-form" action="/newsletter.html" method="POST">
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe for Free Tips</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Diet_Solver. All Rights Reserved.</span>
+        <span>
+    Design and Managed by
+    <a href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">
+      Advertising India
+    </a>
+  </span>
+        <span>
+          <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+          <a href="/terms.html">Terms of Service</a> &nbsp;·&nbsp;
+          <a href="/sitemap.xml">Sitemap</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-btns">
+    <a href="https://wa.me/919999000000?text=Hi!%20I'm%20interested%20in%20a%20Custom%20Diet%20Plan."
+      class="float-btn float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+        class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919999000000" class="float-btn float-call" aria-label="Call"><i class="fas fa-phone"></i></a>
+  </div>
+  <button id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i
+      class="fas fa-arrow-up"></i></button>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+      document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function toggleFaq(id) {
+      const item = document.getElementById(id);
+      const btn = item.querySelector('.faq-q');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-q').setAttribute('aria-expanded', false);
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', true); }
+    }
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
+</body>
+
+</html>
