@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +8,13 @@
   <meta name="description" content="Manage PCOS & PCOD naturally through personalised nutrition. Diet_Solver" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.dietsolver.in/services/pcos-pcod.html" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://www.dietsolver.in/services/pcos-pcod.php" />
-  <meta property="og:title"       content="PCOS & PCOD Diet Programme | Diet_Solver — Balance Hormones Naturally" />
+  <link rel="stylesheet" href="../css/style.css">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dietsolver.in/services/pcos-pcod.php" />
+  <meta property="og:title" content="PCOS & PCOD Diet Programme | Diet_Solver — Balance Hormones Naturally" />
   <meta property="og:description" content="Manage PCOS & PCOD naturally through personalised nutrition. Diet_Solver" />
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="PCOS & PCOD Diet Programme | Diet_Solver — Balance Hormones Naturally" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PCOS & PCOD Diet Programme | Diet_Solver — Balance Hormones Naturally" />
   <meta name="twitter:description" content="Manage PCOS & PCOD naturally through personalised nutrition. Diet_Solver" />
 
   <script type="application/ld+json">
@@ -49,832 +51,2338 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
     :root {
-      --green-dark:  #1a5c2e;
-      --green-mid:   #2d8653;
+      --green-dark: #1a5c2e;
+      --green-mid: #2d8653;
       --green-light: #4caf7d;
-      --green-pale:  #e8f5ee;
+      --green-pale: #e8f5ee;
       --green-xpale: #f4fbf6;
-      --accent:      #f4a024;
-      --white:       #ffffff;
-      --off-white:   #fafaf8;
-      --text-dark:   #1a1a1a;
-      --text-mid:    #3d4a3e;
-      --text-muted:  #6b7c6e;
-      --border:      #d6e9dc;
+      --accent: #f4a024;
+      --white: #ffffff;
+      --off-white: #fafaf8;
+      --text-dark: #1a1a1a;
+      --text-mid: #3d4a3e;
+      --text-muted: #6b7c6e;
+      --border: #d6e9dc;
       /* PCOS purple theme */
-      --pc-dark:     #5c2d7a;
-      --pc-mid:      #7c4daa;
-      --pc-light:    #a878d0;
-      --pc-pale:     #f3eafa;
-      --pc-xpale:    #faf5ff;
-      --shadow-sm:   0 2px 12px rgba(92,45,122,.08);
-      --shadow-md:   0 8px 32px rgba(92,45,122,.13);
-      --shadow-lg:   0 20px 60px rgba(92,45,122,.18);
-      --radius:      14px;
-      --radius-lg:   24px;
-      --font-display:'Playfair Display', Georgia, serif;
-      --font-body:   'DM Sans', sans-serif;
-      --transition:  .3s cubic-bezier(.4,0,.2,1);
+      --pc-dark: #5c2d7a;
+      --pc-mid: #7c4daa;
+      --pc-light: #a878d0;
+      --pc-pale: #f3eafa;
+      --pc-xpale: #faf5ff;
+      --shadow-sm: 0 2px 12px rgba(92, 45, 122, .08);
+      --shadow-md: 0 8px 32px rgba(92, 45, 122, .13);
+      --shadow-lg: 0 20px 60px rgba(92, 45, 122, .18);
+      --radius: 14px;
+      --radius-lg: 24px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+      --transition: .3s cubic-bezier(.4, 0, .2, 1);
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); color: var(--text-dark); background: var(--white); line-height: 1.65; overflow-x: hidden; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    .section-label { display: inline-block; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--pc-mid); background: var(--pc-pale); padding: 5px 14px; border-radius: 50px; margin-bottom: 14px; }
-    .section-title { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.6rem); font-weight: 700; color: var(--green-dark); line-height: 1.22; margin-bottom: 16px; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 30px; border-radius: 50px; font-family: var(--font-body); font-size: .95rem; font-weight: 600; cursor: pointer; border: none; transition: var(--transition); white-space: nowrap; }
-    .btn-primary { background: var(--pc-dark); color: var(--white); }
-    .btn-primary:hover { background: var(--pc-mid); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(92,45,122,.35); }
-    .btn-accent  { background: var(--accent); color: var(--white); }
-    .btn-accent:hover { background: #d4880f; transform: translateY(-2px); }
-    .btn-outline { background: transparent; color: var(--pc-dark); border: 2px solid var(--pc-dark); }
-    .btn-outline:hover { background: var(--pc-dark); color: var(--white); transform: translateY(-2px); }
-    .btn-white { background: var(--white); color: var(--pc-dark); }
-    .btn-white:hover { background: var(--pc-pale); transform: translateY(-2px); }
-    .btn-ghost { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.5); }
-    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.1); transform: translateY(-2px); }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--pc-mid);
+      background: var(--pc-pale);
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1.22;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--pc-dark);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--pc-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(92, 45, 122, .35);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn-accent:hover {
+      background: #d4880f;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--pc-dark);
+      border: 2px solid var(--pc-dark);
+    }
+
+    .btn-outline:hover {
+      background: var(--pc-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--pc-dark);
+    }
+
+    .btn-white:hover {
+      background: var(--pc-pale);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, .5);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--white);
+      background: rgba(255, 255, 255, .1);
+      transform: translateY(-2px);
+    }
 
     /* ── Top Bar ─────────────── */
-    .topbar { background: var(--green-dark); color: rgba(255,255,255,.88); font-size: .82rem; padding: 8px 0; }
-    .topbar-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-    .topbar-contacts { display: flex; gap: 20px; flex-wrap: wrap; }
-    .topbar-contacts a { color: rgba(255,255,255,.88); display: flex; align-items: center; gap: 6px; transition: color var(--transition); }
-    .topbar-contacts a:hover { color: var(--accent); }
-    .topbar-socials { display: flex; gap: 12px; }
-    .topbar-socials a { color: rgba(255,255,255,.7); font-size: .9rem; transition: color var(--transition); }
-    .topbar-socials a:hover { color: var(--accent); }
+    .topbar {
+      background: var(--green-dark);
+      color: rgba(255, 255, 255, .88);
+      font-size: .82rem;
+      padding: 8px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-left a,
+    .topbar-right span {
+      color: rgba(255, 255, 255, .88);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .topbar-left a:hover {
+      color: var(--accent);
+    }
+
+    .topbar-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .topbar-socials a {
+      color: rgba(255, 255, 255, .7);
+      font-size: .9rem;
+      transition: color var(--transition);
+    }
+
+    .topbar-socials a:hover {
+      color: var(--accent);
+    }
 
     /* ── Header ──────────────── */
-    .header { position: sticky; top: 0; z-index: 1000; background: var(--white); box-shadow: 0 2px 12px rgba(26,92,46,.08); transition: box-shadow var(--transition); }
-    .header.scrolled { box-shadow: 0 8px 32px rgba(26,92,46,.13); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 20px; }
-    .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-    .logo-icon { width: 44px; height: 44px; background: var(--green-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.3rem; }
-    .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-    .logo-name { font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; color: var(--green-dark); }
-    .logo-name span { color: var(--green-light); }
-    .logo-tagline { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); font-weight: 500; }
-    .nav-links { display: flex; align-items: center; gap: 4px; }
-    .nav-links a { font-size: .9rem; font-weight: 500; color: var(--text-mid); padding: 8px 14px; border-radius: 8px; transition: var(--transition); }
-    .nav-links a:hover, .nav-links a.active { color: var(--green-dark); background: var(--green-pale); }
-    .nav-item { position: relative; }
-    .nav-item .dropdown { position: absolute; top: calc(100% + 8px); left: 0; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 8px 32px rgba(26,92,46,.13); min-width: 230px; padding: 8px; opacity: 0; visibility: hidden; transform: translateY(10px); transition: var(--transition); z-index: 200; }
-    .nav-item:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
-    .dropdown a { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-radius: 8px; font-size: .87rem; color: var(--text-mid); width: 100%; }
-    .dropdown a:hover, .dropdown a.current { background: var(--green-pale); color: var(--green-dark); }
-    .dropdown a i { font-size: .8rem; color: var(--green-mid); width: 16px; }
-    .nav-cta { margin-left: 8px; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; border: none; background: none; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: var(--green-dark); border-radius: 2px; transition: var(--transition); }
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-    .mobile-nav { display: none; position: fixed; inset: 0; background: var(--white); z-index: 999; padding: 80px 24px 40px; overflow-y: auto; flex-direction: column; gap: 8px; }
-    .mobile-nav.open { display: flex; }
-    .mobile-nav a { font-size: 1.05rem; font-weight: 500; color: var(--text-mid); padding: 12px 16px; border-radius: var(--radius); border-bottom: 1px solid var(--border); }
-    .mobile-nav a:hover { background: var(--green-pale); color: var(--green-dark); }
-    .mobile-nav .btn { margin-top: 16px; justify-content: center; }
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(26, 92, 46, .08);
+      transition: box-shadow var(--transition);
+    }
+
+    .header.scrolled {
+      box-shadow: 0 8px 32px rgba(26, 92, 46, .13);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--green-dark);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.3rem;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+
+    .logo-name span {
+      color: var(--green-light);
+    }
+
+    .logo-tagline {
+      font-size: .68rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      font-size: .9rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--green-dark);
+      background: var(--green-pale);
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item .dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(26, 92, 46, .13);
+      min-width: 230px;
+      padding: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition);
+      z-index: 200;
+    }
+
+    .nav-item:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-size: .87rem;
+      color: var(--text-mid);
+      width: 100%;
+    }
+
+    .dropdown a:hover,
+    .dropdown a.current {
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+
+    .dropdown a i {
+      font-size: .8rem;
+      color: var(--green-mid);
+      width: 16px;
+    }
+
+    .nav-cta {
+      margin-left: 8px;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 6px;
+      border: none;
+      background: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--green-dark);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--white);
+      z-index: 999;
+      padding: 80px 24px 40px;
+      overflow-y: auto;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-nav a:hover {
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+
+    .mobile-nav .btn {
+      margin-top: 16px;
+      justify-content: center;
+    } */
 
     /* ── Breadcrumb ──────────── */
-    .breadcrumb { background: var(--pc-xpale); border-bottom: 1px solid #e8d8f4; padding: 12px 0; font-size: .82rem; color: var(--text-muted); }
-    .breadcrumb-inner { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .breadcrumb a { color: var(--pc-mid); transition: color var(--transition); }
-    .breadcrumb a:hover { color: var(--pc-dark); }
+    .breadcrumb {
+      background: var(--pc-xpale);
+      border-bottom: 1px solid #e8d8f4;
+      padding: 12px 0;
+      font-size: .82rem;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb a {
+      color: var(--pc-mid);
+      transition: color var(--transition);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--pc-dark);
+    }
 
     /* ── Hero ────────────────── */
     .hero {
       background: linear-gradient(135deg, #3d1060 0%, #6a2090 50%, #9040b8 100%);
       padding: 76px 0 64px;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
-    .hero::before { content:''; position:absolute; top:-100px; right:-100px; width:500px; height:500px; background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%); border-radius:50%; pointer-events:none; }
-    .hero::after  { content:''; position:absolute; bottom:-60px; left:-60px; width:300px; height:300px; background:radial-gradient(circle,rgba(255,200,255,.08) 0%,transparent 65%); border-radius:50%; pointer-events:none; }
-    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
-    .hero-service-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 50px; padding: 6px 16px; margin-bottom: 18px; font-size: .8rem; font-weight: 600; color: rgba(255,255,255,.9); }
-    .hero-service-badge i { color: #f0c0ff; }
-    .hero-title { font-family: var(--font-display); font-size: clamp(2.2rem,4.5vw,3.4rem); font-weight: 800; color: var(--white); line-height: 1.12; margin-bottom: 18px; }
-    .hero-title span { color: #f0c0ff; }
-    .hero-desc { font-size: 1rem; color: rgba(255,255,255,.82); line-height: 1.78; margin-bottom: 32px; max-width: 480px; }
-    .hero-perks { display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; }
-    .hero-perk { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.88); font-size: .9rem; }
-    .hero-perk i { color: #f0c0ff; width: 16px; flex-shrink: 0; }
-    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 255, 255, .06) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      left: -60px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255, 200, 255, .08) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-service-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 50px;
+      padding: 6px 16px;
+      margin-bottom: 18px;
+      font-size: .8rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .hero-service-badge i {
+      color: #f0c0ff;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.12;
+      margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      color: #f0c0ff;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .82);
+      line-height: 1.78;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+
+    .hero-perks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .hero-perk {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255, 255, 255, .88);
+      font-size: .9rem;
+    }
+
+    .hero-perk i {
+      color: #f0c0ff;
+      width: 16px;
+      flex-shrink: 0;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
     /* Hero card */
-    .hero-visual { position: relative; }
-    .hero-main-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 20px 60px rgba(92,45,122,.25); overflow: hidden; }
-    .hero-thumb { width: 100%; aspect-ratio: 4/3.2; background: linear-gradient(135deg,#ede0fc,#c4a0e8); display: flex; align-items: center; justify-content: center; font-size: 6rem; }
-    .hero-card-body { padding: 22px 24px; }
-    .hero-stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
-    .h-stat { text-align: center; padding: 12px 8px; background: var(--pc-pale); border-radius: 10px; }
-    .h-stat-num   { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--pc-dark); display: block; line-height: 1; }
-    .h-stat-label { font-size: .7rem; color: var(--text-muted); margin-top: 3px; display: block; }
-    .hero-float { position: absolute; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
-    .hero-float.f1 { top: -16px; right: -16px; }
-    .hero-float.f2 { bottom: 100px; left: -18px; }
-    .float-icon { width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: .95rem; flex-shrink: 0; }
-    .float-icon.p { background: var(--pc-pale); color: var(--pc-dark); }
-    .float-icon.g { background: var(--green-pale); color: var(--green-dark); }
-    .float-card-text strong { display: block; font-size: .82rem; font-weight: 700; color: var(--text-dark); }
-    .float-card-text span   { font-size: .72rem; color: var(--text-muted); }
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-main-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 60px rgba(92, 45, 122, .25);
+      overflow: hidden;
+    }
+
+    .hero-thumb {
+      width: 100%;
+      aspect-ratio: 4/3.2;
+      background: linear-gradient(135deg, #ede0fc, #c4a0e8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+    }
+
+    .hero-card-body {
+      padding: 22px 24px;
+    }
+
+    .hero-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .h-stat {
+      text-align: center;
+      padding: 12px 8px;
+      background: var(--pc-pale);
+      border-radius: 10px;
+    }
+
+    .h-stat-num {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--pc-dark);
+      display: block;
+      line-height: 1;
+    }
+
+    .h-stat-label {
+      font-size: .7rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+      display: block;
+    }
+
+    .hero-float {
+      position: absolute;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-float.f1 {
+      top: -16px;
+      right: -16px;
+    }
+
+    .hero-float.f2 {
+      bottom: 100px;
+      left: -18px;
+    }
+
+    .float-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .95rem;
+      flex-shrink: 0;
+    }
+
+    .float-icon.p {
+      background: var(--pc-pale);
+      color: var(--pc-dark);
+    }
+
+    .float-icon.g {
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+
+    .float-card-text strong {
+      display: block;
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .float-card-text span {
+      font-size: .72rem;
+      color: var(--text-muted);
+    }
 
     /* ── Symptom Cards ───────── */
-    .symptoms { padding: 90px 0; background: var(--white); }
-    .symptoms-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-    .symptoms-text p { font-size: .96rem; color: var(--text-mid); line-height: 1.82; margin-bottom: 18px; }
-    .highlight-box { background: var(--pc-pale); border-left: 4px solid var(--pc-dark); border-radius: 0 var(--radius) var(--radius) 0; padding: 18px 22px; margin: 24px 0; }
-    .highlight-box p { font-size: .9rem; font-style: italic; color: var(--pc-dark); margin: 0; font-weight: 500; }
+    .symptoms {
+      padding: 90px 0;
+      background: var(--white);
+    }
 
-    .symptom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .symptom-card { background: var(--pc-xpale); border: 1px solid #e0c8f4; border-radius: var(--radius); padding: 16px; transition: var(--transition); }
-    .symptom-card:hover { border-color: var(--pc-light); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
-    .symptom-icon { font-size: 1.4rem; margin-bottom: 8px; }
-    .symptom-card h4 { font-family: var(--font-display); font-size: .88rem; font-weight: 700; color: var(--pc-dark); margin-bottom: 4px; }
-    .symptom-card p  { font-size: .78rem; color: var(--text-muted); line-height: 1.5; }
-    .symptom-badge { display: inline-block; font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; background: var(--pc-pale); color: var(--pc-mid); padding: 2px 8px; border-radius: 50px; margin-bottom: 8px; }
+    .symptoms-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .symptoms-text p {
+      font-size: .96rem;
+      color: var(--text-mid);
+      line-height: 1.82;
+      margin-bottom: 18px;
+    }
+
+    .highlight-box {
+      background: var(--pc-pale);
+      border-left: 4px solid var(--pc-dark);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      font-size: .9rem;
+      font-style: italic;
+      color: var(--pc-dark);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .symptom-card {
+      background: var(--pc-xpale);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius);
+      padding: 16px;
+      transition: var(--transition);
+    }
+
+    .symptom-card:hover {
+      border-color: var(--pc-light);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-2px);
+    }
+
+    .symptom-icon {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .symptom-card h4 {
+      font-family: var(--font-display);
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--pc-dark);
+      margin-bottom: 4px;
+    }
+
+    .symptom-card p {
+      font-size: .78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .symptom-badge {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      background: var(--pc-pale);
+      color: var(--pc-mid);
+      padding: 2px 8px;
+      border-radius: 50px;
+      margin-bottom: 8px;
+    }
 
     /* ── Hormone Explainer ────── */
-    .hormone-section { padding: 90px 0; background: var(--pc-xpale); }
-    .hormone-header { text-align: center; margin-bottom: 52px; }
-    .hormone-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
-    .hormone-card { background: var(--white); border: 1px solid #e0c8f4; border-radius: var(--radius-lg); padding: 24px 20px; text-align: center; transition: var(--transition); }
-    .hormone-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: var(--pc-light); }
-    .hormone-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--pc-pale); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin: 0 auto 14px; transition: var(--transition); }
-    .hormone-card:hover .hormone-icon { background: var(--pc-dark); color: var(--white); }
-    .hormone-card h3 { font-family: var(--font-display); font-size: .95rem; font-weight: 700; color: var(--pc-dark); margin-bottom: 6px; }
-    .hormone-card .role { font-size: .75rem; font-weight: 600; color: var(--pc-light); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
-    .hormone-card p  { font-size: .8rem; color: var(--text-muted); line-height: 1.6; }
-    .hormone-food { font-size: .78rem; color: var(--green-mid); font-weight: 600; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+    .hormone-section {
+      padding: 90px 0;
+      background: var(--pc-xpale);
+    }
+
+    .hormone-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .hormone-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .hormone-card {
+      background: var(--white);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .hormone-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--pc-light);
+    }
+
+    .hormone-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--pc-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin: 0 auto 14px;
+      transition: var(--transition);
+    }
+
+    .hormone-card:hover .hormone-icon {
+      background: var(--pc-dark);
+      color: var(--white);
+    }
+
+    .hormone-card h3 {
+      font-family: var(--font-display);
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--pc-dark);
+      margin-bottom: 6px;
+    }
+
+    .hormone-card .role {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--pc-light);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 8px;
+    }
+
+    .hormone-card p {
+      font-size: .8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .hormone-food {
+      font-size: .78rem;
+      color: var(--green-mid);
+      font-weight: 600;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
 
     /* ── Included ────────────── */
-    .included { padding: 90px 0; background: var(--white); }
-    .included-header { text-align: center; margin-bottom: 52px; }
-    .included-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .included-card { background: var(--pc-xpale); border: 1px solid #e0c8f4; border-radius: var(--radius-lg); padding: 30px 24px; transition: var(--transition); position: relative; overflow: hidden; }
-    .included-card::after { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--pc-dark),var(--pc-light)); transform:scaleX(0); transition:transform var(--transition); }
-    .included-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); }
-    .included-card:hover::after { transform:scaleX(1); }
-    .inc-icon { width:54px; height:54px; border-radius:14px; background:var(--pc-pale); display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:18px; transition:var(--transition); }
-    .included-card:hover .inc-icon { background:var(--pc-dark); color:var(--white); }
-    .included-card h3 { font-family:var(--font-display); font-size:1.05rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; }
-    .included-card p  { font-size:.85rem; color:var(--text-muted); line-height:1.65; }
+    .included {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .included-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .included-card {
+      background: var(--pc-xpale);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .included-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--pc-dark), var(--pc-light));
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+
+    .included-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .included-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .inc-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: var(--pc-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      transition: var(--transition);
+    }
+
+    .included-card:hover .inc-icon {
+      background: var(--pc-dark);
+      color: var(--white);
+    }
+
+    .included-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+
+    .included-card p {
+      font-size: .85rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
 
     /* ── Foods Section ───────── */
-    .foods-section { padding: 90px 0; background: var(--pc-xpale); }
-    .foods-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-    .foods-col h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
-    .foods-col.good h3  { color: var(--green-dark); }
-    .foods-col.avoid h3 { color: #c03020; }
-    .food-list { display: flex; flex-direction: column; gap: 8px; }
-    .food-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 14px; border-radius: 10px; font-size: .86rem; color: var(--text-mid); }
-    .foods-col.good  .food-item { background: #edfaf3; border: 1px solid #a0d8b4; }
-    .foods-col.avoid .food-item { background: #fdecea; border: 1px solid #f0a090; }
-    .foods-col.good  .food-item i { color: var(--green-mid); flex-shrink: 0; margin-top: 1px; }
-    .foods-col.avoid .food-item i { color: #c03020; flex-shrink: 0; margin-top: 1px; }
-    .food-item strong { color: var(--text-dark); display: block; margin-bottom: 1px; }
+    .foods-section {
+      padding: 90px 0;
+      background: var(--pc-xpale);
+    }
+
+    .foods-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .foods-col h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .foods-col.good h3 {
+      color: var(--green-dark);
+    }
+
+    .foods-col.avoid h3 {
+      color: #c03020;
+    }
+
+    .food-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .food-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: .86rem;
+      color: var(--text-mid);
+    }
+
+    .foods-col.good .food-item {
+      background: #edfaf3;
+      border: 1px solid #a0d8b4;
+    }
+
+    .foods-col.avoid .food-item {
+      background: #fdecea;
+      border: 1px solid #f0a090;
+    }
+
+    .foods-col.good .food-item i {
+      color: var(--green-mid);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .foods-col.avoid .food-item i {
+      color: #c03020;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .food-item strong {
+      color: var(--text-dark);
+      display: block;
+      margin-bottom: 1px;
+    }
 
     /* ── Meal Plan ───────────── */
-    .meal-plan { padding: 90px 0; background: var(--white); }
-    .meal-plan-header { text-align: center; margin-bottom: 52px; }
-    .meal-disclaimer { background: rgba(168,120,208,.1); border: 1px solid rgba(168,120,208,.35); border-radius: var(--radius); padding: 12px 18px; font-size: .82rem; color: var(--text-mid); margin-bottom: 32px; display: flex; align-items: flex-start; gap: 10px; }
-    .meal-disclaimer i { color: var(--pc-mid); margin-top: 2px; flex-shrink: 0; }
-    .meal-days { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-    .meal-day { background: var(--pc-xpale); border: 1px solid #e0c8f4; border-radius: var(--radius-lg); overflow: hidden; transition: var(--transition); }
-    .meal-day:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
-    .meal-day-head { background: linear-gradient(90deg,#3d1060,#9040b8); color: var(--white); padding: 12px 18px; font-family: var(--font-display); font-size: .9rem; font-weight: 700; }
-    .meal-day-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
-    .meal-row { display: flex; gap: 10px; align-items: flex-start; padding-bottom: 10px; border-bottom: 1px solid #e0c8f4; }
-    .meal-row:last-child { border-bottom: none; padding-bottom: 0; }
-    .meal-label { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--pc-mid); min-width: 70px; margin-top: 1px; }
-    .meal-items { font-size: .82rem; color: var(--text-mid); line-height: 1.5; }
+    .meal-plan {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .meal-plan-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .meal-disclaimer {
+      background: rgba(168, 120, 208, .1);
+      border: 1px solid rgba(168, 120, 208, .35);
+      border-radius: var(--radius);
+      padding: 12px 18px;
+      font-size: .82rem;
+      color: var(--text-mid);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .meal-disclaimer i {
+      color: var(--pc-mid);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .meal-days {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .meal-day {
+      background: var(--pc-xpale);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .meal-day:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .meal-day-head {
+      background: linear-gradient(90deg, #3d1060, #9040b8);
+      color: var(--white);
+      padding: 12px 18px;
+      font-family: var(--font-display);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .meal-day-body {
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .meal-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0c8f4;
+    }
+
+    .meal-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .meal-label {
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--pc-mid);
+      min-width: 70px;
+      margin-top: 1px;
+    }
+
+    .meal-items {
+      font-size: .82rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
 
     /* ── Journey Timeline ────── */
-    .journey { padding: 90px 0; background: var(--pc-xpale); }
-    .journey-header { text-align: center; margin-bottom: 60px; }
-    .journey-wrap { position: relative; max-width: 760px; margin: 0 auto; }
-    .journey-line { position: absolute; left: 28px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom,var(--pc-light),var(--accent)); }
-    .journey-item { display: flex; gap: 28px; margin-bottom: 36px; position: relative; }
-    .journey-item:last-child { margin-bottom: 0; }
-    .journey-dot { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg,var(--pc-dark),var(--pc-mid)); color: var(--white); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: .85rem; font-weight: 800; flex-shrink: 0; z-index: 1; box-shadow: 0 4px 16px rgba(92,45,122,.35); }
-    .journey-content { background: var(--white); border: 1px solid #e0c8f4; border-radius: var(--radius); padding: 20px 22px; flex: 1; transition: var(--transition); }
-    .journey-content:hover { border-color: var(--pc-light); box-shadow: var(--shadow-sm); }
-    .journey-week { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--pc-mid); margin-bottom: 5px; }
-    .journey-content h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 7px; }
-    .journey-content p  { font-size: .85rem; color: var(--text-muted); line-height: 1.6; }
+    .journey {
+      padding: 90px 0;
+      background: var(--pc-xpale);
+    }
+
+    .journey-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .journey-wrap {
+      position: relative;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .journey-line {
+      position: absolute;
+      left: 28px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--pc-light), var(--accent));
+    }
+
+    .journey-item {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 36px;
+      position: relative;
+    }
+
+    .journey-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .journey-dot {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pc-dark), var(--pc-mid));
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: .85rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      z-index: 1;
+      box-shadow: 0 4px 16px rgba(92, 45, 122, .35);
+    }
+
+    .journey-content {
+      background: var(--white);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      flex: 1;
+      transition: var(--transition);
+    }
+
+    .journey-content:hover {
+      border-color: var(--pc-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .journey-week {
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--pc-mid);
+      margin-bottom: 5px;
+    }
+
+    .journey-content h3 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 7px;
+    }
+
+    .journey-content p {
+      font-size: .85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
 
     /* Cycle tracker visual */
-    .cycle-tracker { background: var(--white); border: 1px solid #e0c8f4; border-radius: var(--radius); padding: 24px; margin-top: 40px; }
-    .cycle-tracker h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--pc-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-    .cycle-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .cycle-row:last-child { margin-bottom: 0; }
-    .cycle-label { font-size: .78rem; color: var(--text-muted); min-width: 100px; font-weight: 600; }
-    .cycle-bar-wrap { flex: 1; height: 10px; background: var(--border); border-radius: 50px; overflow: hidden; }
-    .cycle-fill { height: 100%; border-radius: 50px; transition: width 1.2s ease; }
-    .cycle-fill.irregular { background: #e05050; }
-    .cycle-fill.improving { background: var(--accent); }
-    .cycle-fill.regular   { background: var(--green-light); }
-    .cycle-val { font-size: .75rem; font-weight: 700; min-width: 80px; text-align: right; }
+    .cycle-tracker {
+      background: var(--white);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .cycle-tracker h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--pc-dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cycle-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .cycle-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .cycle-label {
+      font-size: .78rem;
+      color: var(--text-muted);
+      min-width: 100px;
+      font-weight: 600;
+    }
+
+    .cycle-bar-wrap {
+      flex: 1;
+      height: 10px;
+      background: var(--border);
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    .cycle-fill {
+      height: 100%;
+      border-radius: 50px;
+      transition: width 1.2s ease;
+    }
+
+    .cycle-fill.irregular {
+      background: #e05050;
+    }
+
+    .cycle-fill.improving {
+      background: var(--accent);
+    }
+
+    .cycle-fill.regular {
+      background: var(--green-light);
+    }
+
+    .cycle-val {
+      font-size: .75rem;
+      font-weight: 700;
+      min-width: 80px;
+      text-align: right;
+    }
 
     /* ── Testimonials ────────── */
-    .testimonials { padding: 90px 0; background: var(--white); }
-    .testi-header { text-align: center; margin-bottom: 52px; }
-    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .testi-card { background: var(--pc-xpale); border: 1px solid #e0c8f4; border-radius: var(--radius-lg); padding: 26px; transition: var(--transition); }
-    .testi-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-    .testi-stars { color: var(--accent); font-size: .9rem; margin-bottom: 12px; letter-spacing: 2px; }
-    .testi-text  { font-size: .88rem; color: var(--text-mid); line-height: 1.72; margin-bottom: 18px; font-style: italic; }
-    .testi-author { display: flex; align-items: center; gap: 12px; }
-    .testi-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--pc-mid); color: var(--white); font-family: var(--font-display); font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .testi-author strong { display: block; font-size: .88rem; font-weight: 700; color: var(--text-dark); }
-    .testi-author span   { font-size: .78rem; color: var(--text-muted); }
-    .result-pill { display: inline-flex; align-items: center; gap: 6px; background: var(--pc-pale); color: var(--pc-dark); border: 1px solid rgba(124,77,170,.25); border-radius: 50px; font-size: .72rem; font-weight: 700; padding: 3px 10px; margin-bottom: 14px; }
+    .testimonials {
+      padding: 90px 0;
+      background: var(--white);
+    }
+
+    .testi-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testi-card {
+      background: var(--pc-xpale);
+      border: 1px solid #e0c8f4;
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      transition: var(--transition);
+    }
+
+    .testi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .testi-stars {
+      color: var(--accent);
+      font-size: .9rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+
+    .testi-text {
+      font-size: .88rem;
+      color: var(--text-mid);
+      line-height: 1.72;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testi-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--pc-mid);
+      color: var(--white);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .testi-author strong {
+      display: block;
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .testi-author span {
+      font-size: .78rem;
+      color: var(--text-muted);
+    }
+
+    .result-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--pc-pale);
+      color: var(--pc-dark);
+      border: 1px solid rgba(124, 77, 170, .25);
+      border-radius: 50px;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      margin-bottom: 14px;
+    }
 
     /* ── FAQ ─────────────────── */
-    .faq { padding: 90px 0; background: var(--off-white); }
-    .faq-inner { display: grid; grid-template-columns: 1fr 1.5fr; gap: 70px; align-items: start; }
-    .faq-list { display: flex; flex-direction: column; gap: 10px; }
-    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
-    .faq-item.open { border-color: var(--pc-light); }
-    .faq-q { width: 100%; background: none; border: none; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; font-family: var(--font-body); font-size: .9rem; font-weight: 600; color: var(--text-dark); text-align: left; }
-    .faq-q i { color: var(--pc-mid); font-size: .75rem; transition: transform var(--transition); flex-shrink: 0; }
-    .faq-item.open .faq-q i { transform: rotate(180deg); }
-    .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s ease; font-size: .86rem; color: var(--text-muted); line-height: 1.7; padding: 0 20px; }
-    .faq-item.open .faq-a { max-height: 250px; padding: 0 20px 16px; }
+    .faq {
+      padding: 90px 0;
+      background: var(--off-white);
+    }
+
+    .faq-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .faq-item.open {
+      border-color: var(--pc-light);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: left;
+    }
+
+    .faq-q i {
+      color: var(--pc-mid);
+      font-size: .75rem;
+      transition: transform var(--transition);
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .3s ease;
+      font-size: .86rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 250px;
+      padding: 0 20px 16px;
+    }
 
     /* ── Related ─────────────── */
-    .related { padding: 80px 0; background: var(--white); }
-    .related-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
-    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-    .related-card { display: flex; align-items: center; gap: 14px; padding: 18px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); transition: var(--transition); }
-    .related-card:hover { transform: translateX(4px); border-color: var(--pc-light); box-shadow: var(--shadow-sm); }
-    .related-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
-    .related-card h4 { font-family: var(--font-display); font-size: .92rem; font-weight: 700; color: var(--green-dark); margin-bottom: 3px; }
-    .related-card p  { font-size: .78rem; color: var(--text-muted); }
+    .related {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .related-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .related-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      transition: var(--transition);
+    }
+
+    .related-card:hover {
+      transform: translateX(4px);
+      border-color: var(--pc-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .related-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .related-card h4 {
+      font-family: var(--font-display);
+      font-size: .92rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 3px;
+    }
+
+    .related-card p {
+      font-size: .78rem;
+      color: var(--text-muted);
+    }
 
     /* ── CTA ─────────────────── */
-    .cta-banner { background: linear-gradient(135deg,#3d1060 0%,#6a2090 55%,#9040b8 100%); padding: 90px 0; text-align: center; position: relative; overflow: hidden; }
-    .cta-banner::before { content:''; position:absolute; top:-80px; right:-80px; width:320px; height:320px; background:rgba(255,255,255,.04); border-radius:50%; }
-    .cta-content { position: relative; z-index: 1; }
-    .cta-banner h2 { font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:800; color:var(--white); margin-bottom:14px; }
-    .cta-banner p  { font-size:1.05rem; color:rgba(255,255,255,.82); margin-bottom:36px; max-width:540px; margin-left:auto; margin-right:auto; }
-    .cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .cta-banner {
+      background: linear-gradient(135deg, #3d1060 0%, #6a2090 55%, #9040b8 100%);
+      padding: 90px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 320px;
+      height: 320px;
+      background: rgba(255, 255, 255, .04);
+      border-radius: 50%;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-banner h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .cta-banner p {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, .82);
+      margin-bottom: 36px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
     /* ── Footer ──────────────── */
-    .footer { background: #0f3d1e; color: rgba(255,255,255,.8); padding: 70px 0 0; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px; margin-bottom: 50px; }
-    .footer-logo .logo-name { color: var(--white); font-size: 1.5rem; }
-    .footer-logo .logo-name span { color: var(--green-light); }
-    .footer-logo .logo-tagline { color: rgba(255,255,255,.5); }
-    .footer-about { font-size: .88rem; color: rgba(255,255,255,.6); line-height: 1.7; margin: 0 0 24px; }
-    .footer-socials { display: flex; gap: 10px; }
-    .footer-socials a { width:38px; height:38px; border-radius:10px; border:1px solid rgba(255,255,255,.15); display:flex; align-items:center; justify-content:center; font-size:.85rem; color:rgba(255,255,255,.7); transition:var(--transition); }
-    .footer-socials a:hover { background:var(--green-mid); border-color:var(--green-mid); color:var(--white); }
-    .footer h4 { font-family:var(--font-display); font-size:1rem; font-weight:700; color:var(--white); margin-bottom:20px; }
-    .footer-links { display:flex; flex-direction:column; gap:10px; }
-    .footer-links a { font-size:.87rem; color:rgba(255,255,255,.6); transition:var(--transition); }
-    .footer-links a:hover { color:var(--green-light); padding-left:4px; }
-    .footer-contact-list { display:flex; flex-direction:column; gap:14px; }
-    .footer-contact-item { display:flex; align-items:flex-start; gap:12px; font-size:.87rem; color:rgba(255,255,255,.6); }
-    .footer-contact-item i { color:var(--accent); margin-top:2px; flex-shrink:0; }
-    .newsletter-form { display:flex; flex-direction:column; gap:10px; margin-top:8px; }
-    .newsletter-form input { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:10px; padding:12px 16px; font-family:var(--font-body); font-size:.88rem; color:var(--white); outline:none; }
-    .newsletter-form input::placeholder { color:rgba(255,255,255,.4); }
-    .newsletter-form button { background:var(--green-light); color:var(--white); border:none; border-radius:10px; padding:12px; font-family:var(--font-body); font-size:.9rem; font-weight:600; cursor:pointer; transition:var(--transition); }
-    .newsletter-form button:hover { background:var(--green-mid); }
-    .footer-bottom { border-top:1px solid rgba(255,255,255,.1); padding:20px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:.82rem; color:rgba(255,255,255,.45); }
-    .footer-bottom a { color:rgba(255,255,255,.55); }
-    .footer-bottom a:hover { color:var(--green-light); }
+    /* .footer {
+      background: #07507A;
+      color: rgba(255, 255, 255, .8);
+      padding: 70px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px;
+      margin-bottom: 50px;
+    }
+
+    .footer-logo .logo-name {
+      color: var(--white);
+      font-size: 1.5rem;
+    }
+
+    .footer-logo .logo-name span {
+      color: var(--green-light);
+    }
+
+    .footer-logo .logo-tagline {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .footer-about {
+      font-size: .88rem;
+      color: rgba(255, 255, 255, .6);
+      line-height: 1.7;
+      margin: 0 0 24px;
+    }
+
+    .footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, .78);
+  background: rgba(255, 255, 255, .06);
+  transition: transform var(--trans), background var(--trans), border-color var(--trans), color var(--trans);
+} */
+
+/* .footer-socials a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+    .footer h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      font-size: .87rem;
+      color: rgba(255, 255, 255, .6);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--green-light);
+      padding-left: 4px;
+    }
+
+    .footer-contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: .87rem;
+      color: rgba(255, 255, 255, .6);
+    }
+
+    .footer-contact-item i {
+      color: var(--accent);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .newsletter-form input {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-family: var(--font-body);
+      font-size: .88rem;
+      color: var(--white);
+      outline: none;
+    }
+
+    .newsletter-form input::placeholder {
+      color: rgba(255, 255, 255, .4);
+    }
+
+    .newsletter-form button {
+      background: var(--green-light);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      font-family: var(--font-body);
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .newsletter-form button:hover {
+      background: var(--green-mid);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .45);
+    }
+
+    .footer-bottom a {
+      color: rgba(255, 255, 255, .55);
+    }
+
+    .footer-bottom a:hover {
+      color: var(--green-light);
+    } */
 
     /* ── Float / Scroll ──────── */
-    .float-btns { position:fixed; right:20px; bottom:24px; display:flex; flex-direction:column; gap:12px; z-index:900; }
-    .float-btn { width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.2rem; box-shadow:var(--shadow-md); transition:var(--transition); cursor:pointer; border:none; }
-    .float-btn:hover { transform:scale(1.12); }
-    .float-wa   { background:#25D366; color:var(--white); }
-    .float-call { background:var(--green-dark); color:var(--white); }
-    #scrollTop { position:fixed; left:20px; bottom:24px; width:44px; height:44px; border-radius:12px; background:var(--pc-dark); color:var(--white); border:none; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow-md); opacity:0; transform:translateY(10px); transition:var(--transition); z-index:900; }
-    #scrollTop.show { opacity:1; transform:translateY(0); }
-    #scrollTop:hover { background:var(--pc-mid); }
+    .float-btns {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 900;
+    }
+
+    .float-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .float-btn:hover {
+      transform: scale(1.12);
+    }
+
+    .float-wa {
+      background: #25D366;
+      color: var(--white);
+    }
+
+    .float-call {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    #scrollTop {
+      position: fixed;
+      left: 20px;
+      bottom: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--pc-dark);
+      color: var(--white);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: var(--transition);
+      z-index: 900;
+    }
+
+    #scrollTop.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #scrollTop:hover {
+      background: var(--pc-mid);
+    }
 
     /* ── Animations ──────────── */
-    .fade-up { opacity:0; transform:translateY(30px); transition:opacity .65s ease,transform .65s ease; }
-    .fade-up.visible { opacity:1; transform:translateY(0); }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     /* ── Responsive ──────────── */
     @media (max-width: 1024px) {
-      .hormone-grid { grid-template-columns: repeat(2,1fr); }
-      .included-grid { grid-template-columns: repeat(2,1fr); }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hormone-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .included-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
+
     @media (max-width: 768px) {
-      .nav-links, .nav-cta { display: none; }
-      .hamburger { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
-      .hero-float.f1 { right: 0; }
-      .hero-float.f2 { left: 0; }
-      .symptoms-inner { grid-template-columns: 1fr; gap: 40px; }
-      .symptom-grid { grid-template-columns: 1fr 1fr; }
-      .hormone-grid { grid-template-columns: 1fr 1fr; }
-      .included-grid { grid-template-columns: 1fr; }
-      .foods-grid { grid-template-columns: 1fr; }
-      .meal-days { grid-template-columns: 1fr; }
-      .testi-grid { grid-template-columns: 1fr; }
-      .faq-inner { grid-template-columns: 1fr; gap: 40px; }
-      .related-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-      .footer-bottom { flex-direction: column; text-align: center; }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .hero-float.f1 {
+        right: 0;
+      }
+
+      .hero-float.f2 {
+        left: 0;
+      }
+
+      .symptoms-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .symptom-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hormone-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .included-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .foods-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .meal-days {
+        grid-template-columns: 1fr;
+      }
+
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
     }
+
     @media (max-width: 480px) {
-      .symptom-grid { grid-template-columns: 1fr; }
-      .hormone-grid { grid-template-columns: 1fr; }
+      .symptom-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hormone-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .logo-img {
-  width: auto;
-  height: 100px;
-  object-fit: contain;
-}
-.footer-logo-img { height: 100px; width: auto; filter: brightness(1.2); }
-.hero-img { width: 100%; height: 500px; object-fit: cover; object-position: center top; }
+      width: auto;
+      height: 100px;
+      object-fit: contain;
+    }
 
+    .footer-logo-img {
+      height: 100px;
+      width: auto;
+      filter: brightness(1.2);
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: center top;
+    }
   </style>
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar" role="banner">
-  <div class="container">
-    <div class="topbar-inner">
-      <div class="topbar-contacts">
-        <a href="mailto:hello@dietsolver.in"><i class="fas fa-envelope"></i> hello@dietsolver.in</a>
-        <a href="tel:+919999000000"><i class="fas fa-phone"></i> +91-9999-000000</a>
-      </div>
-      <div class="topbar-socials">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  <div id="navbar-placeholder"></div>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-inner">
+        <a href="../"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right" style="font-size:.65rem;"></i>
+        <a href="../services.html">Services</a>
+        <i class="fas fa-chevron-right" style="font-size:.65rem;"></i>
+        <span aria-current="page">PCOS / PCOD</span>
       </div>
     </div>
-  </div>
-</div>
+  </nav>
 
-<!-- HEADER -->
-<header class="header" id="header">
-  <div class="container">
-    <nav class="nav-inner" aria-label="Main navigation">
-      <!-- <a href="/" class="logo" aria-label="Diet_Solver Home">
-        <div class="logo-icon"><i class="fas fa-leaf"></i></div>
-        <div class="logo-text">
-          <span class="logo-name">Diet<span>_Solver</span></span>
-          <span class="logo-tagline">Your Diet. Your Rules.</span>
-        </div>
-      </a> -->
-       <a href="/" class="logo">
-  <img src="../img/logo_01.png" alt="Diet Solver Logo" class="logo-img">
-</a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li class="nav-item">
-          <a href="/services.html" class="active">Services <i class="fas fa-chevron-down" style="font-size:.65rem;margin-left:4px;"></i></a>
-          <ul class="dropdown">
-            <li><a href="weight-loss.html"><i class="fas fa-weight"></i> Weight Loss & Management</a></li>
-            <li><a href="diabetes-diet.html"><i class="fas fa-heartbeat"></i> Diabetes Management</a></li>
-            <li><a href="pcos-pcod.html"><i class="fas fa-female"></i> PCOS / PCOD Management</a></li>
-            <li><a href="custom-diet.html"><i class="fas fa-utensils"></i> Diet for Women</a></li>
-            <li><a href="pre-wedding-diet.html"><i class="fas fa-running"></i> Pre-Wedding Diet</a></li>
-            <li><a href="cholesterol-management.html"><i class="fas fa-heartbeat"></i> Cholesterol Management</a></li>
-            <li><a href="sports-nutrition.html"><i class="fas fa-child"></i>Sports Nutrition</a></li>
-          </ul>
-        </li>
-        <li><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-      <a href="/book-appointment.html?service=PCOS+%2F+PCOD" class="btn btn-accent nav-cta">
-        <i class="fas fa-calendar-check"></i> Book Free Consult
-      </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<!-- MOBILE NAV -->
-<nav class="mobile-nav" id="mobileNav">
-  <a href="/">Home</a>
-  <a href="/about.html">About Us</a>
-  <a href="/services.html">Services</a>
-  <a href="/services/weight-loss.html" style="padding-left:32px;font-size:.9rem;">↳ Weight Loss</a>
-  <a href="/services/diabetes-diet.html" style="padding-left:32px;font-size:.9rem;">↳ Diabetes Diet</a>
-  <a href="/services/pcos-pcod.html" style="padding-left:32px;font-size:.9rem;">↳ PCOS / PCOD</a>
-  <a href="/services/sports-nutrition.html" style="padding-left:32px;font-size:.9rem;">↳ Sports Nutrition</a>
-  <a href="/services/custom-diet.html" style="padding-left:32px;font-size:.9rem;">↳ Custom Diet Plans</a>
-  <a href="/services/cholesterol-management.html" style="padding-left:32px;font-size:.9rem;">↳ Cholesterol Management</a>
-  <a href="/blog.html">Blog</a>
-  <a href="/contact.html">Contact</a>
-  <a href="/book-appointment.html?service=PCOS+%2F+PCOD" class="btn btn-accent"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
-</nav>
-
-<!-- BREADCRUMB -->
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="container">
-    <div class="breadcrumb-inner">
-      <a href="/"><i class="fas fa-home"></i> Home</a>
-      <i class="fas fa-chevron-right" style="font-size:.65rem;"></i>
-      <a href="/services.html">Services</a>
-      <i class="fas fa-chevron-right" style="font-size:.65rem;"></i>
-      <span aria-current="page">PCOS / PCOD</span>
-    </div>
-  </div>
-</nav>
-
-<main>
-<!-- ── HERO ──────────────────────────────────────────────────────────── -->
-<section class="hero" aria-labelledby="pcos-hero-heading">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="fade-up">
-        <div class="hero-service-badge">
-          <i class="fas fa-female"></i> PCOS & PCOD Diet Programme
-        </div>
-        <h1 class="hero-title" id="pcos-hero-heading">
-          Balance Your Hormones<br><span>With the Power of Food.</span>
-        </h1>
-        <p class="hero-desc">
-          A science-backed, holistic nutrition programme for PCOS and PCOD that targets insulin resistance, chronic inflammation, and hormonal imbalance — helping you restore regular cycles, manage weight, improve skin, and support fertility naturally.
-        </p>
-        <div class="hero-perks">
-          <div class="hero-perk"><i class="fas fa-check-circle"></i> Cycle regularity typically within 2–4 months</div>
-          <div class="hero-perk"><i class="fas fa-check-circle"></i> Reduces acne, hair fall & bloating</div>
-          <div class="hero-perk"><i class="fas fa-check-circle"></i> Anti-inflammatory, low-GI Indian meal plans</div>
-          <div class="hero-perk"><i class="fas fa-check-circle"></i> Fertility nutrition track available</div>
-          <div class="hero-perk"><i class="fas fa-check-circle"></i> Zero supplements — 100% food-based</div>
-        </div>
-        <div class="hero-ctas">
-          <a href="/book-appointment.html?service=PCOS+%2F+PCOD" class="btn btn-accent">
-            <i class="fas fa-calendar-check"></i> Book Free Consultation
-          </a>
-          <a href="#symptoms" class="btn btn-ghost">
-            <i class="fas fa-arrow-down"></i> Learn More
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-visual fade-up" aria-hidden="true">
-        <div class="hero-main-card">
-          <div class="hero-img-wrap">
-          <!-- LEAVE PATH FOR IMAGE -->
-          <img src="../img/pcos.png" alt="Dr. Anjani - Best Dietician Noida" class="hero-img" onerror="this.parentElement.classList.add('hero-img-fallback')"/>
-        </div>
-          <!-- <div class="hero-thumb">🌸</div> -->
-          <div class="hero-card-body">
-            <div class="hero-stats-row">
-              <div class="h-stat">
-                <span class="h-stat-num">2–4</span>
-                <span class="h-stat-label">Months to cycle regularity</span>
+  <main>
+    <!-- ── HERO ──────────────────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="pcos-hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="fade-up">
+            <div class="hero-service-badge">
+              <i class="fas fa-female"></i> PCOS & PCOD Diet Programme
+            </div>
+            <h1 class="hero-title" id="pcos-hero-heading">
+              Balance Your Hormones<br><span>With the Power of Food.</span>
+            </h1>
+            <p class="hero-desc">
+              A science-backed, holistic nutrition programme for PCOS and PCOD that targets insulin resistance, chronic
+              inflammation, and hormonal imbalance — helping you restore regular cycles, manage weight, improve skin,
+              and support fertility naturally.
+            </p>
+            <div class="hero-perks">
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Cycle regularity typically within 2–4 months
               </div>
-              <div class="h-stat">
-                <span class="h-stat-num">3–4 wks</span>
-                <span class="h-stat-label">To first changes</span>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Reduces acne, hair fall & bloating</div>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Anti-inflammatory, low-GI Indian meal plans
               </div>
-              <div class="h-stat">
-                <span class="h-stat-num">100%</span>
-                <span class="h-stat-label">Natural approach</span>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Fertility nutrition track available</div>
+              <div class="hero-perk"><i class="fas fa-check-circle"></i> Zero supplements — 100% food-based</div>
+            </div>
+            <div class="hero-ctas">
+              <a href="/book-appointment.html?service=PCOS+%2F+PCOD" class="btn btn-accent">
+                <i class="fas fa-calendar-check"></i> Book Free Consultation
+              </a>
+              <a href="#symptoms" class="btn btn-ghost">
+                <i class="fas fa-arrow-down"></i> Learn More
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual fade-up" aria-hidden="true">
+            <div class="hero-main-card">
+              <div class="hero-img-wrap">
+                <!-- LEAVE PATH FOR IMAGE -->
+                <img src="../img/pcos.png" alt="Dr. Anjani - Best Dietician Noida" class="hero-img"
+                  onerror="this.parentElement.classList.add('hero-img-fallback')" />
+              </div>
+              <!-- <div class="hero-thumb">🌸</div> -->
+              <div class="hero-card-body">
+                <div class="hero-stats-row">
+                  <div class="h-stat">
+                    <span class="h-stat-num">2–4</span>
+                    <span class="h-stat-label">Months to cycle regularity</span>
+                  </div>
+                  <div class="h-stat">
+                    <span class="h-stat-num">3–4 wks</span>
+                    <span class="h-stat-label">To first changes</span>
+                  </div>
+                  <div class="h-stat">
+                    <span class="h-stat-num">100%</span>
+                    <span class="h-stat-label">Natural approach</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-float f1">
+              <div class="float-icon p"><i class="fas fa-heart"></i></div>
+              <div class="float-card-text">
+                <strong>Ananya's cycle</strong>
+                <span>Restored in 3 months</span>
+              </div>
+            </div>
+            <div class="hero-float f2">
+              <div class="float-icon g"><i class="fas fa-seedling"></i></div>
+              <div class="float-card-text">
+                <strong>Zero hormone pills</strong>
+                <span>Food-first approach</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="hero-float f1">
-          <div class="float-icon p"><i class="fas fa-heart"></i></div>
-          <div class="float-card-text">
-            <strong>Ananya's cycle</strong>
-            <span>Restored in 3 months</span>
+      </div>
+    </section>
+
+    <!-- ── SYMPTOMS + OVERVIEW ────────────────────────────────────────────── -->
+    <section class="symptoms" id="symptoms" aria-labelledby="pcos-symptoms-heading">
+      <div class="container">
+        <div class="symptoms-inner">
+          <div class="symptoms-text fade-up">
+            <div class="section-label">Understanding PCOS & PCOD</div>
+            <h2 class="section-title" id="pcos-symptoms-heading">You Deserve to Know What's Actually Happening</h2>
+            <p>PCOS (Polycystic Ovary Syndrome) affects 1 in 5 women in India — yet it is chronically under-diagnosed,
+              misunderstood, and poorly managed. Most women are handed a prescription and sent home. We believe you
+              deserve more.</p>
+            <p>At its core, PCOS is driven by insulin resistance and chronic low-grade inflammation — both of which are
+              powerfully influenced by what you eat. The right nutrition doesn't just treat symptoms — it addresses the
+              root cause.</p>
+            <div class="highlight-box">
+              <p>"PCOS is not a life sentence. With the right food, the right lifestyle, and the right support, your
+                body has an extraordinary capacity to rebalance itself."</p>
+            </div>
+            <p>Our PCOS programme is designed by a registered dietitian who has personally worked with hundreds of women
+              with PCOS across all age groups, body types, and symptom profiles — from teenagers to women trying to
+              conceive in their 30s.</p>
+          </div>
+
+          <!-- Symptom Cards -->
+          <div class="fade-up">
+            <div class="section-label">Common PCOS Symptoms We Address</div>
+            <h3
+              style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--green-dark);margin-bottom:20px;">
+              Does This Sound Like You?</h3>
+            <div class="symptom-grid">
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Very Common</div>
+                <div class="symptom-icon">🔄</div>
+                <h4>Irregular Periods</h4>
+                <p>Cycles longer than 35 days, missed periods, or very unpredictable cycles.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Very Common</div>
+                <div class="symptom-icon">⚖️</div>
+                <h4>Weight Gain</h4>
+                <p>Unexplained weight gain, especially around the belly, despite eating normally.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Common</div>
+                <div class="symptom-icon">💇</div>
+                <h4>Hair Fall</h4>
+                <p>Diffuse hair thinning or excessive shedding — often linked to androgen excess.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Common</div>
+                <div class="symptom-icon">🌿</div>
+                <h4>Acne & Oily Skin</h4>
+                <p>Hormonal acne on jawline, chin, and chest — often worsening before periods.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Common</div>
+                <div class="symptom-icon">😴</div>
+                <h4>Fatigue & Brain Fog</h4>
+                <p>Persistent tiredness, difficulty concentrating, and afternoon energy crashes.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Significant</div>
+                <div class="symptom-icon">🤰</div>
+                <h4>Fertility Challenges</h4>
+                <p>Difficulty conceiving due to irregular or absent ovulation.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Underlying</div>
+                <div class="symptom-icon">🍬</div>
+                <h4>Sugar Cravings</h4>
+                <p>Intense cravings for carbs and sweets, especially post-meal — a sign of insulin resistance.</p>
+              </div>
+
+              <div class="symptom-card">
+                <div class="symptom-badge">Often Missed</div>
+                <div class="symptom-icon">😔</div>
+                <h4>Mood Changes</h4>
+                <p>Anxiety, low mood, or PMS-like symptoms driven by hormonal fluctuations.</p>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="hero-float f2">
-          <div class="float-icon g"><i class="fas fa-seedling"></i></div>
-          <div class="float-card-text">
-            <strong>Zero hormone pills</strong>
-            <span>Food-first approach</span>
+      </div>
+    </section>
+
+    <!-- ── HORMONE EXPLAINER ──────────────────────────────────────────────── -->
+    <section class="hormone-section" aria-labelledby="hormone-heading">
+      <div class="container">
+        <div class="hormone-header fade-up">
+          <div class="section-label">The Hormone–Food Connection</div>
+          <h2 class="section-title" id="hormone-heading">4 Key Hormones — and How Food Fixes Them</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:560px;margin:0 auto;">PCOS is fundamentally a
+            hormonal disorder. Each key hormone is directly influenced by specific foods — and your plan targets all of
+            them.</p>
+        </div>
+        <div class="hormone-grid">
+
+          <div class="hormone-card fade-up" style="transition-delay:0.00s">
+            <div class="hormone-icon"><i class="fas fa-tint"></i></div>
+            <h3>Insulin</h3>
+            <div class="role">The Root Driver</div>
+            <p>Excess insulin stimulates the ovaries to produce more androgens. Reducing insulin resistance is the
+              single most important dietary goal in PCOS.</p>
+            <div class="hormone-food">🫘 Fibre, legumes, low-GI grains, cinnamon</div>
+          </div>
+
+          <div class="hormone-card fade-up" style="transition-delay:0.10s">
+            <div class="hormone-icon"><i class="fas fa-venus"></i></div>
+            <h3>Androgens</h3>
+            <div class="role">The Symptom Maker</div>
+            <p>Elevated testosterone and DHEA cause acne, hair fall, and excess body hair. Anti-androgenic foods
+              directly reduce this excess.</p>
+            <div class="hormone-food">🌿 Spearmint tea, flaxseeds, soy (in moderation)</div>
+          </div>
+
+          <div class="hormone-card fade-up" style="transition-delay:0.20s">
+            <div class="hormone-icon"><i class="fas fa-moon"></i></div>
+            <h3>Oestrogen</h3>
+            <div class="role">The Cycle Driver</div>
+            <p>Oestrogen imbalance disrupts the menstrual cycle. Supporting healthy oestrogen metabolism helps restore
+              regular ovulation.</p>
+            <div class="hormone-food">🥦 Cruciferous veg, fermented foods, fibre</div>
+          </div>
+
+          <div class="hormone-card fade-up" style="transition-delay:0.30s">
+            <div class="hormone-icon"><i class="fas fa-sun"></i></div>
+            <h3>Cortisol</h3>
+            <div class="role">The Stress Factor</div>
+            <p>Chronic stress raises cortisol, which worsens insulin resistance and androgen production.
+              Anti-inflammatory eating reduces cortisol's impact.</p>
+            <div class="hormone-food">🐟 Omega-3 foods, magnesium-rich leafy greens</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHAT'S INCLUDED ────────────────────────────────────────────────── -->
+    <section class="included" aria-labelledby="pcos-included-heading">
+      <div class="container">
+        <div class="included-header fade-up">
+          <div class="section-label">What's Included</div>
+          <h2 class="section-title" id="pcos-included-heading">Everything in Your PCOS Nutrition Programme</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">A comprehensive,
+            compassionate programme designed to address the root causes of PCOS — not just the symptoms.</p>
+        </div>
+        <div class="included-grid">
+
+          <div class="included-card fade-up" style="transition-delay:0.00s">
+            <div class="inc-icon"><i class="fas fa-clipboard-list"></i></div>
+            <h3>Comprehensive PCOS Assessment</h3>
+            <p>A detailed intake covering your diagnosis, symptom history, hormonal blood reports (LH/FSH ratio,
+              testosterone, prolactin), medication, and lifestyle.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.08s">
+            <div class="inc-icon"><i class="fas fa-fire-alt"></i></div>
+            <h3>Anti-Inflammatory Meal Plans</h3>
+            <p>Weekly plans built around anti-inflammatory, low-GI Indian foods that reduce insulin resistance and
+              androgen production simultaneously.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.16s">
+            <div class="inc-icon"><i class="fas fa-seedling"></i></div>
+            <h3>Phytoestrogen & Hormone Foods</h3>
+            <p>Specific foods incorporated strategically — flaxseeds, spearmint, cinnamon, turmeric — chosen for their
+              evidence-based hormone-balancing properties.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.00s">
+            <div class="inc-icon"><i class="fas fa-baby"></i></div>
+            <h3>Fertility Nutrition Track</h3>
+            <p>A dedicated fertility track for women trying to conceive — focused on ovulation support, follicle health,
+              uterine lining nutrition, and early pregnancy preparation.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.08s">
+            <div class="inc-icon"><i class="fas fa-weight"></i></div>
+            <h3>PCOS Weight Management</h3>
+            <p>A specialised weight approach that accounts for the metabolic challenges of PCOS — including insulin
+              resistance, slower metabolism, and emotional eating patterns.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.16s">
+            <div class="inc-icon"><i class="fas fa-smile-beam"></i></div>
+            <h3>Skin, Hair & Acne Nutrition</h3>
+            <p>Targeted nutritional strategies to reduce hormonal acne, support hair follicle health, and improve skin
+              texture through specific micronutrient optimisation.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.00s">
+            <div class="inc-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Cycle Regularity Tracking</h3>
+            <p>Week-by-week cycle monitoring with dietary adjustments aligned to your cycle phase — including
+              follicular, ovulatory, and luteal phase nutrition.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.08s">
+            <div class="inc-icon"><i class="fas fa-comments"></i></div>
+            <h3>WhatsApp Support</h3>
+            <p>Direct access to your dietitian for questions about symptoms, cravings, eating out, or when you're having
+              a hard day emotionally or physically.</p>
+          </div>
+
+          <div class="included-card fade-up" style="transition-delay:0.16s">
+            <div class="inc-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>PCOS Lifestyle Education</h3>
+            <p>Guidance on stress management, sleep quality, exercise timing, and environmental factors — all of which
+              influence PCOS severity and recovery.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOODS TO EAT & AVOID ───────────────────────────────────────────── -->
+    <section class="foods-section" aria-labelledby="pcos-foods-heading">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:52px;" class="fade-up">
+          <div class="section-label">PCOS-Friendly Eating</div>
+          <h2 class="section-title" id="pcos-foods-heading">Foods That Help Your Hormones vs. Foods That Disrupt Them
+          </h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">Every item in your
+            personalised plan is chosen with hormonal balance in mind — not just calories.</p>
+        </div>
+        <div class="foods-grid">
+          <div class="foods-col good fade-up">
+            <h3><i class="fas fa-check-circle"></i> Hormone-Supportive Foods</h3>
+            <div class="food-list">
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Flaxseeds</strong>Rich in lignans — natural phytoestrogens that reduce androgen levels and
+                  support cycle regularity.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Spearmint Tea</strong>Clinical evidence shows spearmint tea reduces testosterone levels in
+                  PCOS women with just 2 cups/day.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Leafy Greens (Methi, Palak)</strong>High in magnesium and folate — reduce insulin
+                  resistance and support oestrogen metabolism.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>All Legumes & Lentils</strong>Low-GI, high-fibre protein source — slows glucose absorption
+                  and reduces insulin spikes.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Cinnamon (Dalchini)</strong>Improves insulin sensitivity — add to tea, milk, or sprinkle
+                  over oats daily.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Turmeric (Haldi)</strong>Powerful anti-inflammatory — reduces the chronic inflammation
+                  underlying PCOS severity.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Pumpkin Seeds (Kaddu ke Beej)</strong>High in zinc — supports progesterone production and
+                  reduces excess androgens.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Fermented Foods (Dahi, Kanji)</strong>Gut health directly impacts oestrogen metabolism —
+                  probiotics help maintain hormonal balance.</div>
+              </div>
+
+            </div>
+          </div>
+          <div class="foods-col avoid fade-up">
+            <h3><i class="fas fa-times-circle"></i> Hormone-Disrupting Foods</h3>
+            <div class="food-list">
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Refined Sugar & Mithai</strong>Causes immediate insulin surge — the single biggest driver
+                  of androgen production in PCOS.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Maida & Refined Flour</strong>White bread, biscuits, naan — rapid blood sugar spikes worsen
+                  insulin resistance.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Dairy in Excess</strong>Full-fat dairy contains IGF-1 which can elevate androgen levels —
+                  switch to low-fat or A2 milk.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Caffeine in Excess</strong>Raises cortisol — which worsens insulin resistance and disrupts
+                  the HPO hormonal axis.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Processed & Packaged Foods</strong>Hidden sugars, trans fats, and sodium — all
+                  pro-inflammatory and insulin-disrupting.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Alcohol</strong>Disrupts liver oestrogen metabolism and raises cortisol — both worsen PCOS
+                  significantly.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Soy in Large Amounts</strong>Small amounts are beneficial, but excess phytoestrogens from
+                  soy can disrupt hormonal balance.</div>
+              </div>
+
+              <div class="food-item">
+                <i class="fas fa-times-circle"></i>
+                <div><strong>Deep-Fried Snacks</strong>Trans fats and refined carbs together — a double hit for insulin
+                  resistance and inflammation.</div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── SYMPTOMS + OVERVIEW ────────────────────────────────────────────── -->
-<section class="symptoms" id="symptoms" aria-labelledby="pcos-symptoms-heading">
-  <div class="container">
-    <div class="symptoms-inner">
-      <div class="symptoms-text fade-up">
-        <div class="section-label">Understanding PCOS & PCOD</div>
-        <h2 class="section-title" id="pcos-symptoms-heading">You Deserve to Know What's Actually Happening</h2>
-        <p>PCOS (Polycystic Ovary Syndrome) affects 1 in 5 women in India — yet it is chronically under-diagnosed, misunderstood, and poorly managed. Most women are handed a prescription and sent home. We believe you deserve more.</p>
-        <p>At its core, PCOS is driven by insulin resistance and chronic low-grade inflammation — both of which are powerfully influenced by what you eat. The right nutrition doesn't just treat symptoms — it addresses the root cause.</p>
-        <div class="highlight-box">
-          <p>"PCOS is not a life sentence. With the right food, the right lifestyle, and the right support, your body has an extraordinary capacity to rebalance itself."</p>
-        </div>
-        <p>Our PCOS programme is designed by a registered dietitian who has personally worked with hundreds of women with PCOS across all age groups, body types, and symptom profiles — from teenagers to women trying to conceive in their 30s.</p>
-      </div>
-
-      <!-- Symptom Cards -->
-      <div class="fade-up">
-        <div class="section-label">Common PCOS Symptoms We Address</div>
-        <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--green-dark);margin-bottom:20px;">Does This Sound Like You?</h3>
-        <div class="symptom-grid">
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Very Common</div>
-            <div class="symptom-icon">🔄</div>
-            <h4>Irregular Periods</h4>
-            <p>Cycles longer than 35 days, missed periods, or very unpredictable cycles.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Very Common</div>
-            <div class="symptom-icon">⚖️</div>
-            <h4>Weight Gain</h4>
-            <p>Unexplained weight gain, especially around the belly, despite eating normally.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Common</div>
-            <div class="symptom-icon">💇</div>
-            <h4>Hair Fall</h4>
-            <p>Diffuse hair thinning or excessive shedding — often linked to androgen excess.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Common</div>
-            <div class="symptom-icon">🌿</div>
-            <h4>Acne & Oily Skin</h4>
-            <p>Hormonal acne on jawline, chin, and chest — often worsening before periods.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Common</div>
-            <div class="symptom-icon">😴</div>
-            <h4>Fatigue & Brain Fog</h4>
-            <p>Persistent tiredness, difficulty concentrating, and afternoon energy crashes.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Significant</div>
-            <div class="symptom-icon">🤰</div>
-            <h4>Fertility Challenges</h4>
-            <p>Difficulty conceiving due to irregular or absent ovulation.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Underlying</div>
-            <div class="symptom-icon">🍬</div>
-            <h4>Sugar Cravings</h4>
-            <p>Intense cravings for carbs and sweets, especially post-meal — a sign of insulin resistance.</p>
-          </div>
-          
-          <div class="symptom-card">
-            <div class="symptom-badge">Often Missed</div>
-            <div class="symptom-icon">😔</div>
-            <h4>Mood Changes</h4>
-            <p>Anxiety, low mood, or PMS-like symptoms driven by hormonal fluctuations.</p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── HORMONE EXPLAINER ──────────────────────────────────────────────── -->
-<section class="hormone-section" aria-labelledby="hormone-heading">
-  <div class="container">
-    <div class="hormone-header fade-up">
-      <div class="section-label">The Hormone–Food Connection</div>
-      <h2 class="section-title" id="hormone-heading">4 Key Hormones — and How Food Fixes Them</h2>
-      <p style="color:var(--text-muted);font-size:1rem;max-width:560px;margin:0 auto;">PCOS is fundamentally a hormonal disorder. Each key hormone is directly influenced by specific foods — and your plan targets all of them.</p>
-    </div>
-    <div class="hormone-grid">
-      
-      <div class="hormone-card fade-up" style="transition-delay:0.00s">
-        <div class="hormone-icon"><i class="fas fa-tint"></i></div>
-        <h3>Insulin</h3>
-        <div class="role">The Root Driver</div>
-        <p>Excess insulin stimulates the ovaries to produce more androgens. Reducing insulin resistance is the single most important dietary goal in PCOS.</p>
-        <div class="hormone-food">🫘 Fibre, legumes, low-GI grains, cinnamon</div>
-      </div>
-      
-      <div class="hormone-card fade-up" style="transition-delay:0.10s">
-        <div class="hormone-icon"><i class="fas fa-venus"></i></div>
-        <h3>Androgens</h3>
-        <div class="role">The Symptom Maker</div>
-        <p>Elevated testosterone and DHEA cause acne, hair fall, and excess body hair. Anti-androgenic foods directly reduce this excess.</p>
-        <div class="hormone-food">🌿 Spearmint tea, flaxseeds, soy (in moderation)</div>
-      </div>
-      
-      <div class="hormone-card fade-up" style="transition-delay:0.20s">
-        <div class="hormone-icon"><i class="fas fa-moon"></i></div>
-        <h3>Oestrogen</h3>
-        <div class="role">The Cycle Driver</div>
-        <p>Oestrogen imbalance disrupts the menstrual cycle. Supporting healthy oestrogen metabolism helps restore regular ovulation.</p>
-        <div class="hormone-food">🥦 Cruciferous veg, fermented foods, fibre</div>
-      </div>
-      
-      <div class="hormone-card fade-up" style="transition-delay:0.30s">
-        <div class="hormone-icon"><i class="fas fa-sun"></i></div>
-        <h3>Cortisol</h3>
-        <div class="role">The Stress Factor</div>
-        <p>Chronic stress raises cortisol, which worsens insulin resistance and androgen production. Anti-inflammatory eating reduces cortisol's impact.</p>
-        <div class="hormone-food">🐟 Omega-3 foods, magnesium-rich leafy greens</div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- ── WHAT'S INCLUDED ────────────────────────────────────────────────── -->
-<section class="included" aria-labelledby="pcos-included-heading">
-  <div class="container">
-    <div class="included-header fade-up">
-      <div class="section-label">What's Included</div>
-      <h2 class="section-title" id="pcos-included-heading">Everything in Your PCOS Nutrition Programme</h2>
-      <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">A comprehensive, compassionate programme designed to address the root causes of PCOS — not just the symptoms.</p>
-    </div>
-    <div class="included-grid">
-      
-      <div class="included-card fade-up" style="transition-delay:0.00s">
-        <div class="inc-icon"><i class="fas fa-clipboard-list"></i></div>
-        <h3>Comprehensive PCOS Assessment</h3>
-        <p>A detailed intake covering your diagnosis, symptom history, hormonal blood reports (LH/FSH ratio, testosterone, prolactin), medication, and lifestyle.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.08s">
-        <div class="inc-icon"><i class="fas fa-fire-alt"></i></div>
-        <h3>Anti-Inflammatory Meal Plans</h3>
-        <p>Weekly plans built around anti-inflammatory, low-GI Indian foods that reduce insulin resistance and androgen production simultaneously.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.16s">
-        <div class="inc-icon"><i class="fas fa-seedling"></i></div>
-        <h3>Phytoestrogen & Hormone Foods</h3>
-        <p>Specific foods incorporated strategically — flaxseeds, spearmint, cinnamon, turmeric — chosen for their evidence-based hormone-balancing properties.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.00s">
-        <div class="inc-icon"><i class="fas fa-baby"></i></div>
-        <h3>Fertility Nutrition Track</h3>
-        <p>A dedicated fertility track for women trying to conceive — focused on ovulation support, follicle health, uterine lining nutrition, and early pregnancy preparation.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.08s">
-        <div class="inc-icon"><i class="fas fa-weight"></i></div>
-        <h3>PCOS Weight Management</h3>
-        <p>A specialised weight approach that accounts for the metabolic challenges of PCOS — including insulin resistance, slower metabolism, and emotional eating patterns.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.16s">
-        <div class="inc-icon"><i class="fas fa-smile-beam"></i></div>
-        <h3>Skin, Hair & Acne Nutrition</h3>
-        <p>Targeted nutritional strategies to reduce hormonal acne, support hair follicle health, and improve skin texture through specific micronutrient optimisation.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.00s">
-        <div class="inc-icon"><i class="fas fa-sync-alt"></i></div>
-        <h3>Cycle Regularity Tracking</h3>
-        <p>Week-by-week cycle monitoring with dietary adjustments aligned to your cycle phase — including follicular, ovulatory, and luteal phase nutrition.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.08s">
-        <div class="inc-icon"><i class="fas fa-comments"></i></div>
-        <h3>WhatsApp Support</h3>
-        <p>Direct access to your dietitian for questions about symptoms, cravings, eating out, or when you're having a hard day emotionally or physically.</p>
-      </div>
-      
-      <div class="included-card fade-up" style="transition-delay:0.16s">
-        <div class="inc-icon"><i class="fas fa-graduation-cap"></i></div>
-        <h3>PCOS Lifestyle Education</h3>
-        <p>Guidance on stress management, sleep quality, exercise timing, and environmental factors — all of which influence PCOS severity and recovery.</p>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- ── FOODS TO EAT & AVOID ───────────────────────────────────────────── -->
-<section class="foods-section" aria-labelledby="pcos-foods-heading">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:52px;" class="fade-up">
-      <div class="section-label">PCOS-Friendly Eating</div>
-      <h2 class="section-title" id="pcos-foods-heading">Foods That Help Your Hormones vs. Foods That Disrupt Them</h2>
-      <p style="color:var(--text-muted);font-size:1rem;max-width:540px;margin:0 auto;">Every item in your personalised plan is chosen with hormonal balance in mind — not just calories.</p>
-    </div>
-    <div class="foods-grid">
-      <div class="foods-col good fade-up">
-        <h3><i class="fas fa-check-circle"></i> Hormone-Supportive Foods</h3>
-        <div class="food-list">
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Flaxseeds</strong>Rich in lignans — natural phytoestrogens that reduce androgen levels and support cycle regularity.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Spearmint Tea</strong>Clinical evidence shows spearmint tea reduces testosterone levels in PCOS women with just 2 cups/day.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Leafy Greens (Methi, Palak)</strong>High in magnesium and folate — reduce insulin resistance and support oestrogen metabolism.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>All Legumes & Lentils</strong>Low-GI, high-fibre protein source — slows glucose absorption and reduces insulin spikes.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Cinnamon (Dalchini)</strong>Improves insulin sensitivity — add to tea, milk, or sprinkle over oats daily.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Turmeric (Haldi)</strong>Powerful anti-inflammatory — reduces the chronic inflammation underlying PCOS severity.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Pumpkin Seeds (Kaddu ke Beej)</strong>High in zinc — supports progesterone production and reduces excess androgens.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-check-circle"></i>
-            <div><strong>Fermented Foods (Dahi, Kanji)</strong>Gut health directly impacts oestrogen metabolism — probiotics help maintain hormonal balance.</div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="foods-col avoid fade-up">
-        <h3><i class="fas fa-times-circle"></i> Hormone-Disrupting Foods</h3>
-        <div class="food-list">
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Refined Sugar & Mithai</strong>Causes immediate insulin surge — the single biggest driver of androgen production in PCOS.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Maida & Refined Flour</strong>White bread, biscuits, naan — rapid blood sugar spikes worsen insulin resistance.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Dairy in Excess</strong>Full-fat dairy contains IGF-1 which can elevate androgen levels — switch to low-fat or A2 milk.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Caffeine in Excess</strong>Raises cortisol — which worsens insulin resistance and disrupts the HPO hormonal axis.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Processed & Packaged Foods</strong>Hidden sugars, trans fats, and sodium — all pro-inflammatory and insulin-disrupting.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Alcohol</strong>Disrupts liver oestrogen metabolism and raises cortisol — both worsen PCOS significantly.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Soy in Large Amounts</strong>Small amounts are beneficial, but excess phytoestrogens from soy can disrupt hormonal balance.</div>
-          </div>
-          
-          <div class="food-item">
-            <i class="fas fa-times-circle"></i>
-            <div><strong>Deep-Fried Snacks</strong>Trans fats and refined carbs together — a double hit for insulin resistance and inflammation.</div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── SAMPLE MEAL PLAN ───────────────────────────────────────────────── -->
-<!-- <section class="meal-plan" aria-labelledby="pcos-meal-heading">
+    <!-- ── SAMPLE MEAL PLAN ───────────────────────────────────────────────── -->
+    <!-- <section class="meal-plan" aria-labelledby="pcos-meal-heading">
   <div class="container">
     <div class="meal-plan-header fade-up">
       <div class="section-label">Sample Meal Plan</div>
@@ -921,488 +2429,461 @@
   </div>
 </section> -->
 
-<!-- ── PROGRAMME JOURNEY ──────────────────────────────────────────────── -->
-<section class="journey" aria-labelledby="pcos-journey-heading">
-  <div class="container">
-    <div class="journey-header fade-up">
-      <div class="section-label">Your Journey</div>
-      <h2 class="section-title" id="pcos-journey-heading">What the First 4 Months Look Like</h2>
-      <p style="color:var(--text-muted);font-size:1rem;max-width:480px;margin:0 auto;">A realistic timeline for hormonal healing through personalised nutrition at Diet_Solver.</p>
-    </div>
-    <div class="journey-wrap">
-      <div class="journey-line" aria-hidden="true"></div>
-      
-      <div class="journey-item fade-up" style="transition-delay:0.00s">
-        <div class="journey-dot" aria-hidden="true">1</div>
-        <div class="journey-content">
-          <div class="journey-week">Week 1</div>
-          <h3>Hormone Assessment & Plan</h3>
-          <p>Review of blood reports, symptom history, and menstrual calendar. Your anti-inflammatory, low-GI meal plan arrives within 24 hours — with spearmint tea, flaxseeds, and cinnamon integrated from Day 1.</p>
+    <!-- ── PROGRAMME JOURNEY ──────────────────────────────────────────────── -->
+    <section class="journey" aria-labelledby="pcos-journey-heading">
+      <div class="container">
+        <div class="journey-header fade-up">
+          <div class="section-label">Your Journey</div>
+          <h2 class="section-title" id="pcos-journey-heading">What the First 4 Months Look Like</h2>
+          <p style="color:var(--text-muted);font-size:1rem;max-width:480px;margin:0 auto;">A realistic timeline for
+            hormonal healing through personalised nutrition at Diet_Solver.</p>
         </div>
-      </div>
-      
-      <div class="journey-item fade-up" style="transition-delay:0.10s">
-        <div class="journey-dot" aria-hidden="true">2</div>
-        <div class="journey-content">
-          <div class="journey-week">Weeks 2–4</div>
-          <h3>Early Symptom Changes</h3>
-          <p>Bloating reduces, energy improves, and sugar cravings diminish. Skin may begin to clear. Internally, insulin sensitivity starts improving — the foundation for everything else.</p>
-        </div>
-      </div>
-      
-      <div class="journey-item fade-up" style="transition-delay:0.20s">
-        <div class="journey-dot" aria-hidden="true">3</div>
-        <div class="journey-content">
-          <div class="journey-week">Month 2</div>
-          <h3>First Cycle Improvements</h3>
-          <p>Most clients see their first cycle changes — shorter delay, reduced pain, or lighter flow. Not everyone sees this immediately; it depends on starting hormone levels and adherence.</p>
-        </div>
-      </div>
-      
-      <div class="journey-item fade-up" style="transition-delay:0.30s">
-        <div class="journey-dot" aria-hidden="true">4</div>
-        <div class="journey-content">
-          <div class="journey-week">Months 2–3</div>
-          <h3>Androgen Reduction Phase</h3>
-          <p>Hair fall typically reduces. Acne improves. LH/FSH ratio may begin normalising. Weight around the abdomen starts shifting as insulin resistance decreases.</p>
-        </div>
-      </div>
-      
-      <div class="journey-item fade-up" style="transition-delay:0.40s">
-        <div class="journey-dot" aria-hidden="true">5</div>
-        <div class="journey-content">
-          <div class="journey-week">Month 4</div>
-          <h3>Cycle Regularity & Hormone Testing</h3>
-          <p>Many clients achieve regular cycles at this stage. Hormonal blood tests are recommended at 3 months to measure LH, FSH, testosterone, and insulin changes objectively.</p>
-        </div>
-      </div>
-      
-      <div class="journey-item fade-up" style="transition-delay:0.50s">
-        <div class="journey-dot" aria-hidden="true">6</div>
-        <div class="journey-content">
-          <div class="journey-week">Ongoing</div>
-          <h3>Long-Term PCOS Management</h3>
-          <p>PCOS requires ongoing management. We transition you to a long-term eating pattern that maintains hormonal balance — not a strict diet, but a sustainable lifestyle.</p>
-        </div>
-      </div>
-      
-    </div>
+        <div class="journey-wrap">
+          <div class="journey-line" aria-hidden="true"></div>
 
-    <!-- Cycle Tracker Visual -->
-    <div class="cycle-tracker fade-up" style="margin-top:48px;" aria-label="Typical cycle improvement timeline">
-      <h4><i class="fas fa-sync-alt" style="color:var(--pc-mid);margin-right:8px;"></i> Typical Cycle Improvement Timeline</h4>
-      
-      <div class="cycle-row">
-        <span class="cycle-label">At start</span>
-        <div class="cycle-bar-wrap">
-          <div class="cycle-fill irregular" style="width:90%"></div>
-        </div>
-        <span class="cycle-val">Irregular (35–90+ days)</span>
-      </div>
-      
-      <div class="cycle-row">
-        <span class="cycle-label">Month 2</span>
-        <div class="cycle-bar-wrap">
-          <div class="cycle-fill improving" style="width:55%"></div>
-        </div>
-        <span class="cycle-val">Improving (30–45 days)</span>
-      </div>
-      
-      <div class="cycle-row">
-        <span class="cycle-label">Month 4+</span>
-        <div class="cycle-bar-wrap">
-          <div class="cycle-fill regular" style="width:25%"></div>
-        </div>
-        <span class="cycle-val">Regulating (28–35 days)</span>
-      </div>
-      
-      <p style="font-size:.75rem;color:var(--text-muted);margin-top:12px;"><i class="fas fa-info-circle"></i> Individual results vary based on starting hormone levels, adherence, and whether medication is also being used.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── TESTIMONIALS ───────────────────────────────────────────────────── -->
-<section class="testimonials" aria-labelledby="pcos-testi-heading">
-  <div class="container">
-    <div class="testi-header fade-up">
-      <div class="section-label">Success Stories</div>
-      <h2 class="section-title" id="pcos-testi-heading">Real Women. Real Hormonal Healing. Real Results.</h2>
-    </div>
-    <div class="testi-grid">
-      
-      <article class="testi-card fade-up" style="transition-delay:0.00s">
-        <div class="result-pill"><i class="fas fa-heart"></i> Cycle restored in 3 months</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"After 3 years of irregular periods and failed treatments, Diet_Solver changed everything. Within 3 months of my personalised plan, I had my first regular cycle in years. No new medication — just food, done right."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">A</div>
-          <div>
-            <strong>Ananya K.</strong>
-            <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Mumbai</span>
-          </div>
-        </div>
-      </article>
-      
-      <article class="testi-card fade-up" style="transition-delay:0.08s">
-        <div class="result-pill"><i class="fas fa-heart"></i> Pregnant naturally after 8 months</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"My gynaecologist had told me IVF might be necessary. After 8 months on Diet_Solver's PCOS fertility nutrition plan, I conceived naturally. I cannot express how much this means to my family."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">P</div>
-          <div>
-            <strong>Pritha S.</strong>
-            <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Delhi</span>
-          </div>
-        </div>
-      </article>
-      
-      <article class="testi-card fade-up" style="transition-delay:0.16s">
-        <div class="result-pill"><i class="fas fa-heart"></i> Acne & hair fall resolved</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"I'd battled jawline acne and excessive hair fall since I was 18. Within 6 weeks of starting my plan, my skin was clearing. By month 3, my dermatologist was asking what I'd changed. Just my diet!"</p>
-        <div class="testi-author">
-          <div class="testi-avatar">S</div>
-          <div>
-            <strong>Shreya M.</strong>
-            <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Bangalore</span>
-          </div>
-        </div>
-      </article>
-      
-      <article class="testi-card fade-up" style="transition-delay:0.00s">
-        <div class="result-pill"><i class="fas fa-heart"></i> Lost 11 kg with PCOS</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"PCOS weight is the hardest to lose — everyone with PCOS knows this. Diet_Solver built a plan that accounted for my insulin resistance specifically. I lost 11 kg in 5 months without ever feeling deprived."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">R</div>
-          <div>
-            <strong>Riya T.</strong>
-            <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Pune</span>
-          </div>
-        </div>
-      </article>
-      
-      <article class="testi-card fade-up" style="transition-delay:0.08s">
-        <div class="result-pill"><i class="fas fa-heart"></i> Off metformin in 6 months</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"I'd been on Metformin for 4 years. After 6 months of consistent PCOS nutrition with Diet_Solver, my insulin levels normalised enough that my doctor discontinued the medication. Unbelievable result."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">N</div>
-          <div>
-            <strong>Nisha P.</strong>
-            <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Hyderabad</span>
-          </div>
-        </div>
-      </article>
-      
-      <article class="testi-card fade-up" style="transition-delay:0.16s">
-        <div class="result-pill"><i class="fas fa-heart"></i> Energy completely transformed</div>
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"The fatigue and brain fog were making my work impossible. Three weeks into my plan, my energy was back. The cravings stopped. I slept properly for the first time in years. The cycle regulation came later — but these early wins kept me going."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">K</div>
-          <div>
-            <strong>Kaveri B.</strong>
-            <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Chennai</span>
-          </div>
-        </div>
-      </article>
-      
-    </div>
-  </div>
-</section>
-
-<!-- ── FAQ ────────────────────────────────────────────────────────────── -->
-<section class="faq" aria-labelledby="pcos-faq-heading">
-  <div class="container">
-    <div class="faq-inner">
-      <div class="fade-up">
-        <div class="section-label">FAQs</div>
-        <h2 class="section-title" id="pcos-faq-heading">PCOS Nutrition — Questions Answered</h2>
-        <p style="color:var(--text-muted);font-size:.93rem;line-height:1.75;margin-top:12px;">Have a question specific to your symptoms, medications, or fertility goals? We'll answer honestly before you even book.</p>
-        <a href="https://wa.me/919999000000?text=Hi!%20I%20have%20a%20question%20about%20the%20PCOS%20programme."
-           class="btn btn-primary" style="margin-top:24px;" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-whatsapp"></i> Ask on WhatsApp
-        </a>
-      </div>
-      <div class="faq-list fade-up">
-        
-        <div class="faq-item" id="pcosfaq-0">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-0')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-0">
-            Can diet reverse PCOS completely?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-0">PCOS cannot be fully reversed since it has a genetic component — but the right nutrition can dramatically reduce or eliminate symptoms. Many of our clients achieve complete cycle regularity, clear skin, healthy weight, and normal hormone readings through diet alone.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-1">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-1')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-1">
-            How long before I see results?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-1">Most clients notice energy improvements, reduced bloating, and better sleep within 3–4 weeks. Skin and hair changes typically follow in weeks 4–8. Cycle regularity usually improves between months 2–4 depending on your starting hormone levels.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-2">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-2')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-2">
-            I'm trying to conceive — can you help?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-2">Yes. We have a dedicated fertility nutrition track within the PCOS programme. This focuses on ovulation-supporting nutrients (folate, zinc, omega-3), follicle health, uterine lining nutrition, and creating the hormonal environment needed for conception.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-3">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-3')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-3">
-            Can I follow the plan if I'm on Metformin or OCPs?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-3">Absolutely. Our plans are designed to work alongside Metformin, OCPs, or any other medication prescribed by your gynaecologist. We will never advise you to stop or change medication — that's your doctor's domain.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-4">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-4')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-4">
-            Is dairy bad for PCOS?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-4">Excess full-fat dairy can worsen androgen levels in some PCOS cases. We don't eliminate dairy entirely — instead we moderate it, switch to low-fat or A2 milk, and use fermented dairy (curd, buttermilk) which has additional benefits.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-5">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-5')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-5">
-            Will the plan accommodate my vegetarian diet?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-5">Yes — in fact, a well-planned vegetarian diet is particularly well-suited to PCOS management. Legumes, seeds, vegetables, and fermented foods are all central to the programme and are naturally vegetarian.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-6">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-6')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-6">
-            Do I need to share my hormone blood reports?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-6">Not mandatory, but sharing your LH, FSH, AMH, testosterone, insulin, and thyroid reports helps us calibrate your plan far more precisely. If you don't have recent reports, we'll recommend which ones to get first.</div>
-        </div>
-        
-        <div class="faq-item" id="pcosfaq-7">
-          <button class="faq-q" onclick="toggleFaq('pcosfaq-7')"
-                  aria-expanded="false" aria-controls="pcosfaq-ans-7">
-            What about PCOS weight loss — is it really harder?
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="faq-a" id="pcosfaq-ans-7">Yes — insulin resistance makes weight loss harder for PCOS women on standard diets. Our PCOS weight management approach specifically accounts for this by focusing on glycaemic load, meal timing, and anti-androgenic foods, not just calorie reduction.</div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── RELATED SERVICES ───────────────────────────────────────────────── -->
-<section class="related" aria-labelledby="pcos-related-heading">
-  <div class="container">
-    <div class="related-header">
-      <div>
-        <div class="section-label">Also Explore</div>
-        <h2 class="section-title" id="pcos-related-heading" style="margin-bottom:0;">Related Services</h2>
-      </div>
-      <a href="/services.html" class="btn btn-outline">View All Services</a>
-    </div>
-    <div class="related-grid">
-      
-      <a href="/services/weight-loss.html" class="related-card">
-        <div class="related-icon" style="background:linear-gradient(135deg,#c8ead5,#88c8a4)">⚖️</div>
-        <div>
-          <h4>Weight Loss</h4>
-          <p>Lose weight sustainably — no crash diets.</p>
-        </div>
-        <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
-      </a>
-      
-      <a href="/services/diabetes-diet.html" class="related-card">
-        <div class="related-icon" style="background:linear-gradient(135deg,#fce4b4,#f4c068)">🩺</div>
-        <div>
-          <h4>Diabetes Diet</h4>
-          <p>Control blood sugar — often linked to PCOS.</p>
-        </div>
-        <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
-      </a>
-      
-      <a href="/services/custom-diet.html" class="related-card">
-        <div class="related-icon" style="background:linear-gradient(135deg,#d8f4e0,#90d8a8)">🍽️</div>
-        <div>
-          <h4>Custom Diet Plans</h4>
-          <p>PCOS + thyroid + other conditions in one plan.</p>
-        </div>
-        <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
-      </a>
-      
-      <a href="/services/cholesterol-management.html" class="related-card">
-        <div class="related-icon" style="background:linear-gradient(135deg,#fde8d8,#f8b88a)">💻</div>
-        <div>
-          <h4>Cholesterol Management</h4>
-          <p>Expert PCOS guidance from anywhere in India.</p>
-        </div>
-        <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
-      </a>
-      
-      <a href="/services/sports-nutrition.html" class="related-card">
-        <div class="related-icon" style="background:linear-gradient(135deg,#dde8fc,#9ab8f0)">🏃</div>
-        <div>
-          <h4>Sports Nutrition</h4>
-          <p>Exercise & PCOS — get the nutrition right.</p>
-        </div>
-        <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
-      </a>
-      
-    </div>
-  </div>
-</section>
-
-<!-- ── CTA BANNER ─────────────────────────────────────────────────────── -->
-<section class="cta-banner" aria-labelledby="pcos-cta-heading">
-  <div class="container">
-    <div class="cta-content">
-      <h2 id="pcos-cta-heading">Your Hormones Can Heal. Let Food Be the Medicine.</h2>
-      <p>Book a free 30-minute consultation with Dr. Aisha. She specialises in PCOS nutrition and will outline exactly how your personalised programme will address your specific symptoms.</p>
-      <div class="cta-btns">
-        <a href="/book-appointment.html?service=PCOS+%2F+PCOD" class="btn btn-white">
-          <i class="fas fa-calendar-check"></i> Book Free Consultation
-        </a>
-        <a href="https://wa.me/919999000000?text=Hi!%20I'm%20interested%20in%20the%20PCOS%20programme."
-           class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-whatsapp"></i> WhatsApp Us
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- FOOTER -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <!-- <div class="footer-logo logo">
-          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
-          <div class="logo-text">
-            <span class="logo-name">Diet<span>_Solver</span></span>
-            <span class="logo-tagline">Your Diet. Your Rules.</span>
-          </div>
-        </div> -->
-        <div class="footer-logo logo">
-            <!-- <div class="logo-icon"><i class="fas fa-leaf"></i></div> -->
-            <div class="logo-text">
-              <img src="../img/logo_02.png" alt="DietSolver" class="footer-logo-img"/>
-              <!-- <span class="logo-name">Diet<span>_Solver</span></span>
-              <span class="logo-tagline">Your Diet. Your Rules.</span> -->
+          <div class="journey-item fade-up" style="transition-delay:0.00s">
+            <div class="journey-dot" aria-hidden="true">1</div>
+            <div class="journey-content">
+              <div class="journey-week">Week 1</div>
+              <h3>Hormone Assessment & Plan</h3>
+              <p>Review of blood reports, symptom history, and menstrual calendar. Your anti-inflammatory, low-GI meal
+                plan arrives within 24 hours — with spearmint tea, flaxseeds, and cinnamon integrated from Day 1.</p>
             </div>
           </div>
-        <p class="footer-about">We believe in the power of real food, personalised plans, and consistent support to transform your health — naturally and sustainably.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+
+          <div class="journey-item fade-up" style="transition-delay:0.10s">
+            <div class="journey-dot" aria-hidden="true">2</div>
+            <div class="journey-content">
+              <div class="journey-week">Weeks 2–4</div>
+              <h3>Early Symptom Changes</h3>
+              <p>Bloating reduces, energy improves, and sugar cravings diminish. Skin may begin to clear. Internally,
+                insulin sensitivity starts improving — the foundation for everything else.</p>
+            </div>
+          </div>
+
+          <div class="journey-item fade-up" style="transition-delay:0.20s">
+            <div class="journey-dot" aria-hidden="true">3</div>
+            <div class="journey-content">
+              <div class="journey-week">Month 2</div>
+              <h3>First Cycle Improvements</h3>
+              <p>Most clients see their first cycle changes — shorter delay, reduced pain, or lighter flow. Not everyone
+                sees this immediately; it depends on starting hormone levels and adherence.</p>
+            </div>
+          </div>
+
+          <div class="journey-item fade-up" style="transition-delay:0.30s">
+            <div class="journey-dot" aria-hidden="true">4</div>
+            <div class="journey-content">
+              <div class="journey-week">Months 2–3</div>
+              <h3>Androgen Reduction Phase</h3>
+              <p>Hair fall typically reduces. Acne improves. LH/FSH ratio may begin normalising. Weight around the
+                abdomen starts shifting as insulin resistance decreases.</p>
+            </div>
+          </div>
+
+          <div class="journey-item fade-up" style="transition-delay:0.40s">
+            <div class="journey-dot" aria-hidden="true">5</div>
+            <div class="journey-content">
+              <div class="journey-week">Month 4</div>
+              <h3>Cycle Regularity & Hormone Testing</h3>
+              <p>Many clients achieve regular cycles at this stage. Hormonal blood tests are recommended at 3 months to
+                measure LH, FSH, testosterone, and insulin changes objectively.</p>
+            </div>
+          </div>
+
+          <div class="journey-item fade-up" style="transition-delay:0.50s">
+            <div class="journey-dot" aria-hidden="true">6</div>
+            <div class="journey-content">
+              <div class="journey-week">Ongoing</div>
+              <h3>Long-Term PCOS Management</h3>
+              <p>PCOS requires ongoing management. We transition you to a long-term eating pattern that maintains
+                hormonal balance — not a strict diet, but a sustainable lifestyle.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cycle Tracker Visual -->
+        <div class="cycle-tracker fade-up" style="margin-top:48px;" aria-label="Typical cycle improvement timeline">
+          <h4><i class="fas fa-sync-alt" style="color:var(--pc-mid);margin-right:8px;"></i> Typical Cycle Improvement
+            Timeline</h4>
+
+          <div class="cycle-row">
+            <span class="cycle-label">At start</span>
+            <div class="cycle-bar-wrap">
+              <div class="cycle-fill irregular" style="width:90%"></div>
+            </div>
+            <span class="cycle-val">Irregular (35–90+ days)</span>
+          </div>
+
+          <div class="cycle-row">
+            <span class="cycle-label">Month 2</span>
+            <div class="cycle-bar-wrap">
+              <div class="cycle-fill improving" style="width:55%"></div>
+            </div>
+            <span class="cycle-val">Improving (30–45 days)</span>
+          </div>
+
+          <div class="cycle-row">
+            <span class="cycle-label">Month 4+</span>
+            <div class="cycle-bar-wrap">
+              <div class="cycle-fill regular" style="width:25%"></div>
+            </div>
+            <span class="cycle-val">Regulating (28–35 days)</span>
+          </div>
+
+          <p style="font-size:.75rem;color:var(--text-muted);margin-top:12px;"><i class="fas fa-info-circle"></i>
+            Individual results vary based on starting hormone levels, adherence, and whether medication is also being
+            used.</p>
         </div>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/services.html">All Services</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-          <li><a href="/book-appointment.html">Book Appointment</a></li>
-        </ul>
+    </section>
+
+    <!-- ── TESTIMONIALS ───────────────────────────────────────────────────── -->
+    <section class="testimonials" aria-labelledby="pcos-testi-heading">
+      <div class="container">
+        <div class="testi-header fade-up">
+          <div class="section-label">Success Stories</div>
+          <h2 class="section-title" id="pcos-testi-heading">Real Women. Real Hormonal Healing. Real Results.</h2>
+        </div>
+        <div class="testi-grid">
+
+          <article class="testi-card fade-up" style="transition-delay:0.00s">
+            <div class="result-pill"><i class="fas fa-heart"></i> Cycle restored in 3 months</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"After 3 years of irregular periods and failed treatments, Diet_Solver changed
+              everything. Within 3 months of my personalised plan, I had my first regular cycle in years. No new
+              medication — just food, done right."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div>
+                <strong>Ananya K.</strong>
+                <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Mumbai</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.08s">
+            <div class="result-pill"><i class="fas fa-heart"></i> Pregnant naturally after 8 months</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"My gynaecologist had told me IVF might be necessary. After 8 months on Diet_Solver's
+              PCOS fertility nutrition plan, I conceived naturally. I cannot express how much this means to my family."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">P</div>
+              <div>
+                <strong>Pritha S.</strong>
+                <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Delhi</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.16s">
+            <div class="result-pill"><i class="fas fa-heart"></i> Acne & hair fall resolved</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"I'd battled jawline acne and excessive hair fall since I was 18. Within 6 weeks of
+              starting my plan, my skin was clearing. By month 3, my dermatologist was asking what I'd changed. Just my
+              diet!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">S</div>
+              <div>
+                <strong>Shreya M.</strong>
+                <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Bangalore</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.00s">
+            <div class="result-pill"><i class="fas fa-heart"></i> Lost 11 kg with PCOS</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"PCOS weight is the hardest to lose — everyone with PCOS knows this. Diet_Solver built
+              a plan that accounted for my insulin resistance specifically. I lost 11 kg in 5 months without ever
+              feeling deprived."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">R</div>
+              <div>
+                <strong>Riya T.</strong>
+                <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.08s">
+            <div class="result-pill"><i class="fas fa-heart"></i> Off metformin in 6 months</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"I'd been on Metformin for 4 years. After 6 months of consistent PCOS nutrition with
+              Diet_Solver, my insulin levels normalised enough that my doctor discontinued the medication. Unbelievable
+              result."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">N</div>
+              <div>
+                <strong>Nisha P.</strong>
+                <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Hyderabad</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card fade-up" style="transition-delay:0.16s">
+            <div class="result-pill"><i class="fas fa-heart"></i> Energy completely transformed</div>
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"The fatigue and brain fog were making my work impossible. Three weeks into my plan,
+              my energy was back. The cravings stopped. I slept properly for the first time in years. The cycle
+              regulation came later — but these early wins kept me going."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">K</div>
+              <div>
+                <strong>Kaveri B.</strong>
+                <span><i class="fas fa-map-marker-alt" style="font-size:.65rem;"></i> Chennai</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
-      <div>
-        <h4>Our Services</h4>
-        <ul class="footer-links">
-          <li><a href="/services/weight-loss.html">Weight Loss</a></li>
-          <li><a href="/services/diabetes-diet.html">Diabetes Diet</a></li>
-          <li><a href="/services/pcos-pcod.html">PCOS / PCOD</a></li>
-          <li><a href="/services/sports-nutrition.html">Sports Nutrition</a></li>
-          <li><a href="/services/custom-diet.html">Custom Diet Plans</a></li>
-          <li><a href="/services/cholesterol-management.html">Cholesterol Management</a></li>
-        </ul>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────────────────────────────────── -->
+    <section class="faq" aria-labelledby="pcos-faq-heading">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="fade-up">
+            <div class="section-label">FAQs</div>
+            <h2 class="section-title" id="pcos-faq-heading">PCOS Nutrition — Questions Answered</h2>
+            <p style="color:var(--text-muted);font-size:.93rem;line-height:1.75;margin-top:12px;">Have a question
+              specific to your symptoms, medications, or fertility goals? We'll answer honestly before you even book.
+            </p>
+            <a href="https://wa.me/919999000000?text=Hi!%20I%20have%20a%20question%20about%20the%20PCOS%20programme."
+              class="btn btn-primary" style="margin-top:24px;" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> Ask on WhatsApp
+            </a>
+          </div>
+          <div class="faq-list fade-up">
+
+            <div class="faq-item" id="pcosfaq-0">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-0')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-0">
+                Can diet reverse PCOS completely?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-0">PCOS cannot be fully reversed since it has a genetic component — but
+                the right nutrition can dramatically reduce or eliminate symptoms. Many of our clients achieve complete
+                cycle regularity, clear skin, healthy weight, and normal hormone readings through diet alone.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-1">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-1')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-1">
+                How long before I see results?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-1">Most clients notice energy improvements, reduced bloating, and
+                better sleep within 3–4 weeks. Skin and hair changes typically follow in weeks 4–8. Cycle regularity
+                usually improves between months 2–4 depending on your starting hormone levels.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-2">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-2')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-2">
+                I'm trying to conceive — can you help?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-2">Yes. We have a dedicated fertility nutrition track within the PCOS
+                programme. This focuses on ovulation-supporting nutrients (folate, zinc, omega-3), follicle health,
+                uterine lining nutrition, and creating the hormonal environment needed for conception.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-3">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-3')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-3">
+                Can I follow the plan if I'm on Metformin or OCPs?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-3">Absolutely. Our plans are designed to work alongside Metformin,
+                OCPs, or any other medication prescribed by your gynaecologist. We will never advise you to stop or
+                change medication — that's your doctor's domain.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-4">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-4')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-4">
+                Is dairy bad for PCOS?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-4">Excess full-fat dairy can worsen androgen levels in some PCOS cases.
+                We don't eliminate dairy entirely — instead we moderate it, switch to low-fat or A2 milk, and use
+                fermented dairy (curd, buttermilk) which has additional benefits.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-5">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-5')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-5">
+                Will the plan accommodate my vegetarian diet?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-5">Yes — in fact, a well-planned vegetarian diet is particularly
+                well-suited to PCOS management. Legumes, seeds, vegetables, and fermented foods are all central to the
+                programme and are naturally vegetarian.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-6">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-6')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-6">
+                Do I need to share my hormone blood reports?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-6">Not mandatory, but sharing your LH, FSH, AMH, testosterone, insulin,
+                and thyroid reports helps us calibrate your plan far more precisely. If you don't have recent reports,
+                we'll recommend which ones to get first.</div>
+            </div>
+
+            <div class="faq-item" id="pcosfaq-7">
+              <button class="faq-q" onclick="toggleFaq('pcosfaq-7')" aria-expanded="false"
+                aria-controls="pcosfaq-ans-7">
+                What about PCOS weight loss — is it really harder?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="faq-a" id="pcosfaq-ans-7">Yes — insulin resistance makes weight loss harder for PCOS women on
+                standard diets. Our PCOS weight management approach specifically accounts for this by focusing on
+                glycaemic load, meal timing, and anti-androgenic foods, not just calorie reduction.</div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Get In Touch</h4>
-        <ul class="footer-contact-list">
-          <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919999000000">+91-9999-000000</a></li>
-          <li class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:hello@dietsolver.in">hello@dietsolver.in</a></li>
-          <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Connaught Place, New Delhi – 110001</span></li>
-        </ul>
-        <h4 style="margin-top:24px;">Newsletter</h4>
-        <form class="newsletter-form" action="/newsletter.html" method="POST">
-          <input type="email" name="email" placeholder="Your email address" required />
-          <button type="submit">Subscribe for Free Tips</button>
-        </form>
+    </section>
+
+    <!-- ── RELATED SERVICES ───────────────────────────────────────────────── -->
+    <section class="related" aria-labelledby="pcos-related-heading">
+      <div class="container">
+        <div class="related-header">
+          <div>
+            <div class="section-label">Also Explore</div>
+            <h2 class="section-title" id="pcos-related-heading" style="margin-bottom:0;">Related Services</h2>
+          </div>
+          <a href="/services.html" class="btn btn-outline">View All Services</a>
+        </div>
+        <div class="related-grid">
+
+          <a href="/services/weight-loss.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#c8ead5,#88c8a4)">⚖️</div>
+            <div>
+              <h4>Weight Loss</h4>
+              <p>Lose weight sustainably — no crash diets.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/diabetes-diet.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#fce4b4,#f4c068)">🩺</div>
+            <div>
+              <h4>Diabetes Diet</h4>
+              <p>Control blood sugar — often linked to PCOS.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/custom-diet.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#d8f4e0,#90d8a8)">🍽️</div>
+            <div>
+              <h4>Custom Diet Plans</h4>
+              <p>PCOS + thyroid + other conditions in one plan.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/cholesterol-management.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#fde8d8,#f8b88a)">💻</div>
+            <div>
+              <h4>Cholesterol Management</h4>
+              <p>Expert PCOS guidance from anywhere in India.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+          <a href="/services/sports-nutrition.html" class="related-card">
+            <div class="related-icon" style="background:linear-gradient(135deg,#dde8fc,#9ab8f0)">🏃</div>
+            <div>
+              <h4>Sports Nutrition</h4>
+              <p>Exercise & PCOS — get the nutrition right.</p>
+            </div>
+            <i class="fas fa-chevron-right"
+              style="margin-left:auto;color:var(--border);font-size:.8rem;flex-shrink:0;"></i>
+          </a>
+
+        </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 Diet_Solver. All Rights Reserved.</span>
-      <span>
-    Design and Managed by
-    <a href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">
-      Advertising India
-    </a>
-  </span>
-      <span>
-        <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
-        <a href="/terms.html">Terms of Service</a> &nbsp;·&nbsp;
-        <a href="/sitemap.xml">Sitemap</a>
-      </span>
-    </div>
+    </section>
+
+    <!-- ── CTA BANNER ─────────────────────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="pcos-cta-heading">
+      <div class="container">
+        <div class="cta-content">
+          <h2 id="pcos-cta-heading">Your Hormones Can Heal. Let Food Be the Medicine.</h2>
+          <p>Book a free 30-minute consultation with Dr. Aisha. She specialises in PCOS nutrition and will outline
+            exactly how your personalised programme will address your specific symptoms.</p>
+          <div class="cta-btns">
+            <a href="/book-appointment.html?service=PCOS+%2F+PCOD" class="btn btn-white">
+              <i class="fas fa-calendar-check"></i> Book Free Consultation
+            </a>
+            <a href="https://wa.me/919999000000?text=Hi!%20I'm%20interested%20in%20the%20PCOS%20programme."
+              class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <div class="float-btns">
+    <a href="https://wa.me/919999000000?text=Hi!%20I'm%20interested%20in%20the%20PCOS%20programme."
+      class="float-btn float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+        class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919999000000" class="float-btn float-call" aria-label="Call"><i class="fas fa-phone"></i></a>
   </div>
-</footer>
+  <button id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i
+      class="fas fa-arrow-up"></i></button>
 
-<div class="float-btns">
-  <a href="https://wa.me/919999000000?text=Hi!%20I'm%20interested%20in%20the%20PCOS%20programme." class="float-btn float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  <a href="tel:+919999000000" class="float-btn float-call" aria-label="Call"><i class="fas fa-phone"></i></a>
-</div>
-<button id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+  <script src="../components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+      document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
 
-<script>
-  const header = document.getElementById('header');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 50);
-    document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 400);
-  }, { passive: true });
-
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
-  hamburger.addEventListener('click', () => {
-    const isOpen = mobileNav.classList.toggle('open');
-    hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  });
-
-  function toggleFaq(id) {
-    const item = document.getElementById(id);
-    const btn  = item.querySelector('.faq-q');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(el => {
-      el.classList.remove('open');
-      el.querySelector('.faq-q').setAttribute('aria-expanded', false);
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
-    if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', true); }
-  }
 
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
-</script>
+    function toggleFaq(id) {
+      const item = document.getElementById(id);
+      const btn = item.querySelector('.faq-q');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-q').setAttribute('aria-expanded', false);
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', true); }
+    }
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
 </body>
+
 </html>
