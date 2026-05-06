@@ -107,7 +107,7 @@
       color: var(--text-dark);
       background: var(--white);
       line-height: 1.65;
-      overflow-x: hidden;
+      overflow-x: clip;
     }
 
     a {
@@ -123,6 +123,10 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 24px;
+    }
+
+    #navbar-placeholder {
+      display: contents;
     }
 
     .section-label {

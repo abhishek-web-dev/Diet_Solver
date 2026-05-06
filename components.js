@@ -40,7 +40,7 @@ const DIET_NAVBAR = `
   <div class="container">
     <nav class="nav-inner">
       <a href="${basePath}index.html" class="logo">
-        <img src="${basePath}img/logo_01.png" alt="DietSolver Logo" class="logo-img"/>
+        <img src="${basePath}img/logo.png" alt="DietSolver Logo" class="logo-img"/>
       </a>
       <ul class="nav-links">
         <li><a href="${basePath}index.html">Home</a></li>
@@ -96,7 +96,7 @@ const DIET_FOOTER = `
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <img src="${basePath}img/logo_02.png" alt="DietSolver" class="footer-logo-img"/>
+          <img src="${basePath}img/logo (10) copy.png" alt="DietSolver" class="footer-logo-img"/>
           <p>Diet Solvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/dietsolver" target="_blank" rel="noopener noreferrer" class="fsoc fsoc-fb" aria-label="Facebook">
