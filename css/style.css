@@ -735,7 +735,7 @@ ul {
 
 /* ---- STRUGGLE ---- */
 .struggle {
-  background: linear-gradient(180deg, #fff 0%, #f9fcf9 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fffbe9 100%);
 }
 
 .struggle-title {
@@ -753,8 +753,9 @@ ul {
 }
 
 .struggle-card {
-  background: #fff;
-  border: 1px solid #dbe8dd;
+  background: #ffffff;
+  border: 1px solid rgba(159, 32, 32, 0.12);
+  border-bottom: 4px solid #9f2020;
   border-radius: 22px;
   min-height: 170px;
   padding: 30px 26px;
@@ -763,19 +764,27 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 10px 32px rgba(46, 125, 50, .05);
+  box-shadow: 0 10px 32px rgba(159, 32, 32, 0.06);
   transition: var(--trans);
 }
 
 .struggle-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(46, 125, 50, .1);
+  box-shadow: 0 18px 40px rgba(245, 153, 26, 0.15);
+  border-color: #f5991a;
+  border-bottom-color: #f5991a;
 }
 
 .struggle-icon {
-  font-size: 2rem;
-  color: #ef5350;
+  font-size: 2.2rem;
+  color: #9f2020;
   margin-bottom: 20px;
+  transition: transform var(--trans), color var(--trans);
+}
+
+.struggle-card:hover .struggle-icon {
+  color: #f5991a;
+  transform: scale(1.1);
 }
 
 .struggle-card h3 {
@@ -794,7 +803,7 @@ ul {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 700;
-  color: var(--text-dark);
+  color: #9f2020;
   margin-bottom: 8px;
 }
 
@@ -805,7 +814,7 @@ ul {
 
 /* ---- HEALING ---- */
 .healing {
-  background: linear-gradient(180deg, #ffffff 0%, #f5fbf6 100%);
+  background: linear-gradient(180deg, #fffbe9 0%, #ffffff 100%);
 }
 
 .healing-title {
@@ -816,7 +825,7 @@ ul {
 }
 
 .healing-title span {
-  color: #4ba36d;
+  color: #0780b8;
 }
 
 .healing-grid {
@@ -827,18 +836,37 @@ ul {
 }
 
 .healing-card {
-  background: #f7fcf8;
-  border: 1px solid #d9ebe0;
+  background: #ffffff;
+  border: 1px solid #c8dfa0;
   border-radius: 24px;
   padding: 40px 30px 34px;
   text-align: center;
-  box-shadow: 0 12px 34px rgba(46, 125, 50, .05);
+  box-shadow: 0 12px 34px rgba(7, 128, 184, 0.06);
+  transition: var(--trans);
+  position: relative;
+  overflow: hidden;
+}
+
+.healing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #a1ca39, #0780b8);
+  opacity: 0;
   transition: var(--trans);
 }
 
 .healing-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(46, 125, 50, .09);
+  box-shadow: 0 18px 40px rgba(161, 202, 57, 0.15);
+  border-color: #a1ca39;
+}
+
+.healing-card:hover::before {
+  opacity: 1;
 }
 
 .healing-icon {
@@ -846,12 +874,19 @@ ul {
   height: 68px;
   margin: 0 auto 24px;
   border-radius: 50%;
-  background: #e4f4ea;
-  color: #4ba36d;
+  background: #c8dfa0;
+  color: #0780b8;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
+  transition: var(--trans);
+}
+
+.healing-card:hover .healing-icon {
+  background: #0780b8;
+  color: #ffffff;
+  transform: rotate(10deg) scale(1.1);
 }
 
 .healing-card h3 {
