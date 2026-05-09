@@ -1,0 +1,160 @@
+:root {
+    --ds-green: #153f34;
+    --ds-accent: #f17947;
+    --ds-cream: #f8f4ee;
+    --ds-soft: #eef4f1;
+    --ds-text: #5c6964;
+    --ds-border: rgba(21, 63, 52, 0.12);
+}
+
+body {
+    background: #fff;
+}
+
+.page-hero {
+    position: relative;
+    padding: 170px 0 110px;
+    overflow: hidden;
+}
+
+.page-hero::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(241, 121, 71, 0.18) 0%, rgba(241, 121, 71, 0) 70%);
+    pointer-events: none;
+}
+
+.page-hero .breadcrumb,
+.page-hero .breadcrumb a,
+.page-hero .breadcrumb span {
+    color: #fff !important;
+}
+
+.page-hero .page-hero-inner {
+    max-width: 760px;
+}
+
+.page-hero .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.page-hero h1,
+.page-hero .page-hero-desc {
+    color: #fff;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title,
+.section-title h2,
+.section-title h1,
+.section-header h2 {
+    color: var(--ds-green);
+}
+
+.service-detail-card,
+.blog-card,
+.gallery-item,
+.contact-card,
+.contact-form-wrap,
+.contact-side,
+.stat-box,
+.timeline-item {
+    border: 1px solid var(--ds-border);
+    box-shadow: 0 18px 40px rgba(21, 63, 52, 0.08);
+}
+
+.service-detail-card,
+.blog-card,
+.contact-form-wrap,
+.contact-side,
+.timeline-item {
+    border-radius: 24px;
+}
+
+.service-detail-card,
+.blog-card,
+.contact-form-wrap,
+.contact-side {
+    background: #fff;
+}
+
+.service-detail-card .btn,
+.blog-card .btn,
+.cta-banner .btn,
+.contact-form-wrap .btn,
+.section .btn {
+    border-radius: 999px;
+}
+
+.cta-banner {
+    background:
+        linear-gradient(135deg, rgba(21, 63, 52, 0.96), rgba(25, 98, 78, 0.92)),
+        url("../images/page-cta-box-bg.jpg") center/cover no-repeat;
+    padding: 90px 0;
+}
+
+.cta-content {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2,
+.cta-content p {
+    color: #fff;
+}
+
+.contact-info-bar,
+.contact-main,
+.gallery-tabs,
+.blog-grid,
+.contact-cards,
+.contact-main-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-tab,
+.faq-q,
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border-radius: 18px;
+}
+
+.gallery-tab.active,
+.gallery-tab:hover {
+    background: var(--ds-green);
+    color: #fff;
+}
+
+.float-btns,
+#scrollTop {
+    z-index: 99;
+}
+
+@media only screen and (max-width: 991px) {
+    .page-hero {
+        padding: 140px 0 90px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+}

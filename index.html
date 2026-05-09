@@ -1,1774 +1,939 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Awaiken">
-    <!-- Page Title -->
-    <title>Healix - Health Coach HTML Template</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-- Google Fonts Css-->
+    <title>DietSolver | Best Dietician in Noida | Eat Well Live Well</title>
+    <meta name="description"
+        content="DietSolver offers personalised diet plans for Weight Loss, Diabetes, PCOS/PCOD, Pre-Wedding, Sports Nutrition & more by Dr. Anjani – Best Dietician in Noida Extension.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dietsolver.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dietsolver.in/">
+    <meta property="og:title" content="DietSolver | Best Dietician in Noida | Eat Well Live Well">
+    <meta property="og:description"
+        content="DietSolver offers personalised diet plans for Weight Loss, Diabetes, PCOS/PCOD & more by Dr. Anjani.">
+    <meta property="og:image" content="https://www.dietsolver.in/img/banner_01.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"DietSolver","description":"Best Dietician in Noida offering personalised diet and nutrition plans.","url":"https://www.dietsolver.in/","telephone":"+91-7011626850","address":{"@type":"PostalAddress","streetAddress":"2007, O Tower, Ajnara Homes","addressLocality":"Noida Extension","addressRegion":"UP","addressCountry":"IN"},"sameAs":["https://www.facebook.com/dietsolver","https://www.instagram.com/dietsolver"]}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Ye browser ko ready karta hai -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Ye asal font download karta hai (Check karein kya aapne ye line dali hai?) -->
-    <link href="https://googleapis.com" rel="stylesheet">
-
-
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- Bootstrap Css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- SlickNav Css -->
     <link href="css/slicknav.min.css" rel="stylesheet">
-    <!-- Swiper Css -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- Font Awesome Icon Css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Animated Css -->
     <link href="css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Core Css File -->
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- Mouse Cursor Css File -->
     <link rel="stylesheet" href="css/mousecursor.css">
-    <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="css/index-home.css" rel="stylesheet" media="screen">
 </head>
 
-<body>
+<body class="home-page">
 
-    <!-- Preloader Start -->
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
             <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
         </div>
     </div>
-    <!-- Preloader End -->
 
-    <!-- Header Start -->
     <header class="main-header bg-section">
         <div class="header-sticky">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <!-- Logo Start -->
                     <a class="navbar-brand" href="./">
-                        <img src="images/logo.svg" alt="Logo">
+                        <img src="img/logo.png" alt="DietSolver Logo">
                     </a>
-                    <!-- Logo End -->
-
-                    <!-- Main Menu Start -->
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="./">Home</a>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="services.html">Services</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index.html">Home - Main</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-image.html">Home -
-                                                Image</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home -
-                                                Video</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home -
-                                                Slider</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/weight-loss.html">Weight Loss & Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/diabetes-diet.html">Diabetes Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/pcos-pcod.html">PCOS / PCOD Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/custom-diet.html">Diet for Women</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/cholesterol-management.html">Cholesterol Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="services/sports-nutrition.html">Sports Nutrition</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service
-                                                Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog
-                                                Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="programs.html">Our Programs</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="program-single.html">Program
-                                                details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team-single.html">Team
-                                                Details</a></li>
-                                        <li class="nav-item"><a class="nav-link"
-                                                href="testimonials.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image
-                                                Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video
-                                                Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link"
-                                        href="book-appointment.html">Book Appointment</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">Book Free Consultation</a></li>
                             </ul>
                         </div>
-
-                        <!-- Header Btn Start -->
                         <div class="header-btn">
-                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book Appointment</a>
+                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
                         </div>
-                        <!-- Header Btn End -->
                     </div>
-                    <!-- Main Menu End -->
                     <div class="navbar-toggle"></div>
                 </div>
             </nav>
             <div class="responsive-menu"></div>
         </div>
     </header>
-    <!-- Header End -->
 
-    <!-- Hero Section Start -->
-    <div class="hero bg-section dark-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Hero Content Start -->
-                    <div class="hero-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Welcome to Healix</h3>
-                            <h1 class="text-anime-style-3" data-cursor="-opaque">Transform your health embrace life
-                                today!</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Achieve your wellness goals with personalized
-                                guidance, expert support, and sustainable habits for a healthier, happier you.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Goals Content Body Start -->
-                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- Goals Content Button Start -->
-                            <div class="hero-content-btn">
-                                <a href="about.html" class="btn-default btn-highlighted">know more</a>
+    <main>
+        <div class="hero bg-section dark-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="section-title">
+                                <h3 class="wow fadeInUp">Best Dietician in Noida Extension</h3>
+                                <h1 class="text-anime-style-3" data-cursor="-opaque">Nourish Your Body, Transform Your Life</h1>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Discover a personalised path to optimal health with science-backed nutrition guidance, sustainable wellness plans, and expert support by <strong>Dr. Anjani</strong> — 15+ years of expertise.</p>
                             </div>
-                            <!-- Goals Content Button End -->
+                            <div class="hero-content-body wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="hero-content-btn">
+                                    <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                                </div>
+                                <div class="contact-now-box">
+                                    <div class="icon-box">
+                                        <img src="images/icon-phone.svg" alt="">
+                                    </div>
+                                    <div class="contact-now-box-content">
+                                        <p>Talk To DietSolver</p>
+                                        <h3><a href="tel:+917011626850">+91 70116 26850</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-chip-row wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="stats-chip">15+ Years Experience</div>
+                                <div class="stats-chip">5000+ Happy Clients</div>
+                                <div class="stats-chip">98% Success Rate</div>
+                                <div class="stats-chip">7+ Specialisations</div>
+                            </div>
+                            <div class="hero-content-footer">
+                                <div class="trusted-client-images">
+                                    <div class="client-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/trusted-client-img-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="client-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/trusted-client-img-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="client-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/trusted-client-img-3.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="client-image add-more">
+                                        <h3><span class="counter">500</span>+</h3>
+                                    </div>
+                                </div>
+                                <div class="trusted-client-review">
+                                    <p><span class="counter">4.9</span> <i class="fa-solid fa-star"></i> (Google reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <figure>
+                                <img src="images/hero-image.png" alt="DietSolver Hero Image">
+                            </figure>
+                            <div class="hero-experience-box">
+                                <h2><span class="counter">15</span>+</h2>
+                                <p>Years of expertise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Contact Now Box Start -->
+            </div>
+        </div>
+
+        <!-- <section class="hero-info-section">
+            <div class="container">
+                <div class="hero-info-shell">
+                    <div class="hero-info-header wow fadeInUp">
+                        <div>
+                            <div class="hero-info-kicker">DietSolver Promise</div>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Why people trust DietSolver from day one</h2>
+                            <p>Everything starts with practical guidance, real food, and support that fits your lifestyle.</p>
+                        </div>
+                        <div class="hero-info-mini-stat">
+                            <strong>5000+</strong>
+                            <span>Clients guided through sustainable, practical nutrition plans.</span>
+                        </div>
+                    </div>
+
+                    <div class="info-strip wow fadeInUp" data-wow-delay="0.15s">
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fas fa-user-md"></i></div>
+                            <div>
+                                <h3>Expert Dietitian</h3>
+                                <p>15+ Yrs Clinical Experience</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fas fa-seedling"></i></div>
+                            <div>
+                                <h3>100% Natural Plans</h3>
+                                <p>No supplements, no pills</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fas fa-video"></i></div>
+                            <div>
+                                <h3>Online & In-Person</h3>
+                                <p>Consultations available</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fas fa-headset"></i></div>
+                            <div>
+                                <h3>Ongoing Support</h3>
+                                <p>Regular follow-ups & tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <div class="about-us">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-us-images">
+                            <div class="about-us-img-1">
+                                <figure class="image-anime reveal">
+                                    <img src="images/about-us-image-1.jpg" alt="About DietSolver">
+                                </figure>
+                            </div>
+                            <div class="about-us-img-2">
+                                <figure class="image-anime reveal">
+                                    <img src="images/about-us-image-2.jpg" alt="Dr. Anjani">
+                                </figure>
+                            </div>
+                            <div class="hero-experience-box">
+                                <h2><span class="counter">15</span>+</h2>
+                                <p>Years of Expertise in Clinical Nutrition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-us-content">
+                            <div class="section-title">
+                                <h3 class="wow fadeInUp">About Diet Solver</h3>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">Welcome to DietSolver</h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">We are here to aid you in the most realistic and natural manner. We believe in natural ways of attaining health instead of acquiring artificial and superficial methods.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.3s">We don't promote medicines, supplements or machines — instead we achieve our targets by changing the metabolism of the human body through proper diets, care and meaningful advice.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s">Dt. Anjani is a prominent figure in the field of dietetics and nutrition, serving the community primarily in Noida Extension. With a profound commitment to Nutrition and Health Education, she has significantly impacted individuals' lives through her expertise and holistic approach to wellness.</p>
+                            </div>
+                            <div class="about-us-body wow fadeInUp" data-wow-delay="0.5s">
+                                <ul>
+                                    <li>Personalised plans tailored to your medical history & lifestyle</li>
+                                    <li>15+ years experience in clinical dietetics & nutrition</li>
+                                    <li>No crash diets — sustainable habits that last a lifetime</li>
+                                    <li>Regular follow-ups and plan adjustments every week</li>
+                                    <li>Corporate fitness programmes & community outreach</li>
+                                </ul>
+                            </div>
+                            <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="about-us-btn">
+                                    <a href="about.html" class="btn-default">Meet Dr. Anjani</a>
+                                </div>
+                                <div class="about-author-box">
+                                    <div class="author-image">
+                                        <figure class="image-anime">
+                                            <img src="images/trusted-client-img-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="author-info">
+                                        <h3>Certified Dietitian</h3>
+                                        <p>Noida Extension</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="what-we-do">
+            <div class="container">
+                <div class="row section-row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Healing Starts Here</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">You're trying everything... but nothing is working.</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="section-copy wow fadeInUp" data-wow-delay="0.2s">It's not your fault. You were never taught how your body actually heals.</p>
+                    </div>
+                </div>
+                <div class="compact-cards">
+                    <div class="compact-card wow fadeInUp">
+                        <div class="icon-box"><i class="fas fa-arrow-trend-down"></i></div>
+                        <h3>Blood sugar still high</h3>
+                    </div>
+                    <div class="compact-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box"><i class="far fa-heart"></i></div>
+                        <h3>Weight not reducing</h3>
+                    </div>
+                    <div class="compact-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box"><i class="fas fa-battery-quarter"></i></div>
+                        <h3>Fatigue never leaving</h3>
+                    </div>
+                    <div class="compact-card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="icon-box"><i class="fas fa-capsules"></i></div>
+                        <h3>Medicines increasing... energy decreasing</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-services bg-section">
+            <div class="container">
+                <div class="row services-list">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="our-service-content">
+                            <div class="section-title">
+                                <h3 class="wow fadeInUp">What We Offer</h3>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">Our Popular Services</h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Our Services Include Weight Management, Diabetes Management, PCOS & PCOD, Pre-Wedding Diet, Kids Nutrition, Cholesterol Management and more — all personalised, science-backed programmes.</p>
+                            </div>
+                            <div class="our-service-button wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="services.html" class="btn-default">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item active wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-service-1.svg" alt="">
+                            </div>
+                            <div class="service-item-content">
+                                <h3><a href="services/weight-loss.html">Weight Loss & Management</a></h3>
+                                <p>A tailor-made programme for inch loss, fat loss & weight gain. Combines nutritional science with behavioural coaching for sustainable transformation.</p>
+                            </div>
+                            <div class="service-readmore-btn">
+                                <a href="services/weight-loss.html" class="readmore-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="images/icon-service-2.svg" alt="">
+                            </div>
+                            <div class="service-item-content">
+                                <h3><a href="services/diabetes-diet.html">Diabetes Management</a></h3>
+                                <p>Plans customised to manage weight with diabetes, with a strong focus on reversal of Type II diabetes through targeted dietary intervention.</p>
+                            </div>
+                            <div class="service-readmore-btn">
+                                <a href="services/diabetes-diet.html" class="readmore-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="images/icon-service-3.svg" alt="">
+                            </div>
+                            <div class="service-item-content">
+                                <h3><a href="services/pcos-pcod.html">PCOS / PCOD Management</a></h3>
+                                <p>A balanced, evidence-based diet plan specifically designed to manage PCOD symptoms and support healthy weight loss for better hormonal balance.</p>
+                            </div>
+                            <div class="service-readmore-btn">
+                                <a href="services/pcos-pcod.html" class="readmore-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="icon-box">
+                                <img src="images/icon-service-4.svg" alt="">
+                            </div>
+                            <div class="service-item-content">
+                                <h3><a href="services/custom-diet.html">Diet for Women</a></h3>
+                                <p>Lose post-pregnancy weight with a carefully tailored plan. Addresses nutritional needs specific to different stages of a woman's life.</p>
+                            </div>
+                            <div class="service-readmore-btn">
+                                <a href="services/custom-diet.html" class="readmore-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="page-cta-box wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="page-cta-box-info">
+                                <h3>More Services</h3>
+                                <h2>Pre-Wedding Diet, Cholesterol Management and Sports Nutrition</h2>
+                            </div>
                             <div class="contact-now-box">
                                 <div class="icon-box">
                                     <img src="images/icon-phone.svg" alt="">
                                 </div>
                                 <div class="contact-now-box-content">
                                     <p>Call Us 24/7</p>
-                                    <h3><a href="tel:+123456789">(123) 456 789</a></h3>
+                                    <h3><a href="tel:+917011626850">+91 70116 26850</a></h3>
                                 </div>
                             </div>
-                            <!-- Contact Now Box End -->
-                        </div>
-                        <!-- Goals Content Body End -->
-
-                        <!-- Hero Content Footer Start -->
-                        <div class="hero-content-footer">
-                            <!-- Trusted Client Image Start -->
-                            <div class="trusted-client-images">
-                                <!-- Client Image Start -->
-                                <div class="client-image">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/trusted-client-img-1.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- Client Image End -->
-
-                                <!-- Client Image Start -->
-                                <div class="client-image">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/trusted-client-img-2.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- Client Image End -->
-
-                                <!-- Client Image Start -->
-                                <div class="client-image">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/trusted-client-img-3.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- Client Image End -->
-
-                                <!-- Client Counter Start -->
-                                <div class="client-image add-more">
-                                    <h3><span class="counter">15</span>K</h3>
-                                </div>
-                                <!-- Client Counter End -->
-                            </div>
-                            <!-- Trusted Client Image End -->
-
-                            <!-- Trusted Client Review Start -->
-                            <div class="trusted-client-review">
-                                <p><span class="counter">5.0</span> <i class="fa-solid fa-star"></i> (<span
-                                        class="counter">15.5</span>k review)</p>
-                            </div>
-                            <!-- Trusted Client Review End -->
-                        </div>
-                        <!-- Hero Content Footer End -->
-                    </div>
-                    <!-- Hero Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Hero Image Start -->
-                    <div class="hero-image">
-                        <figure>
-                            <img src="images/hero-image.png" alt="">
-                        </figure>
-
-                        <!-- Hero Contact Circle Start -->
-                        <div class="hero-experience-box">
-                            <h2><span class="counter">25</span></h2>
-                            <p>Years of experience</p>
-                        </div>
-                        <!-- Hero Contact Circle End -->
-                    </div>
-                    <!-- Hero Image End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hero Section End -->
-
-    <!-- About Us Section Start -->
-    <div class="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- About Us Image Start -->
-                    <div class="about-us-images">
-                        <!-- About Us Image 2 Start -->
-                        <div class="about-us-img-1">
-                            <figure class="image-anime reveal">
-                                <img src="images/about-us-image-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Us Image 2 End -->
-
-                        <!-- About Us Image 2 Start -->
-                        <div class="about-us-img-2">
-                            <figure class="image-anime reveal">
-                                <img src="images/about-us-image-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Us Image 2 End -->
-
-                        <!-- Hero Contact Circle Start -->
-                        <div class="hero-experience-box">
-                            <h2><span class="counter">25</span></h2>
-                            <p>Years of experience</p>
-                        </div>
-                        <!-- Hero Contact Circle End -->
-                    </div>
-                    <!-- About Us Image End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- About Us Content Start -->
-                    <div class="about-us-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">About us</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Your wellness journey starts here</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Discover a holistic approach to health and
-                                wellness, tailored to help you achieve balance, vitality, and lasting transformation.
-                            </p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- About Us Body Start -->
-                        <div class="about-us-body wow fadeInUp" data-wow-delay="0.4s">
-                            <ul>
-                                <li>Holistic Health Approach</li>
-                                <li>One-on-One Coaching</li>
-                                <li>Sustainable Life Strategies</li>
-                                <li>Nutrition and Meal Guidance</li>
-                            </ul>
-                        </div>
-                        <!-- About Us Body End -->
-
-                        <!-- About Us Footer Start -->
-                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
-                            <!-- About Us Button Start -->
-                            <div class="about-us-btn">
-                                <a href="about.html" class="btn-default">more about us</a>
-                            </div>
-                            <!-- About Us Button End -->
-
-                            <!-- About Author Box Start -->
-                            <div class="about-author-box">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/trusted-client-img-2.jpg" alt="">
-                                    </figure>
-                                </div>
-
-                                <div class="author-info">
-                                    <h3>Bessie cooper</h3>
-                                    <p>Co-founder</p>
-                                </div>
-                            </div>
-                            <!-- About Author Box End -->
-                        </div>
-                        <!-- About Us Footer End -->
-                    </div>
-                    <!-- About Us Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Us Section End -->
-
-    <!-- Our Services Section Start -->
-    <div class="our-services bg-section">
-        <div class="container">
-            <div class="row services-list">
-                <div class="col-lg-4 col-md-6">
-                    <div class="our-service-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Services</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">We provide services for you</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">We offer personalized health coaching services
-                                support your wellness journey and empower you to life.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Our Service Button Start -->
-                        <div class="our-service-button wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="services.html" class="btn-default">All services</a>
-                        </div>
-                        <!-- Our Service Button End -->
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item active wow fadeInUp">
-                        <div class="icon-box">
-                            <img src="images/icon-service-1.svg" alt="">
-                        </div>
-                        <div class="service-item-content">
-                            <h3><a href="service-single.html">Nutrition counseling</a></h3>
-                            <p>Receive personalized nutrition guidance to create balanced, sustainable eating habits
-                                that support your health.</p>
-                        </div>
-                        <div class="service-readmore-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
                         </div>
                     </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="icon-box">
-                            <img src="images/icon-service-2.svg" alt="">
-                        </div>
-                        <div class="service-item-content">
-                            <h3><a href="service-single.html">Group Coaching Sessions</a></h3>
-                            <p>Receive personalized nutrition guidance to create balanced, sustainable eating habits
-                                that support your health.</p>
-                        </div>
-                        <div class="service-readmore-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
+                    <div class="col-lg-12">
+                        <div class="section-footer-text wow fadeInUp" data-wow-delay="1s">
+                            <p><span>free</span>Start your personalised wellness journey today. <a href="book-appointment.html">Book consultation</a></p>
                         </div>
                     </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon-box">
-                            <img src="images/icon-service-3.svg" alt="">
-                        </div>
-                        <div class="service-item-content">
-                            <h3><a href="service-single.html">Work-Life Coaching</a></h3>
-                            <p>Receive personalized nutrition guidance to create balanced, sustainable eating habits
-                                that support your health.</p>
-                        </div>
-                        <div class="service-readmore-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="icon-box">
-                            <img src="images/icon-service-4.svg" alt="">
-                        </div>
-                        <div class="service-item-content">
-                            <h3><a href="service-single.html">Chronic Management</a></h3>
-                            <p>Receive personalized nutrition guidance to create balanced, sustainable eating habits
-                                that support your health.</p>
-                        </div>
-                        <div class="service-readmore-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="page-cta-box wow fadeInUp" data-wow-delay="0.8s">
-                        <!-- Service Content Info Start -->
-                        <div class="page-cta-box-info">
-                            <h3>Have You any question</h3>
-                            <h2>Don't waste your time call us! </h2>
-                        </div>
-                        <!-- Service Content Info End -->
-
-                        <!-- Contact Now Box Start -->
-                        <div class="contact-now-box">
-                            <div class="icon-box">
-                                <img src="images/icon-phone.svg" alt="">
-                            </div>
-                            <div class="contact-now-box-content">
-                                <p>Call Us 24/7</p>
-                                <h3><a href="tel:+123456789">(123) 456 789</a></h3>
-                            </div>
-                        </div>
-                        <!-- Contact Now Box End -->
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Section Footer Text Start -->
-                    <div class="section-footer-text wow fadeInUp" data-wow-delay="1s">
-                        <p><span>free</span>Let's make something great work together. <a href="contact.html">Get free
-                                quote</a></p>
-                    </div>
-                    <!-- Section Footer Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Services Section End -->
-
-    <!-- What We Do Section Start -->
-    <div class="what-we-do">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <!-- What We Do Image 1 Start -->
-                    <div class="what-we-do-image-1">
-                        <figure class="image-anime reveal">
-                            <img src="images/what-we-do-image-1.jpg" alt="">
-                        </figure>
-                    </div>
-                    <!-- What We Do Image 1 End -->
-                </div>
-
-                <div class="col-lg-8">
-                    <!-- What We Do Content Start -->
-                    <div class="what-we-do-content">
-                        <div class="row section-row align-items-center">
-                            <div class="col-lg-6">
-                                <!-- Section Title Start -->
-                                <div class="section-title">
-                                    <h3 class="wow fadeInUp">What We Do</h3>
-                                    <h2 class="text-anime-style-3" data-cursor="-opaque">Guiding your health wellness
-                                    </h2>
-                                </div>
-                                <!-- Section Title End -->
-                            </div>
-
-                            <div class="col-lg-6">
-                                <!-- Section Content Button Start -->
-                                <div class="section-content-btn">
-                                    <!-- Section Title Content Start -->
-                                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                                        <p>Empowering you to achieve optimal health and wellness with personalized
-                                            coaching, support.</p>
-                                    </div>
-                                    <!-- Section Title Content End -->
-
-                                    <!-- Section Button Start -->
-                                    <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                                        <a href="contact.html" class="btn-default">contact us</a>
-                                    </div>
-                                    <!-- Section Button End -->
-                                </div>
-                                <!-- Section Content Button End -->
-                            </div>
-                        </div>
-
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <!-- What We do List Start -->
-                                <div class="what-we-do-list">
-                                    <!-- What We List Item Start -->
-                                    <div class="what-we-list-item wow fadeInUp">
-                                        <div class="icon-box">
-                                            <img src="images/icon-what-we-do-1.svg" alt="">
-                                        </div>
-                                        <div class="what-we-do-list-content">
-                                            <h3>Stress reduction techniques</h3>
-                                            <p>Receive personalized nutrition guidance to create balanced, sustainable
-                                                eating.</p>
-                                        </div>
-                                    </div>
-                                    <!-- What We List Item End -->
-
-                                    <!-- What We List Item Start -->
-                                    <div class="what-we-list-item wow fadeInUp" data-wow-delay="0.2s">
-                                        <div class="icon-box">
-                                            <img src="images/icon-what-we-do-2.svg" alt="">
-                                        </div>
-                                        <div class="what-we-do-list-content">
-                                            <h3>Goal-oriented wellness plan</h3>
-                                            <p>Receive personalized nutrition guidance to create balanced, sustainable
-                                                eating.</p>
-                                        </div>
-                                    </div>
-                                    <!-- What We List Item End -->
-
-                                    <!-- What We List Item Start -->
-                                    <div class="what-we-list-item wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="icon-box">
-                                            <img src="images/icon-what-we-do-3.svg" alt="">
-                                        </div>
-                                        <div class="what-we-do-list-content">
-                                            <h3>Weight loss strategies</h3>
-                                            <p>Receive personalized nutrition guidance to create balanced, sustainable
-                                                eating.</p>
-                                        </div>
-                                    </div>
-                                    <!-- What We List Item End -->
-                                </div>
-                                <!-- What We do List End -->
-                            </div>
-
-                            <div class="col-md-6">
-                                <!-- What We Do Image 2 Start -->
-                                <div class="what-we-do-image-2">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/what-we-do-image-2.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- What We Do Image 2 End -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- What We Do Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- What We Do Section End -->
-
-    <!-- Why Choose Us Sevtion Start -->
-    <div class="why-choose-us bg-section dark-section">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">Why Choose us</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Your partner in lasting wellness</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>With a personalized approach and unwavering support, we guide you toward sustainable health
-                            and lasting well-being. Trust us to help you achieve your wellness goals.</p>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-md-6 order-lg-1 order-1">
-                    <!-- Why Choose Box Start -->
-                    <div class="why-choose-box">
-                        <!-- Why Choose Item Start -->
-                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon-box">
-                                <img src="images/icon-why-choose-1.svg" alt="">
-                            </div>
-                            <div class="why-choose-item-content">
-                                <h3>Nutrition counseling</h3>
-                                <p>Receive personalize nutrition guidance to create balanced, sustainable eating.</p>
-                            </div>
-                        </div>
-                        <!-- Why Choose Item End -->
-
-                        <!-- Why Choose Item Start -->
-                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="icon-box">
-                                <img src="images/icon-why-choose-2.svg" alt="">
-                            </div>
-                            <div class="why-choose-item-content">
-                                <h3>Supportive coaching</h3>
-                                <p>Receive personalize nutrition guidance to create balanced, sustainable eating.</p>
-                            </div>
-                        </div>
-                        <!-- Why Choose Item End -->
-                    </div>
-                    <!-- Why Choose Box End -->
-                </div>
-
-                <div class="col-lg-6 col-md-12 order-2 order-3">
-                    <!-- Why Choose Image Start -->
-                    <div class="why-choose-image">
-                        <figure>
-                            <img src="images/why-choose-image.png" alt="">
-                        </figure>
-                    </div>
-                    <!-- Why Choose Image End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6 order-lg-3 order-2">
-                    <!-- Why Choose Box Start -->
-                    <div class="why-choose-box">
-                        <!-- Why Choose Item Start -->
-                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon-box">
-                                <img src="images/icon-why-choose-3.svg" alt="">
-                            </div>
-                            <div class="why-choose-item-content">
-                                <h3>Holistic approach</h3>
-                                <p>Receive personalize nutrition guidance to create balanced, sustainable eating.</p>
-                            </div>
-                        </div>
-                        <!-- Why Choose Item End -->
-
-                        <!-- Why Choose Item Start -->
-                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="icon-box">
-                                <img src="images/icon-why-choose-4.svg" alt="">
-                            </div>
-                            <div class="why-choose-item-content">
-                                <h3>Focus on sustainable</h3>
-                                <p>Receive personalize nutrition guidance to create balanced, sustainable eating.</p>
-                            </div>
-                        </div>
-                        <!-- Why Choose Item End -->
-                    </div>
-                    <!-- Why Choose Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Why Choose Us Sevtion End -->
-
-    <!-- Our Expertise Section Start -->
-    <div class="our-expertise">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Expertise</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Mastering wellness for your success</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>We specialize in personalized health strategies designed to help you achieve balance, energy,
-                            and lasting success. With expert guidance and a holistic approach, we empower you to embrace
-                            healthier habits.</p>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
-            </div>
-
-            <div class="row no-gutters align-items-center">
-                <div class="col-lg-6">
-                    <!-- Expertise Image Start -->
-                    <div class="expertise-image">
-                        <figure class="image-anime reveal">
-                            <img src="images/expertise-image.jpg" alt="">
-                        </figure>
-                    </div>
-                    <!-- Expertise Image End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Expertise Box List Start -->
-                    <div class="expertise-box-list">
-                        <!-- Expertise Box Start -->
-                        <div class="expertise-box wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="expertise-box-content">
-                                <h3>Chronic management</h3>
-                                <p>Receive personalized nutrition guidance to create balanced, sustainable eating habits
-                                    that support your health receive personalized nutrition guidance to create balanced.
-                                </p>
-                            </div>
-                            <div class="expertise-box-btn">
-                                <a href="#" class="readmore-btn">read more</a>
-                            </div>
-                        </div>
-                        <!-- Expertise Box End -->
-
-                        <!-- Expertise Box Start -->
-                        <div class="expertise-box wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="expertise-box-content">
-                                <h3>Personalized health solutions</h3>
-                                <p>Receive personalized nutrition guidance to create balanced, sustainable eating habits
-                                    that support your health receive personalized nutrition guidance to create balanced.
-                                </p>
-                            </div>
-                            <div class="expertise-box-btn">
-                                <a href="#" class="readmore-btn">read more</a>
-                            </div>
-                        </div>
-                        <!-- Expertise Box End -->
-                    </div>
-                    <!-- Expertise Box List End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Expertise Section End -->
-
-    <!-- Intro Video Section Start -->
-    <div class="intro-video bg-section dark-section parallaxie">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-9">
-                    <!-- Intro Video Content Start -->
-                    <div class="intro-video-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Our Video</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Lives through wellness video stories
-                            </h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Explore inspiring stories of transformation
-                                and growth through our wellness videos, showcasing real journeys toward healthier,
-                                happier lives.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Intro Video Button Start -->
-                        <div class="intro-video-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="video-gallery.html" class="btn-default">explore more</a>
-                        </div>
-                        <!-- Intro Video Button End -->
-                    </div>
-                    <!-- Intro Video Content End -->
-                </div>
-
-                <div class="col-lg-6 col-md-3">
-                    <!-- Intro Video Circle Start -->
-                    <div class="intro-video-circle">
-                        <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video"
-                            data-cursor-text="Play">
-                            <figure>
-                                <img src="images/health-coaching-video-circle.png" alt="">
-                            </figure>
-
-                            <div class="into-video-play-icon">
-                    <i class="fas fa-play"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Intro Video Circle End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Intro Video Counter List Start -->
-                    <div class="intro-video-counter-list">
-                        <!-- Intro Video Counter Item Start -->
-                        <div class="intro-video-counter-item">
-                            <h2><span class="counter">25</span>+</h2>
-                            <p>Year of experience</p>
-                        </div>
-                        <!-- Intro Video Counter Item End -->
-
-                        <!-- Intro Video Counter Item Start -->
-                        <div class="intro-video-counter-item">
-                            <h2><span class="counter">260</span>+</h2>
-                            <p>Hours of coaching</p>
-                        </div>
-                        <!-- Intro Video Counter Item End -->
-
-                        <!-- Intro Video Counter Item Start -->
-                        <div class="intro-video-counter-item">
-                            <h2><span class="counter">550</span>+</h2>
-                            <p>Complete courses</p>
-                        </div>
-                        <!-- Intro Video Counter Item End -->
-
-                        <!-- Intro Video Counter Item Start -->
-                        <div class="intro-video-counter-item">
-                            <h2><span class="counter">20</span>K+</h2>
-                            <p>Happy customer</p>
-                        </div>
-                        <!-- Intro Video Counter Item End -->
-
-                        <!-- Intro Video Counter Item Start -->
-                        <div class="intro-video-counter-item">
-                            <h2><span class="counter">359</span>+</h2>
-                            <p>Awards win</p>
-                        </div>
-                        <!-- Intro Video Counter Item End -->
-                    </div>
-                    <!-- Intro Video Counter List End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Intro Video Section End -->
-
-    <!-- Our Programs Section Start -->
-    <div class="our-programs">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our programs</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Tailored programs for your wellness</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Button Start -->
-                    <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="programs.html" class="btn-default">all programs</a>
-                    </div>
-                    <!-- Section Button End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Program Item Start -->
-                    <div class="program-item wow fadeInUp">
-                        <!-- Program Image Start -->
-                        <div class="program-image">
-                            <a href="program-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/program-1.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Program Image End -->
-
-                        <!-- Program Body Start -->
-                        <div class="program-body">
-                            <!-- Program Content Start -->
-                            <div class="program-content">
-                                <h3><a href="program-single.html">Weight Management Program</a></h3>
-                            </div>
-                            <!-- Program Content End -->
-
-                            <!-- Program Social List Start -->
-                            <div class="program-readmore-btn">
-                                <a href="program-single.html" class="btn-default btn-highlighted">read more</a>
-                            </div>
-                            <!-- Program Social List End -->
-                        </div>
-                        <!-- Program Body End -->
-                    </div>
-                    <!-- Program Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Program Item Start -->
-                    <div class="program-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Program Image Start -->
-                        <div class="program-image">
-                            <a href="program-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/program-2.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Program Image End -->
-
-                        <!-- Program Body Start -->
-                        <div class="program-body">
-                            <!-- Program Content Start -->
-                            <div class="program-content">
-                                <h3><a href="program-single.html">Stress Reduction & Mindfulness </a></h3>
-                            </div>
-                            <!-- Program Content End -->
-
-                            <!-- Program Social List Start -->
-                            <div class="program-readmore-btn">
-                                <a href="program-single.html" class="btn-default btn-highlighted">read more</a>
-                            </div>
-                            <!-- Program Social List End -->
-                        </div>
-                        <!-- Program Body End -->
-                    </div>
-                    <!-- Program Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Program Item Start -->
-                    <div class="program-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Program Image Start -->
-                        <div class="program-image">
-                            <a href="program-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/program-3.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Program Image End -->
-
-                        <!-- Program Body Start -->
-                        <div class="program-body">
-                            <!-- Program Content Start -->
-                            <div class="program-content">
-                                <h3><a href="program-single.html">Fitness and Movement Coaching</a></h3>
-                            </div>
-                            <!-- Program Content End -->
-
-                            <!-- Program Social List Start -->
-                            <div class="program-readmore-btn">
-                                <a href="program-single.html" class="btn-default btn-highlighted">read more</a>
-                            </div>
-                            <!-- Program Social List End -->
-                        </div>
-                        <!-- Program Body End -->
-                    </div>
-                    <!-- Program Item End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Programs Section End -->
-
-    <!-- How It Work Section Start -->
-    <div class="how-it-work bg-section dark-section">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">how it work</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Step-by-step guide to better health</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Achieving your health goals has never been easier. Our step-by-step approach provides
-                            personalized guidance, actionable strategies, and ongoing support.</p>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- how It Work Steps Start -->
-                    <div class="how-it-work-steps">
-                        <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp">
-                            <div class="icon-box">
-                                <img src="images/icon-how-it-work-1.svg" alt="">
-
-                                <div class="how-work-no">
-                                    <h3>1</h3>
-                                </div>
-                            </div>
-                            <div class="how-work-content">
-                                <h3>custom coaching plan</h3>
-                                <p>Begin with a comprehensive health assessment to understand.</p>
-                            </div>
-                        </div>
-                        <!-- How Work Step Item End -->
-
-                        <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="icon-box">
-                                <img src="images/icon-how-it-work-2.svg" alt="">
-
-                                <div class="how-work-no">
-                                    <h3>2</h3>
-                                </div>
-                            </div>
-                            <div class="how-work-content">
-                                <h3>ongoing support</h3>
-                                <p>begin with a comprehensive health assessment to understand.</p>
-                            </div>
-                        </div>
-                        <!-- How Work Step Item End -->
-
-                        <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon-box">
-                                <img src="images/icon-how-it-work-3.svg" alt="">
-
-                                <div class="how-work-no">
-                                    <h3>3</h3>
-                                </div>
-                            </div>
-                            <div class="how-work-content">
-                                <h3>practical tools</h3>
-                                <p>Begin with a comprehensive health assessment to understand.</p>
-                            </div>
-                        </div>
-                        <!-- How Work Step Item End -->
-
-                        <!-- How Work Step Item Start -->
-                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="icon-box">
-                                <img src="images/icon-how-it-work-4.svg" alt="">
-
-                                <div class="how-work-no">
-                                    <h3>4</h3>
-                                </div>
-                            </div>
-                            <div class="how-work-content">
-                                <h3>flexible engagement</h3>
-                                <p>Begin with a comprehensive health assessment to understand.</p>
-                            </div>
-                        </div>
-                        <!-- How Work Step Item End -->
-                    </div>
-                    <!-- how It Work Steps End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- How It Work Section End -->
-
-    <!-- Book Appointment Section Start -->
-    <div class="book-appointment">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Book Appointment Box Start -->
-                    <div class="book-appointment-box">
-                        <!-- Book Appointment Content Start -->
-                        <div class="book-appointment-content">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h3 class="wow fadeInUp">Appointment</h3>
-                                <h2 class="text-anime-style-3" data-cursor="-opaque">Make appointment</h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Easy scheduling for a personalized health
-                                    coaching session. Take the first step towards better health today!</p>
-                            </div>
-                            <!-- Section Title End -->
-
-                            <!-- Book Appointment Image Start -->
-                            <div class="book-appointment-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/book-appointment-image.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Book Appointment Image End -->
-                        </div>
-                        <!-- Book Appointment Content End -->
-
-                        <!-- Book Appointment Form Start -->
-                        <div class="book-appointment-form">
-                            <form id="appointmentForm" action="#" method="POST" data-toggle="validator"
-                                class="wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="row">
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="fname" class="form-control" id="fname"
-                                            placeholder="First Name" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="lname" class="form-control" id="lname"
-                                            placeholder="Last Name" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-
-                                    <div class="form-group col-md-12 mb-4">
-                                        <input type="email" name="email" class="form-control" id="email"
-                                            placeholder="Email Address" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-
-                                    <div class="form-group col-md-12 mb-4">
-                                        <input type="text" name="phone" class="form-control" id="phone"
-                                            placeholder="Phone Number" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-
-                                    <div class="form-group col-md-6 mb-4">
-                                        <select name="services" class="form-control form-select" id="services" required>
-                                            <option value="" disabled selected>select service</option>
-                                            <option value="general_dental_care">Dermal fillers</option>
-                                            <option value="dental_implants">chemical peels</option>
-                                            <option value="cosmetic_dentistry">Acne treatment</option>
-                                            <option value="teeth_whitening">Skin tightening</option>
-                                            <option value="pediatric_dental_care">Scar revision</option>
-                                            <option value="advanced_oral_care">Wrinkle reduction</option>
-                                        </select>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-
-                                    <div class="form-group col-md-6 mb-5">
-                                        <input type="date" name="date" class="form-control" id="date" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <button type="submit" class="btn-default"><span>Book an
-                                                appointment</span></button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- Book Appointment Form End -->
-                    </div>
-                    <!-- Book Appointment Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Book Appointment Section End -->
-
-    <!-- Our FAQs Section Start -->
-    <div class="our-faqs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- FAQ Images Start -->
-                    <div class="faq-images">
-                        <!-- FAQ Image 1 Start -->
-                        <div class="faq-image-1">
-                            <figure class="image-anime reveal">
-                                <img src="images/faq-image-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- FAQ Image 1 End -->
-
-                        <!-- FAQ Image 2 Start -->
-                        <div class="faq-image-2">
-                            <figure class="image-anime reveal">
-                                <img src="images/faq-image-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- FAQ Image 1 End -->
-                    </div>
-                    <!-- FAQ Images End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- FAQs Content Start -->
-                    <div class="faqs-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Frequently asked questions</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Common questions about health coaching
-                            </h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- FAQ Accordion Start -->
-                        <div class="faq-accordion" id="faqaccordion">
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                        What is health coaching?
-                                    </button>
-                                </h2>
-                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                                    data-bs-parent="#faqaccordion">
-                                    <div class="accordion-body">
-                                        <p>Health coaching is a personalized and structured service designed to guide
-                                            you toward achieving your health and wellness goals. Through tailored
-                                            strategies, ongoing support, and motivation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                <h2 class="accordion-header" id="heading2">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                        How does health coaching work?
-                                    </button>
-                                </h2>
-                                <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2"
-                                    data-bs-parent="#faqaccordion">
-                                    <div class="accordion-body">
-                                        <p>Health coaching is a personalized and structured service designed to guide
-                                            you toward achieving your health and wellness goals. Through tailored
-                                            strategies, ongoing support, and motivation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                                <h2 class="accordion-header" id="heading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                        Who can benefit from health coaching?
-                                    </button>
-                                </h2>
-                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                                    data-bs-parent="#faqaccordion">
-                                    <div class="accordion-body">
-                                        <p>Health coaching is a personalized and structured service designed to guide
-                                            you toward achieving your health and wellness goals. Through tailored
-                                            strategies, ongoing support, and motivation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                        Can I do health coaching online?
-                                    </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                                    data-bs-parent="#faqaccordion">
-                                    <div class="accordion-body">
-                                        <p>Health coaching is a personalized and structured service designed to guide
-                                            you toward achieving your health and wellness goals. Through tailored
-                                            strategies, ongoing support, and motivation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-                        </div>
-                        <!-- FAQ Accordion End -->
-                    </div>
-                    <!-- FAQs Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our FAQs Section End -->
-
-    <!-- Our Testimonial Section Start-->
-    <div class="our-testimonial bg-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Testimonial Content Start-->
-                    <div class="testimonial-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Our testimonials</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Success stories from our clients</h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Testimonial Boxes Start -->
-                        <div class="testimonial-boxes">
-                            <!-- Testimonial Item Start -->
-                            <div class="testimonial-item active wow fadeInUp" data-wow-delay="0.2s">
-                                <!-- Testimonial Item Content Start -->
-                                <div class="testimonial-item-content">
-                                    <div class="testimonial-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div class="testimonial-info">
-                                        <p>“I've struggled with chronic pain for years, but health coaching gave me the
-                                            tools and support.”</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Item Content End -->
-
-                                <!-- Testimonial Author box Start -->
-                                <div class="testimonial-author-box">
-                                    <div class="testimonial-author-iamge">
-                                        <figure class="image-anime">
-                                            <img src="images/author-1.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="testimonial-author-content">
-                                        <h3>Bessie cooper</h3>
-                                        <p>Co-Founder</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Author box End -->
-                            </div>
-                            <!-- Testimonial Item End -->
-
-                            <!-- Testimonial Item Start -->
-                            <div class="testimonial-item wow fadeInUp" data-wow-delay="0.4s">
-                                <!-- Testimonial Item Content Start -->
-                                <div class="testimonial-item-content">
-                                    <div class="testimonial-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div class="testimonial-info">
-                                        <p>“I've struggled with chronic pain for years, but health coaching gave me the
-                                            tools and support.”</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Item Content End -->
-
-                                <!-- Testimonial Author box Start -->
-                                <div class="testimonial-author-box">
-                                    <div class="testimonial-author-iamge">
-                                        <figure class="image-anime">
-                                            <img src="images/author-2.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="testimonial-author-content">
-                                        <h3>Floyd miles</h3>
-                                        <p>Chairman</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Author box End -->
-                            </div>
-                            <!-- Testimonial Item End -->
-
-                            <!-- Testimonial Item Start -->
-                            <div class="testimonial-item wow fadeInUp" data-wow-delay="0.6s">
-                                <!-- Testimonial Item Content Start -->
-                                <div class="testimonial-item-content">
-                                    <div class="testimonial-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div class="testimonial-info">
-                                        <p>“I've struggled with chronic pain for years, but health coaching gave me the
-                                            tools and support.”</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Item Content End -->
-
-                                <!-- Testimonial Author box Start -->
-                                <div class="testimonial-author-box">
-                                    <div class="testimonial-author-iamge">
-                                        <figure class="image-anime">
-                                            <img src="images/author-3.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="testimonial-author-content">
-                                        <h3>Kathryn murphy</h3>
-                                        <p>CEO</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Author box End -->
-                            </div>
-                            <!-- Testimonial Item End -->
-
-                            <!-- Testimonial Item Start -->
-                            <div class="testimonial-item wow fadeInUp" data-wow-delay="0.8s">
-                                <!-- Testimonial Item Content Start -->
-                                <div class="testimonial-item-content">
-                                    <div class="testimonial-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div class="testimonial-info">
-                                        <p>“I've struggled with chronic pain for years, but health coaching gave me the
-                                            tools and support.”</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Item Content End -->
-
-                                <!-- Testimonial Author box Start -->
-                                <div class="testimonial-author-box">
-                                    <div class="testimonial-author-iamge">
-                                        <figure class="image-anime">
-                                            <img src="images/author-4.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="testimonial-author-content">
-                                        <h3>Jerome bell</h3>
-                                        <p>Finance director</p>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Author box End -->
-                            </div>
-                            <!-- Testimonial Item End -->
-                        </div>
-                        <!-- Testimonial Boxes End -->
-                    </div>
-                    <!-- Testimonial Content End-->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Why Choose Image Start -->
-                    <div class="testimonial-images">
-                        <div class="testimonial-img-1">
-                            <figure class="image-anime">
-                                <img src="images/testimonial-image-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="testimonial-img-2">
-                            <figure class="image-anime">
-                                <img src="images/testimonial-image-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="testimonial-img-3">
-                            <figure class="image-anime">
-                                <img src="images/testimonial-image-3.jpg" alt="">
-                            </figure>
-                        </div>
-
-                        <!-- Hero Content Footer Start -->
-                        <div class="hero-content-footer client-review-box">
-                            <!-- Trusted Client Image Start -->
-                            <div class="trusted-client-images">
-                                <!-- Client Image Start -->
-                                <div class="client-image">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/trusted-client-img-1.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- Client Image End -->
-
-                                <!-- Client Image Start -->
-                                <div class="client-image">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/trusted-client-img-2.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- Client Image End -->
-
-                                <!-- Client Image Start -->
-                                <div class="client-image">
-                                    <figure class="image-anime reveal">
-                                        <img src="images/trusted-client-img-3.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <!-- Client Image End -->
-
-                                <!-- Client Counter Start -->
-                                <div class="client-image add-more">
-                                    <h3><span class="counter">15</span>K</h3>
-                                </div>
-                                <!-- Client Counter End -->
-                            </div>
-                            <!-- Trusted Client Image End -->
-
-                            <!-- Trusted Client Review Start -->
-                            <div class="trusted-client-review">
-                                <p><span class="counter">5.0</span> <i class="fa-solid fa-star"></i> (<span
-                                        class="counter">15.5</span>k review)</p>
-                            </div>
-                            <!-- Trusted Client Review End -->
-                        </div>
-                        <!-- Hero Content Footer End -->
-                    </div>
-                    <!-- Why Choose Image End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Testimonial Section End-->
-
-    <!-- Our Blog Section Start -->
-    <div class="our-blog">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">Our blog</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Expert tips for better health and wellness
-                        </h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="blog.html" class="btn-default">view all blog</a>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-1.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">The Power of Self-Care in Your Wellness Journey</a></h3>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-2.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Understanding the Impact of Sleep on Health</a></h3>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-3.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h3><a href="blog-single.html">Overcoming Common Fitness to Challenges</a></h3>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">read more</a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Blog Section End -->
-
-    <!-- Main Footer Section Start -->
-    <footer class="main-footer bg-section dark-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Main Footer Box Start -->
-                    <div class="main-footer-box">
-                        <!-- Footer About Start -->
-                        <div class="footer-about">
-                            <!-- Footer Logo Start -->
-                            <div class="footer-logo">
-                                <img src="images/footer-logo.svg" alt="">
-                            </div>
-                            <!-- Footer Logo End -->
-
-                            <!-- About Footer Content Start -->
-                            <div class="about-footer-content">
-                                <p>Healix - Your Path to Better Health. Personalized Coaching for a Stronger, Healthier
-                                    You!</p>
-                            </div>
-                            <!-- About Footer Content End -->
-
-                            <!-- Footer Content Link Start -->
-                            <div class="footer-contact-list">
-                                <ul>
-                                    <li><a href="tel:2561234568">(256) 123 - 4568</a></li>
-                                    <li><a href="mailto:info@domainname.com">info@domainname.com</a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Content Link End -->
-
-                            <!-- Footer Menu Start -->
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="index.html">home</a></li>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="services.html">services</a></li>
-                                    <li><a href="contact.html">contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Menu End -->
-                        </div>
-                        <!-- Footer About End -->
-
-                        <!-- Footer Links Box Start -->
-                        <div class="footer-links-box">
-                            <!-- Footer Links Start -->
-                            <div class="footer-links">
-                                <h3>Services</h3>
-                                <ul>
-                                    <li><a href="service-single.html">Nutrition counseling</a></li>
-                                    <li><a href="service-single.html">Group coaching sessions</a></li>
-                                    <li><a href="service-single.html">Work-life coaching</a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Links End -->
-
-                            <!-- Footer Links Start -->
-                            <div class="footer-links">
-                                <h3>Working Hours</h3>
-                                <ul>
-                                    <li>Mon - Fri : 9:00am - 18:00pm</li>
-                                    <li>Saturday : 9:00am - 16:00pm </li>
-                                    <li>Sunday : Closed</li>
-                                </ul>
-                            </div>
-                            <!-- Footer Links End -->
-
-                            <!-- Footer Social Links Start -->
-                            <div class="footer-social-links">
-                                <span>Follow on: </span>
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Social Links End -->
-                        </div>
-                        <!-- Footer Links Box End -->
-                    </div>
-                    <!-- Main Footer Box End -->
                 </div>
             </div>
         </div>
 
-        <!-- Footer Copyright Start -->
-        <div class="footer-copyright">
+        <div class="what-we-do">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-5">
-                        <!-- Footer Copyright Text Start -->
-                        <div class="footer-copyright-text">
-                            <p>Copyright © 2025 All Rights Reserved.</p>
+                <div class="row section-row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Why Choose Us</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Why Choose Diet Solver?</h2>
                         </div>
-                        <!-- Footer Copyright Text End -->
                     </div>
+                    <div class="col-lg-6">
+                        <p class="section-copy wow fadeInUp" data-wow-delay="0.2s">With over 15 years of expertise, we don't just focus on weight loss; we focus on building a lifestyle you can sustain for life.</p>
+                    </div>
+                </div>
+                <div class="feature-stack">
+                    <div class="why-card wow fadeInUp">
+                        <div class="icon-box"><i class="fas fa-calendar-check"></i></div>
+                        <h3>Experience Since 2009</h3>
+                        <p>15+ years of hands-on coaching. We know what works for sustainable transformation.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="icon-box"><i class="fas fa-user-check"></i></div>
+                        <h3>Personalized Approach</h3>
+                        <p>Customized guidance based on your body type and lifestyle. No one-size-fits-all plans.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box"><i class="fas fa-microscope"></i></div>
+                        <h3>Science-Backed Nutrition</h3>
+                        <p>Evidence-based nutritional strategies combined with globally recognized research.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="icon-box"><i class="fas fa-infinity"></i></div>
+                        <h3>Sustainable Results</h3>
+                        <p>Not quick fixes. We focus on long-term lifestyle changes and habit building for life.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box"><i class="fas fa-heart-pulse"></i></div>
+                        <h3>Complete Wellness</h3>
+                        <p>Weight management, heart health, immunity, and skin health under one platform.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon-box"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>Accountability System</h3>
+                        <p>Regular follow-ups, progress tracking, and mentoring ensure you stay consistent.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="icon-box"><i class="fas fa-users"></i></div>
+                        <h3>Supportive Community</h3>
+                        <p>You are not alone. Our positive wellness community keeps you inspired and motivated.</p>
+                    </div>
+                    <div class="why-card wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="icon-box"><i class="fas fa-laptop-medical"></i></div>
+                        <h3>Online & Offline</h3>
+                        <p>Seamless support from anywhere in India or abroad via our structured online system.</p>
+                    </div>
+                </div>
+                <div class="section-btn wow fadeInUp" data-wow-delay="0.8s" style="margin-top:40px;">
+                    <a href="book-appointment.html" class="btn-default">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
 
-                    <div class="col-lg-6 col-md-7">
-                        <!-- Footer Privacy Policy Start -->
-                        <div class="footer-privacy-policy">
-                            <ul>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Term & Conditions</a></li>
-                                <li><a href="#">help</a></li>
-                            </ul>
+        <div class="our-programs bg-section">
+            <div class="container">
+                <div class="row section-row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">How It Works</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Your Personalised Path to Better Health</h2>
                         </div>
-                        <!-- Footer Privacy Policy End -->
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="section-copy wow fadeInUp" data-wow-delay="0.2s">Our three-step approach ensures your journey is personalised, sustainable, and empowering.</p>
+                    </div>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card-alt wow fadeInUp">
+                        <div class="step-number">01</div>
+                        <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
+                        <h3>Take Your Health Assessment</h3>
+                        <p>Answer a few simple questions about your lifestyle, eating habits, and wellness goals. This quick assessment helps us understand your unique needs so we can guide you in the right direction.</p>
+                    </div>
+                    <div class="step-card-alt wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="step-number">02</div>
+                        <div class="icon-box"><i class="fas fa-utensils"></i></div>
+                        <h3>Get Your Personalised Plan</h3>
+                        <p>Based on your results, we'll create a tailored nutrition and wellness plan designed just for you — with easy-to-follow guidance, meal suggestions, and lifestyle tips.</p>
+                    </div>
+                    <div class="step-card-alt wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="step-number">03</div>
+                        <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                        <h3>Achieve Results & Get Support</h3>
+                        <p>Start your journey with confidence and see real results. You'll have continuous support, progress tracking, and expert advice to keep you motivated and on track.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer Copyright End -->
-    </footer>
-    <!-- Main Footer Section End -->
 
-    <!-- Jquery Library File -->
+        <div class="book-appointment">
+            <div class="container">
+                <div class="bmi-layout">
+                    <div class="bmi-box wow fadeInUp">
+                        <span class="section-label-alt">Health Tool</span>
+                        <h2>Check Your BMI Instantly</h2>
+                        <p>Body Mass Index (BMI) is a simple yet effective indicator of your body weight relative to height. Use our calculator to understand where you stand and start your wellness journey.</p>
+                        <div class="bmi-range-list">
+                            <div class="bmi-range-item">
+                                <div class="range-dot" style="background:#60a5fa;"></div>
+                                <div><strong>Underweight</strong><p>BMI below 18.5</p></div>
+                            </div>
+                            <div class="bmi-range-item">
+                                <div class="range-dot" style="background:#4ade80;"></div>
+                                <div><strong>Normal Weight</strong><p>BMI 18.5 – 24.9</p></div>
+                            </div>
+                            <div class="bmi-range-item">
+                                <div class="range-dot" style="background:#fb923c;"></div>
+                                <div><strong>Overweight</strong><p>BMI 25 – 29.9</p></div>
+                            </div>
+                            <div class="bmi-range-item">
+                                <div class="range-dot" style="background:#f87171;"></div>
+                                <div><strong>Obese</strong><p>BMI 30 and above</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bmi-box wow fadeInUp" data-wow-delay="0.2s">
+                        <span class="section-label-alt">Calculate</span>
+                        <h2>Calculate Your BMI</h2>
+                        <p>Enter your details below to get an instant result.</p>
+                        <div class="bmi-form">
+                            <div class="mb-3">
+                                <label class="form-label">Weight (kg)</label>
+                                <input type="number" class="form-control" id="bmiWeight" placeholder="e.g. 70" min="1" max="300">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Height (cm)</label>
+                                <input type="number" class="form-control" id="bmiHeight" placeholder="e.g. 165" min="50" max="250">
+                            </div>
+                            <button class="btn-default" type="button" onclick="calcBMI()">Calculate My BMI</button>
+                            <div class="bmi-result" id="bmiResult">
+                                <div class="bmi-result-val" id="bmiVal">-</div>
+                                <h3 id="bmiCat"></h3>
+                                <p id="bmiMsg"></p>
+                                <a href="book-appointment.html" class="btn-default" style="margin-top:16px;">Book a Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-testimonial">
+            <div class="container">
+                <div class="row section-row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Real Stories. Real Results.</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Real Stories. Real Transformations.</h2>
+                            <p class="section-copy centered wow fadeInUp" data-wow-delay="0.2s">See how personalised food plans, sustainable habits, and expert support helped our clients improve their health markers naturally.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-grid-alt">
+                    <div class="testimonial-card-alt wow fadeInUp">
+                        <p>"I never imagined I could stop my diabetes medicines. Anjani ma'am changed my life completely."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>HbA1c 9.2, 3 medicines</strong></div>
+                            <div class="metric-box"><span>After</span><strong>HbA1c 5.8, 0 medicines</strong></div>
+                        </div>
+                        <div class="result-badge">Reduced medication dependency</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">P</div>
+                            <div><strong>Priya S.</strong><p>Type 2 Diabetes</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.1s">
+                        <p>"Lost 22 kg in 5 months and my BP normalized without any extra medication."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>98 kg, BP 160/100</strong></div>
+                            <div class="metric-box"><span>After</span><strong>76 kg, BP 120/80</strong></div>
+                        </div>
+                        <div class="result-badge">22 kg lost in 5 months</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">R</div>
+                            <div><strong>Rajesh K.</strong><p>Obesity &amp; High BP</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.2s">
+                        <p>"My periods became regular for the first time in years. The method truly works."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Irregular cycles, 82 kg</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Regular cycles, 68 kg</strong></div>
+                        </div>
+                        <div class="result-badge">Better hormonal balance</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M</div>
+                            <div><strong>Meena T.</strong><p>PCOS &amp; Weight Gain</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.3s">
+                        <p>"Doctor was shocked at my report. No statins needed anymore. Just food and habits."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Total cholesterol 310</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Total cholesterol 195</strong></div>
+                        </div>
+                        <div class="result-badge">Health markers improved</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">A</div>
+                            <div><strong>Anil V.</strong><p>High Cholesterol</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.4s">
+                        <p>"I used to sleep 12 hours and still feel tired. Now I wake up fresh at 6 AM without an alarm."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Constant fatigue, low energy</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Fresh mornings, steady energy</strong></div>
+                        </div>
+                        <div class="result-badge">Consistent daily energy</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">N</div>
+                            <div><strong>Neha R.</strong><p>Fatigue &amp; Lifestyle Reset</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.5s">
+                        <p>"My doctor said I was 6 months away from insulin. Anjani ma'am saved me from that fate."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Fasting sugar 186, insulin risk</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Fasting sugar 98, stable control</strong></div>
+                        </div>
+                        <div class="result-badge">Blood sugar stabilized</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <div><strong>Sunita M.</strong><p>Prediabetes</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.6s">
+                        <p>"My ultrasound came back normal after 4 months. The whole family is on the DietSolver plan now!"</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Fatty liver grade 2, bloating</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Normal scan, lighter digestion</strong></div>
+                        </div>
+                        <div class="result-badge">Scan reports normalized</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">K</div>
+                            <div><strong>Kavita P.</strong><p>Fatty Liver</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.7s">
+                        <p>"Was told I might need dialysis one day. Today my kidneys are functioning perfectly. Grateful forever."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Creatinine high, kidney stress</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Normal reports, better recovery</strong></div>
+                        </div>
+                        <div class="result-badge">Improved recovery indicators</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">V</div>
+                            <div><strong>Vikram D.</strong><p>Kidney Health Support</p></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-alt wow fadeInUp" data-wow-delay="0.8s">
+                        <p>"The customised plan was so easy to follow. My digestion improved within a week, and I feel lighter and healthier."</p>
+                        <div class="metric-row">
+                            <div class="metric-box"><span>Before</span><strong>Severe acidity, frequent bloating</strong></div>
+                            <div class="metric-box"><span>After</span><strong>Smooth digestion, no discomfort</strong></div>
+                        </div>
+                        <div class="result-badge">Gut health restored</div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">A</div>
+                            <div><strong>Anita S.</strong><p>Digestive Health</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-cta-box" style="margin:0 0 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-cta-box wow fadeInUp" style="background-image:none;">
+                            <div class="page-cta-box-info">
+                                <h3>Start Today</h3>
+                                <h2>Ready to Transform Your Health?</h2>
+                                <p>Start your personalised wellness journey today. Book your FREE consultation with Dr. Anjani — no commitment, no cost.</p>
+                            </div>
+                            <div class="hero-content-btn">
+                                <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                                <a href="https://wa.me/917011626850" target="_blank" class="btn-default" style="margin-left:16px;">Chat on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-blog">
+            <div class="container">
+                <div class="row section-row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">News &amp; Insights</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Our Latest Articles</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a href="blog.html" class="btn-default wow fadeInUp" data-wow-delay="0.2s">View All Posts</a>
+                    </div>
+                </div>
+                <div class="blog-grid-alt">
+                    <div class="blog-card-alt wow fadeInUp">
+                        <figure class="image-anime reveal">
+                            <img src="images/what-we-do-image-1.jpg" alt="Dietician Charges">
+                        </figure>
+                        <span class="section-label-alt">Nutrition Tips</span>
+                        <h3>What is the charge of a dietician?</h3>
+                        <p>A dietician is a healthcare professional who specialises in providing expert advice on nutrition and diet to help people achieve optimal health.</p>
+                        <div class="blog-meta-alt">
+                            <span><i class="fas fa-calendar-alt"></i> January 2025</span>
+                            <span><i class="fas fa-clock"></i> 4 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-card-alt wow fadeInUp" data-wow-delay="0.2s">
+                        <figure class="image-anime reveal">
+                            <img src="images/what-we-do-image-2.jpg" alt="Dietitian Weight Loss">
+                        </figure>
+                        <span class="section-label-alt">Weight Management</span>
+                        <h3>Can a dietitian help me lose weight?</h3>
+                        <p>Your dietitian can help make sure you don't lose too much muscle mass but still lose the unwanted fat through balanced, personalised meal plans.</p>
+                        <div class="blog-meta-alt">
+                            <span><i class="fas fa-calendar-alt"></i> February 2025</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-card-alt wow fadeInUp" data-wow-delay="0.4s">
+                        <figure class="image-anime reveal">
+                            <img src="images/about-us-image-1.jpg" alt="Best Dietitian Noida">
+                        </figure>
+                        <span class="section-label-alt">Noida</span>
+                        <h3>Best Dietitian Nutritionists In Noida</h3>
+                        <p>Based at 2007, O Tower, Ajnara Homes, Noida Extension — serving hundreds of clients locally and across India with personalised nutrition plans.</p>
+                        <div class="blog-meta-alt">
+                            <span><i class="fas fa-calendar-alt"></i> March 2025</span>
+                            <span><i class="fas fa-clock"></i> 3 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-faqs bg-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">FAQs</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Frequently Asked Questions</h2>
+                            <p class="section-copy centered wow fadeInUp" data-wow-delay="0.2s">Everything you want to know about nutrition & wellness with Diet Solver.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-stack">
+                    <div class="faq-item-alt wow fadeInUp" id="faq-0">
+                        <button class="faq-question" type="button" onclick="toggleFaq(0)" aria-expanded="false">Are the diet plans personalised?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Comprehensive diagnosis of your unique metabolic type and body constitution by our expert team, along with a detailed assessment of medical conditions. Personalised meal planning is done with careful consideration of all individual health aspects. Regular follow-ups with updated meal plans and recipes are provided to maintain variety, taste, and flexibility.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.1s" id="faq-1">
+                        <button class="faq-question" type="button" onclick="toggleFaq(1)" aria-expanded="false">Can I follow a plan if I have specific medical conditions?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Yes, our experts specialise in creating diet plans tailored to a range of medical conditions, including diabetes, hypertension, thyroid disorders, and more. Your plan will be designed in coordination with your health condition.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.2s" id="faq-2">
+                        <button class="faq-question" type="button" onclick="toggleFaq(2)" aria-expanded="false">Will diet plans help with long-term weight management?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Yes, our diet plans are crafted not just for weight loss or gain, but also to build sustainable, healthy eating habits for long-term weight management. We believe real results come from lifestyle changes, not temporary fixes.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.3s" id="faq-3">
+                        <button class="faq-question" type="button" onclick="toggleFaq(3)" aria-expanded="false">Are there any side effects to the diet plans?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Our diets are completely natural and free from side effects, customised to your individual needs and preferences. We follow a kitchen-based approach with no reliance on supplements or packaged foods from the clinic.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.4s" id="faq-4">
+                        <button class="faq-question" type="button" onclick="toggleFaq(4)" aria-expanded="false">How long does it take to see results?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Results may vary based on individual health conditions and how closely the plan is followed, but noticeable improvements are often seen within a few weeks. Significant results typically appear within 60–90 days.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.5s" id="faq-5">
+                        <button class="faq-question" type="button" onclick="toggleFaq(5)" aria-expanded="false">Is there any guarantee of the results?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Results are not guaranteed, as they can vary based on individual body responses, consistency with follow-ups, and underlying medical conditions. However, our 98% client satisfaction rate speaks for itself.</div>
+                    </div>
+                </div>
+                <div class="section-btn text-center wow fadeInUp" data-wow-delay="0.6s" style="margin-top:40px;">
+                    <a href="contact.html" class="btn-default">Ask Us Anything</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer-alt">
+        <div class="container">
+            <div class="main-footer-box" style="padding:100px 0 0;">
+                <div class="footer-grid-alt">
+                    <div>
+                        <img src="images/logo.svg" alt="DietSolver" style="max-width:180px; margin-bottom:24px;">
+                        <p>Diet Solvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
+                    </div>
+                    <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="services/weight-loss.html">Weight Loss & Management</a></li>
+                            <li><a href="services/diabetes-diet.html">Diabetes Management</a></li>
+                            <li><a href="services/pcos-pcod.html">PCOS / PCOD</a></li>
+                            <li><a href="services/custom-diet.html">Diet for Women</a></li>
+                            <li><a href="services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
+                            <li><a href="services/sports-nutrition.html">Sports Nutrition</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Get In Touch</h3>
+                        <ul>
+                            <li>2007, O Tower, Ajnara Homes, Noida Extension</li>
+                            <li><a href="tel:+917011626850">+91 70116 26850</a></li>
+                            <li><a href="mailto:anjani78m@gmail.com">anjani78m@gmail.com</a></li>
+                            <li><a href="mailto:dietitiananjnai@gmail.com">dietitiananjnai@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom-alt">
+                    <p>Copyright © 2025 DietSolver. All Rights Reserved. Design and Managed by <a href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">Advertising India</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- 
+    <div class="floating-actions">
+        <a href="https://wa.me/917011626850" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+917011626850" aria-label="Call"><i class="fas fa-phone"></i></a>
+        <button type="button" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    </div> -->
+
     <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Circle Progress Js File -->
     <script src="js/circle-progress.min.js"></script>
-    <!-- Bootstrap js file -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
     <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
     <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
     <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
-    <!-- Magnific js file -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Parallax js -->
     <script src="js/parallaxie.js"></script>
-    <!-- MagicCursor js file -->
     <script src="js/gsap.min.js"></script>
     <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <!-- YTPlayer js File -->
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
-    <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+        function toggleFaq(index) {
+            const item = document.getElementById('faq-' + index);
+            if (!item) return;
+            const isOpen = item.classList.contains('open');
+
+            document.querySelectorAll('.faq-item-alt').forEach(function (el) {
+                el.classList.remove('open');
+                const button = el.querySelector('.faq-question');
+                if (button) button.setAttribute('aria-expanded', 'false');
+            });
+
+            if (!isOpen) {
+                item.classList.add('open');
+                const button = item.querySelector('.faq-question');
+                if (button) button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        function calcBMI() {
+            const weight = parseFloat(document.getElementById('bmiWeight').value);
+            const heightCm = parseFloat(document.getElementById('bmiHeight').value);
+            const resultBox = document.getElementById('bmiResult');
+
+            if (!weight || !heightCm || weight <= 0 || heightCm <= 0) {
+                alert('Please enter valid weight and height.');
+                return;
+            }
+
+            const height = heightCm / 100;
+            const bmi = (weight / (height * height)).toFixed(1);
+            let category = '';
+            let message = '';
+            let borderColor = '#2E7D32';
+            let backgroundColor = '#E8F5E9';
+
+            if (bmi < 18.5) {
+                category = 'Underweight';
+                message = 'A weight gain nutrition plan could help.';
+                borderColor = '#1565C0';
+                backgroundColor = '#E3F2FD';
+            } else if (bmi < 25) {
+                category = 'Normal Weight';
+                message = 'Great! Maintain your healthy lifestyle.';
+                borderColor = '#2E7D32';
+                backgroundColor = '#E8F5E9';
+            } else if (bmi < 30) {
+                category = 'Overweight';
+                message = 'A weight management plan can help you reach your goals.';
+                borderColor = '#E65100';
+                backgroundColor = '#FFF3E0';
+            } else {
+                category = 'Obese';
+                message = 'Consult Dr. Anjani for a personalised programme.';
+                borderColor = '#B71C1C';
+                backgroundColor = '#FFEBEE';
+            }
+
+            document.getElementById('bmiVal').textContent = bmi;
+            document.getElementById('bmiCat').textContent = category;
+            document.getElementById('bmiMsg').textContent = message;
+            resultBox.style.borderColor = borderColor;
+            resultBox.style.backgroundColor = backgroundColor;
+            resultBox.classList.add('show');
+        }
+
+        document.getElementById('scrollTop').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>
