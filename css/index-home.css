@@ -35,7 +35,7 @@
 }
 
 .home-page .navbar-brand img {
-    width: 240px;
+    width: 300px;
     max-width: none !important;
     filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18));
 }
@@ -50,7 +50,7 @@
 .home-page .btn-default.btn-highlighted::before {
     background: var(--brand-cream);
 }
-
+/* 
 .home-page .hero.bg-section.dark-section {
     overflow: hidden;
     background:
@@ -58,9 +58,9 @@
         radial-gradient(circle at 85% 18%, rgba(169, 202, 57, 0.18) 0%, rgba(169, 202, 57, 0) 20%),
         radial-gradient(circle at 80% 72%, rgba(7, 128, 184, 0.18) 0%, rgba(7, 128, 184, 0) 24%),
         linear-gradient(135deg, var(--hero-forest) 0%, var(--hero-forest-soft) 46%, var(--hero-forest-deep) 100%);
-}
+} */
 
-.home-page .hero.bg-section.dark-section::before {
+/* .home-page .hero.bg-section.dark-section::before {
     background:
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
@@ -68,13 +68,13 @@
         linear-gradient(180deg, rgba(3, 18, 17, 0.08) 0%, rgba(3, 18, 17, 0.34) 100%);
     background-size: 110px 110px, 110px 110px, auto, auto;
     opacity: 1;
-}
+} */
 
-.home-page .hero::after {
+/* .home-page .hero::after {
     opacity: 0.08;
     mix-blend-mode: screen;
-}
-
+} */
+/* 
 .home-page .hero .section-title h3 {
     padding: 12px 18px 12px 42px;
     border: 1px solid rgba(200, 223, 160, 0.22);
@@ -83,7 +83,7 @@
         linear-gradient(90deg, rgba(169, 202, 57, 0.14), rgba(200, 223, 160, 0.08));
     background-position: 16px center;
     color: var(--brand-mint);
-}
+} */
 
 .home-page .hero .section-title h1 {
     text-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
@@ -170,9 +170,13 @@
 }
 
 .home-page .hero-image figure,
-.home-page .hero-experience-box {
+.home-page {
     position: relative;
     z-index: 1;
+}
+
+.hero-experience-box {
+ z-index: 1;
 }
 
 .home-page .hero-experience-box {
