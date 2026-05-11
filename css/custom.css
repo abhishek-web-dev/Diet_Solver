@@ -1201,7 +1201,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
 .about-us-images .hero-experience-box{
 	top: auto;
-	bottom: 0;
+	bottom: -53px;
 	right: 100px;
 }
 
