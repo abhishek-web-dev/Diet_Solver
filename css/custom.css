@@ -392,7 +392,7 @@ body{
 	bottom: 0;
 	right: 0;
 	background: radial-gradient(38.51% 48.25% at 50.45% 50.9%, rgba(1, 78, 78, 0) 0.01%, #014E4E 100%);
-	border-radius: 0 0 50px 50px;
+	border-radius: 50px;
 	height: 100%;
 	width: 100%;
 	z-index: 0;
