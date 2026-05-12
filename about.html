@@ -3,21 +3,36 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1" />
   <title>About Us | DietSolver – Dr. Anjani, Best Dietician Noida</title>
   <meta name="description"
     content="Meet Dr. Anjani, dietician and nutritionist with 15+ years of expertise in Noida Extension. Learn about our mission, approach and why 5000+ clients trust DietSolver." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.dietsolver.in/about.html" />
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.dietsolver.in/"},{"@type":"ListItem","position":2,"name":"About Us","item":"https://www.dietsolver.in/about.html"}]}</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.dietsolver.in/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "https://www.dietsolver.in/about.html"
+      }]
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/slicknav.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -25,156 +40,323 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/mousecursor.css">
   <link href="css/custom.css" rel="stylesheet" media="screen">
-  <link href="css/template-bridge.css" rel="stylesheet" media="screen">
+  <link href="css/index-home.css" rel="stylesheet" media="screen">
+  <style>
+    .main-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0;
+      right: 0;
+      z-index: 1030;
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      padding-top: 130px;
+    }
+
+    .hero {
+      padding: 120px 0;
+    }
+
+    .breadcrumb {
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 8px;
+      align-items: center;
+      color: white;
+    }
+
+    .breadcrumb a {
+      color: white;
+    }
+
+    .counter-section {
+      padding: 80px 0;
+    }
+
+    .counter-box h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .counter-box h2 span {
+      display: inline;
+    }
+
+    .counter-box p {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .dark-section .counter-box h2,
+    .dark-section .counter-box p,
+    .dark-section .counter-box h2 span {
+      color: #ffffff;
+    }
+
+    .hero-experience-box {
+      background-color: #1a5c2e !important;
+      transition: all 0.4s ease-in-out !important;
+    }
+
+    .hero-experience-box:hover {
+      background-color: #000000 !important;
+    }
+
+    /* Style FontAwesome icons inside lists */
+    .what-we-list-item .icon-box {
+        transition: all 0.4s ease-in-out;
+    }
+    .what-we-list-item .icon-box::before {
+        display: none;
+    }
+    .what-we-list-item .icon-box i {
+        font-size: 24px;
+        color: #1a5c2e;
+        transition: all 0.4s ease-in-out;
+    }
+    .what-we-list-item:hover .icon-box {
+        background-color: #1a5c2e;
+    }
+    .what-we-list-item:hover .icon-box i {
+        color: #ffffff;
+    }
+
+    ul li a {
+      color: white;
+    }
+
+    /* Overrides for single image layout in About Us section */
+    .about-us-images {
+      padding: 0 !important;
+      max-width: 100% !important;
+    }
+    .about-us-img-1 {
+      transform: none !important;
+    }
+    .about-us-img-1 img {
+      aspect-ratio: auto !important;
+      height: auto !important;
+      max-height: 650px;
+    }
+    .about-us-images .hero-experience-box {
+      right: 30px !important;
+      bottom: -30px !important;
+    }
+  </style>
 </head>
 
-<body>
+<body class="home-page">
+  <div class="preloader">
+      <div class="loading-container">
+          <div class="loading"></div>
+          <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+      </div>
+  </div>
   <div id="navbar-placeholder"></div>
   <main>
-    <section class="page-hero"
-      style="background-image: url('img/about_banner_01.jpg'); background-size: cover; background-position: center; position: relative;">
-      <div style="position: absolute; inset: 0; background: linear-gradient(
-  to right,
-  rgba(30, 110, 80, 0.95) 0%,
-  rgba(59, 155, 110, 0.7) 55%,
-  rgba(59, 155, 110, 0.1) 100%
-);"></div>
-      <div class="container" style="position: relative; z-index: 1;">
-        <nav class="breadcrumb" aria-label="Breadcrumb" style="color: #fff;"><a href="index.html" style="color: #fff;">Home</a><i
-            class="fas fa-chevron-right"></i><span>About Us</span></nav>
-        <div class="page-hero-inner fade-up">
-          <span class="section-label">About DietSolver</span>
-          <h1 style="color: #fff;"> Meet Your <span style="color: #fff;" >Nutrition Expert</span></h1>
-          <p class="page-hero-desc" style="color: #fff;">Dr. Anjani is a prominent figure in the field of dietetics and nutrition, serving
-            the community primarily in Noida Extension with 15+ years of clinical expertise and a holistic approach to
-            wellness.</p>
-          <a href="book-appointment.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Free
-            Consultation</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background:#fff">
+    <!-- Page Title Section -->
+    <div class="hero bg-section dark-section">
       <div class="container">
-        <div class="about-inner">
-          <div class="about-img-wrap fade-up">
-            <div class="about-img-main">
-              <!-- LEAVE PATH FOR IMAGE -->
-              <img src="img/dr_anjani.png" alt="Dr. Anjani - Dietitian Noida"
-                onerror="this.parentElement.classList.add('img-fallback')" />
-            </div>
-            <div class="about-cert-card"><strong>15+</strong><span>Years of Expertise<br>in Clinical Nutrition</span>
-            </div>
-            <div class="about-img-badge"><i class="fas fa-award"></i><span>Certified Dietitian & Nutritionist</span>
-            </div>
-          </div>
-          <div class="about-content fade-up">
-            <span class="section-label">Dr. Anjani</span>
-            <h2 class="section-title">Dietician &amp; Nutritionist,<br><span class="brand-accent">Noida Extension</span>
-            </h2>
-            <p class="about-lead">Dt. Anjani is a prominent figure in the field of dietetics and nutrition, serving the
-              community primarily in Noida Extension. With a profound commitment to Nutrition and Health Education, she
-              has significantly impacted individuals' lives through her expertise and holistic approach to wellness.</p>
-            <p class="about-body">With a rich experience spanning 15 years, Dt. Anjani has honed her skills in various
-              aspects of nutrition. Her expertise includes devising tailored nutrition plans for Weight Loss, Weight
-              Gain, Sports-Specific Nutrition Programs, and Therapeutic Needs.</p>
-            <p class="about-body">Her holistic approach focuses on nurturing healthier lifestyles through sustainable
-              dietary habits, ensuring that every plan she creates is not only effective but also enjoyable and
-              long-lasting.</p>
-            <ul class="about-list">
-              <li><i class="fas fa-check-circle"></i> 15+ years of clinical nutrition experience</li>
-              <li><i class="fas fa-check-circle"></i> Specialisation in therapeutic & sports nutrition</li>
-              <li><i class="fas fa-check-circle"></i> Corporate fitness programme consultant</li>
-              <li><i class="fas fa-check-circle"></i> Published nutrition educator & author</li>
-              <li><i class="fas fa-check-circle"></i> 5000+ lives transformed across India</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary"><i class="fas fa-phone"></i> Get In Touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background:var(--green-xpale)">
-      <div class="container">
-        <div class="stats-grid-4 fade-up">
-          <div class="stat-box">
-            <div class="stat-box-num">15+</div>
-            <div class="stat-box-label">Years Experience</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box-num">5000+</div>
-            <div class="stat-box-label">Happy Clients</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box-num">98%</div>
-            <div class="stat-box-label">Success Rate</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box-num">7+</div>
-            <div class="stat-box-label">Specialisations</div>
-          </div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:20px">
-          <div class="fade-up">
-            <h3 class="section-title">Professional <span class="brand-accent">Contributions</span></h3>
-            <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:20px">Dt. Anjani actively
-              engages in corporate fitness programs, catering to the unique needs of organisations. Her dedication
-              extends beyond personalised consultations; she shares her knowledge by contributing insightful articles to
-              various reputable organisations, aiming to educate and empower individuals on their journey toward better
-              health.</p>
-            <div class="timeline">
-              <div class="timeline-item">
-                <h4>Clinical Practice, Noida Extension</h4>
-                <p>Establishing and running a successful dietetics practice serving thousands of clients locally and
-                  across India.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="hero-content text-center">
+              <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>About Us</span>
+              </nav>
+              <div class="section-title">
+                <h3 class="wow fadeInUp" data-wow-delay="0.2s">About DietSolver</h3>
+                <h1 class="text-anime-style-3" data-cursor="-opaque">Meet Your Nutrition Expert</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Dr. Anjani is a prominent figure in the field of dietetics
+                  and nutrition, serving the community primarily in Noida Extension with 15+ years of clinical
+                  expertise and a holistic approach to wellness.</p>
               </div>
-              <div class="timeline-item">
-                <h4>Corporate Wellness Consulting</h4>
-                <p>Delivering nutrition education and wellness programmes to corporate organisations for employee health
-                  improvement.</p>
-              </div>
-              <div class="timeline-item">
-                <h4>Published Nutritionist</h4>
-                <p>Contributing nutrition articles to various reputable publications and digital platforms for public
-                  health education.</p>
+              <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
+                <div class="hero-content-btn">
+                  <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="fade-up">
-            <h3 class="section-title">Our <span class="brand-accent">Approach</span></h3>
-            <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:20px">Diet Solvers is a
-              comprehensive programme designed to address weight loss and effective weight management. Our approach is
-              rooted in personalized strategies, scientific research, and sustainable lifestyle changes to help
-              individuals achieve their health goals.</p>
-            <p style="color:var(--text-muted);font-size:.93rem;line-height:1.8;margin-bottom:20px">We believe in natural
-              ways and means of attaining health instead of acquiring artificial and superficial methods. We don't
-              promote medicines, supplements or machines — instead we try to achieve our target by changing the
-              metabolism of the human body through proper diets, care and meaningful advice.</p>
-            <a href="services.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-us-images">
+              <div class="about-us-img-1">
+                <figure class="image-anime reveal">
+                  <img src="img/dr_anjani.png" alt="Dr. Anjani - Dietitian Noida">
+                </figure>
+              </div>
+              <div class="hero-experience-box">
+                <h2><span class="counter">15</span>+</h2>
+                <p>Years of Expertise in Clinical Nutrition</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-us-content">
+              <div class="section-title">
+                <h3 class="wow fadeInUp">Dr. Anjani</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Dietician &amp; Nutritionist, Noida Extension</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Dt. Anjani is a prominent figure in the field of
+                  dietetics and nutrition, serving the community primarily in Noida Extension. With a profound
+                  commitment to Nutrition and Health Education, she has significantly impacted individuals' lives
+                  through her expertise and holistic approach to wellness.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.3s">With a rich experience spanning 15 years, Dt. Anjani has
+                  honed her skills in various aspects of nutrition. Her expertise includes devising tailored nutrition
+                  plans for Weight Loss, Weight Gain, Sports-Specific Nutrition Programs, and Therapeutic Needs.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Her holistic approach focuses on nurturing healthier
+                  lifestyles through sustainable dietary habits, ensuring that every plan she creates is not only
+                  effective but also enjoyable and long-lasting.</p>
+              </div>
+              <div class="about-us-body wow fadeInUp" data-wow-delay="0.5s">
+                <ul>
+                  <li>15+ years of clinical nutrition experience</li>
+                  <li>Specialisation in therapeutic & sports nutrition</li>
+                  <li>Corporate fitness programme consultant</li>
+                  <li>Published nutrition educator & author</li>
+                  <li>5000+ lives transformed across India</li>
+                </ul>
+              </div>
+              <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
+                <div class="about-us-btn">
+                  <a href="contact.html" class="btn-default">Get In Touch</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="cta-banner">
+    <!-- Stats Section -->
+    <div class="counter-section bg-section dark-section">
       <div class="container">
-        <div class="cta-content fade-up"><span class="section-label"
-            style="background:rgba(255,255,255,.15);color:#fff">Start Today</span>
-          <h2>Ready to Begin Your Wellness Journey?</h2>
-          <p>Book a FREE consultation with Dr. Anjani today. No commitment, no cost.</p>
-          <div class="cta-btns"><a href="book-appointment.html" class="btn btn-white"><i
-                class="fas fa-calendar-check"></i> Book Free Consultation</a><a href="https://wa.me/917011626850"
-              class="btn btn-ghost" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a></div>
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="counter-box">
+              <h2><span class="counter">15</span>+</h2>
+              <p>Years Experience</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="counter-box">
+              <h2><span class="counter">5000</span>+</h2>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="counter-box">
+              <h2><span class="counter">98</span>%</h2>
+              <p>Success Rate</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="counter-box">
+              <h2><span class="counter">7</span>+</h2>
+              <p>Specialisations</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Approach Section -->
+    <div class="what-we-do" style="padding: 100px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 wow fadeInUp">
+            <div class="section-title">
+              <h3 class="wow fadeInUp">Experience</h3>
+              <h2 class="text-anime-style-3" data-cursor="-opaque">Professional Contributions</h2>
+            </div>
+            <p>Dt. Anjani actively engages in corporate fitness programs, catering to the unique needs of
+              organisations. Her dedication extends beyond personalised consultations; she shares her knowledge by
+              contributing insightful articles to various reputable organisations, aiming to educate and empower
+              individuals on their journey toward better health.</p>
+            <div class="what-we-do-list" style="margin-top: 30px;">
+              <div class="what-we-list-item wow fadeInUp">
+                <div class="icon-box">
+                  <i class="fas fa-clinic-medical"></i>
+                </div>
+                <div class="what-we-do-list-content">
+                  <h3>Clinical Practice, Noida Extension</h3>
+                  <p>Establishing and running a successful dietetics practice serving thousands of clients locally and across India.</p>
+                </div>
+              </div>
+              <div class="what-we-list-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="icon-box">
+                  <i class="fas fa-briefcase-medical"></i>
+                </div>
+                <div class="what-we-do-list-content">
+                  <h3>Corporate Wellness Consulting</h3>
+                  <p>Delivering nutrition education and wellness programmes to corporate organisations for employee health improvement.</p>
+                </div>
+              </div>
+              <div class="what-we-list-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="icon-box">
+                  <i class="fas fa-book-medical"></i>
+                </div>
+                <div class="what-we-do-list-content">
+                  <h3>Published Nutritionist</h3>
+                  <p>Contributing nutrition articles to various reputable publications and digital platforms for public health education.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="section-title">
+              <h3 class="wow fadeInUp">Methodology</h3>
+              <h2 class="text-anime-style-3" data-cursor="-opaque">Our Approach</h2>
+            </div>
+            <p>Diet Solvers is a comprehensive programme designed to address weight loss and effective weight
+              management. Our approach is rooted in personalized strategies, scientific research, and sustainable
+              lifestyle changes to help individuals achieve their health goals.</p>
+            <p>We believe in natural ways and means of attaining health instead of acquiring artificial and superficial
+              methods. We don't promote medicines, supplements or machines — instead we try to achieve our target by
+              changing the metabolism of the human body through proper diets, care and meaningful advice.</p>
+            <div style="margin-top: 30px;">
+              <a href="services.html" class="btn-default">View Our Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div style="margin:0 0 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-cta-box wow fadeInUp bg-section dark-section" style="background-image:none;">
+              <div class="page-cta-box-info">
+                <h3>Start Today</h3>
+                <h2>Ready to Begin Your Wellness Journey?</h2>
+                <p style="color: white;">Book a FREE consultation with Dr. Anjani today. No commitment, no cost.</p>
+              </div>
+              <div class="hero-content-btn">
+                <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                <a href="https://wa.me/917011626850" target="_blank" class="btn-default btn-highlighted"
+                  style="margin-left:16px;">Chat on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <div id="footer-placeholder"></div>
-  <div class="float-btns"><a href="https://wa.me/917011626850" class="float-btn float-wa" target="_blank"><i
-        class="fab fa-whatsapp"></i></a><a href="tel:+917011626850" class="float-btn float-call"><i
-        class="fas fa-phone"></i></a></div>
-  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
-  <script src="components.js"></script>
+
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/circle-progress.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -192,7 +374,7 @@
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/function.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/components.js"></script>
 </body>
 
 </html>

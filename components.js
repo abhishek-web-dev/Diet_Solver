@@ -1,39 +1,38 @@
 const basePath = window.location.pathname.includes('/services/') ? '../' : '';
 
 const DIET_NAVBAR = `
-
     <header class="main-header bg-section">
         <div class="header-sticky">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="./">
-                        <img src="img/logo.png" alt="DietSolver Logo">
+                    <a class="navbar-brand" href="${basePath}">
+                        <img src="${basePath}img/logo.png" alt="DietSolver Logo">
                     </a>
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="services.html">Services</a>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}about.html">About Us</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="${basePath}services.html">Services</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="services/weight-loss.html">Weight Loss & Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/diabetes-diet.html">Diabetes Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/pcos-pcod.html">PCOS / PCOD Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/custom-diet.html">Diet for Women</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/cholesterol-management.html">Cholesterol Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/sports-nutrition.html">Sports Nutrition</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/weight-loss.html">Weight Loss & Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/diabetes-diet.html">Diabetes Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/pcos-pcod.html">PCOS / PCOD Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/custom-diet.html">Diet for Women</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/cholesterol-management.html">Cholesterol Management</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="${basePath}services/sports-nutrition.html">Sports Nutrition</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
-                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">Book Free Consultation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}career.html">Career</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}contact.html">Contact</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="${basePath}book-appointment.html">Book Free Consultation</a></li>
                             </ul>
                         </div>
                         <div class="header-btn">
-                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                            <a href="${basePath}book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
                         </div>
                     </div>
                     <div class="navbar-toggle"></div>
@@ -50,30 +49,30 @@ const DIET_FOOTER = `
             <div class="main-footer-box" style="padding:100px 0 0;">
                 <div class="footer-grid-alt">
                     <div>
-                        <img src="img/logo-footer.png" alt="DietSolver" style="max-width:260px; margin-bottom:24px;">
+                        <img src="${basePath}img/logo-footer.png" alt="DietSolver" style="max-width:260px; margin-bottom:24px;">
                         <p style="color: white;">Diet Solvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
                     </div>
                     <div style="line-height: 20px;">
                         <h3 style="color: white;">Quick Links</h3>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="${basePath}index.html">Home</a></li>
+                            <li><a href="${basePath}about.html">About Us</a></li>
+                            <li><a href="${basePath}services.html">Services</a></li>
+                            <li><a href="${basePath}career.html">Career</a></li>
+                            <li><a href="${basePath}gallery.html">Gallery</a></li>
+                            <li><a href="${basePath}blog.html">Blog</a></li>
+                            <li><a href="${basePath}contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div style="line-height: 20px;">
                         <h3 style="color: white;">Services</h3>
                         <ul>
-                            <li><a href="services/weight-loss.html">Weight Loss & Management</a></li>
-                            <li><a href="services/diabetes-diet.html">Diabetes Management</a></li>
-                            <li><a href="services/pcos-pcod.html">PCOS / PCOD</a></li>
-                            <li><a href="services/custom-diet.html">Diet for Women</a></li>
-                            <li><a href="services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
-                            <li><a href="services/sports-nutrition.html">Sports Nutrition</a></li>
+                            <li><a href="${basePath}services/weight-loss.html">Weight Loss & Management</a></li>
+                            <li><a href="${basePath}services/diabetes-diet.html">Diabetes Management</a></li>
+                            <li><a href="${basePath}services/pcos-pcod.html">PCOS / PCOD</a></li>
+                            <li><a href="${basePath}services/custom-diet.html">Diet for Women</a></li>
+                            <li><a href="${basePath}services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
+                            <li><a href="${basePath}services/sports-nutrition.html">Sports Nutrition</a></li>
                         </ul>
                     </div>
                     <div style="line-height: 20px;">
