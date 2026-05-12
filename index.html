@@ -48,6 +48,89 @@
         body {
             padding-top: 130px; /* Pushes the page content down to make room for the fixed header */
         }
+        
+        /* Custom sizing to fit 4 items on each side in Why Choose Us without scrolling */
+        .why-choose-item {
+            margin-bottom: 12px !important;
+            padding: 12px 16px !important;
+        }
+        .why-choose-item .icon-box {
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+        }
+        .why-choose-item .icon-box img {
+            max-width: 22px !important;
+        }
+        .why-choose-item .icon-box i {
+            font-size: 20px !important;
+            color: #ffffff;
+            transition: all 0.4s ease-in-out;
+        }
+        .why-choose-item:hover .icon-box i {
+            color: #ffffff;
+        }
+        .why-choose-item-content h3 {
+            font-size: 16px !important;
+            margin-bottom: 2px !important;
+        }
+        .why-choose-item-content p {
+            font-size: 13px !important;
+            line-height: 1.4 !important;
+        }
+        .why-choose-image figure img {
+            /* max-height: 520px; */
+            object-fit: contain;
+        }
+        
+        /* Style FontAwesome icons inside What We Do / Healing lists */
+        .what-we-list-item .icon-box {
+            transition: all 0.4s ease-in-out;
+        }
+        /* This disables the original template's ::before pseudo-element hover effect */
+        .what-we-list-item .icon-box::before {
+            display: none;
+        }
+        .what-we-list-item .icon-box i {
+            font-size: 24px;
+            color: #1a5c2e;
+            transition: all 0.4s ease-in-out;
+        }
+        .what-we-list-item:hover .icon-box {
+            background-color: #1a5c2e;
+        }
+        .what-we-list-item:hover .icon-box i {
+            color: #ffffff;
+        }
+        
+        
+        /* Adjust How It Works steps to 3 columns after removing the 4th item */
+        @media (min-width: 992px) {
+            .how-it-work-steps {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                justify-content: center !important;
+                gap: 30px !important;
+            }
+            .how-work-step-item {
+                flex: 1 1 0 !important;
+                width: 100% !important;
+                max-width: 33.333% !important;
+                margin: 0 !important;
+            }
+        }
+        ul li a{
+                color: white;
+        }
+        
+        /* Match hero-experience-box to about-us-btn styling */
+        .hero-experience-box {
+            background-color: #1a5c2e !important;
+            transition: all 0.4s ease-in-out !important;
+        }
+        .hero-experience-box:hover {
+            background-color: #000000 !important;
+        }
     </style>
 </head>
 
@@ -59,47 +142,8 @@
             <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
         </div>
     </div>
+  <div id="navbar-placeholder"></div>
 
-    <header class="main-header bg-section">
-        <div class="header-sticky">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="./">
-                        <img src="img/logo.png" alt="DietSolver Logo">
-                    </a>
-                    <div class="collapse navbar-collapse main-menu">
-                        <div class="nav-menu-wrapper">
-                            <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="services.html">Services</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="services/weight-loss.html">Weight Loss & Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/diabetes-diet.html">Diabetes Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/pcos-pcod.html">PCOS / PCOD Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/custom-diet.html">Diet for Women</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/cholesterol-management.html">Cholesterol Management</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="services/sports-nutrition.html">Sports Nutrition</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
-                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">Book Free Consultation</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-btn">
-                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
-                        </div>
-                    </div>
-                    <div class="navbar-toggle"></div>
-                </div>
-            </nav>
-            <div class="responsive-menu"></div>
-        </div>
-    </header>
 
     <main>
         <div class="hero bg-section dark-section">
@@ -174,55 +218,6 @@
 
             </div>
         </div>
-
-        <!-- <section class="hero-info-section">
-            <div class="container">
-                <div class="hero-info-shell">
-                    <div class="hero-info-header wow fadeInUp">
-                        <div>
-                            <div class="hero-info-kicker">DietSolver Promise</div>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Why people trust DietSolver from day one</h2>
-                            <p>Everything starts with practical guidance, real food, and support that fits your lifestyle.</p>
-                        </div>
-                        <div class="hero-info-mini-stat">
-                            <strong>5000+</strong>
-                            <span>Clients guided through sustainable, practical nutrition plans.</span>
-                        </div>
-                    </div>
-
-                    <div class="info-strip wow fadeInUp" data-wow-delay="0.15s">
-                        <div class="info-card">
-                            <div class="icon-box"><i class="fas fa-user-md"></i></div>
-                            <div>
-                                <h3>Expert Dietitian</h3>
-                                <p>15+ Yrs Clinical Experience</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="icon-box"><i class="fas fa-seedling"></i></div>
-                            <div>
-                                <h3>100% Natural Plans</h3>
-                                <p>No supplements, no pills</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="icon-box"><i class="fas fa-video"></i></div>
-                            <div>
-                                <h3>Online & In-Person</h3>
-                                <p>Consultations available</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="icon-box"><i class="fas fa-headset"></i></div>
-                            <div>
-                                <h3>Ongoing Support</h3>
-                                <p>Regular follow-ups & tracking</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
 
         <div class="about-us">
@@ -391,7 +386,7 @@
                     <!-- What We Do Image 1 Start -->
                     <div class="what-we-do-image-1">
                         <figure class="image-anime reveal">
-                            <img src="/template/healix_data/what-we-do-image-1.jpg" alt="">
+                            <img src="/img/dit.jpg" alt="">
                         </figure>
                     </div>
                     <!-- What We Do Image 1 End -->
@@ -554,6 +549,30 @@
                             </div>
                         </div>
                         <!-- Why Choose Item End -->
+                        
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="icon-box">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="why-choose-item-content">
+                                <h3>Personalized Approach</h3>
+                                <p>Customized guidance based on your body type and lifestyle. No one-size-fits-all plans.</p>
+                            </div>
+                        </div>
+                        <!-- Why Choose Item End -->
+                        
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="icon-box">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <div class="why-choose-item-content">
+                                <h3>Sustainable Results</h3>
+                                <p>Not quick fixes. We focus on long-term lifestyle changes and habit building for life.</p>
+                            </div>
+                        </div>
+                        <!-- Why Choose Item End -->
                     </div>
                     <!-- Why Choose Box End -->
                 </div>
@@ -594,6 +613,30 @@
                             </div>
                         </div>
                         <!-- Why Choose Item End -->
+                        
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="icon-box">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="why-choose-item-content">
+                                <h3>Accountability System</h3>
+                                <p>Regular follow-ups, progress tracking, and mentoring ensure you stay consistent.</p>
+                            </div>
+                        </div>
+                        <!-- Why Choose Item End -->
+                        
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="icon-box">
+                                <i class="fas fa-laptop-medical"></i>
+                            </div>
+                            <div class="why-choose-item-content">
+                                <h3>Online & Offline</h3>
+                                <p>Seamless support from anywhere in India or abroad via our structured online system.</p>
+                            </div>
+                        </div>
+                        <!-- Why Choose Item End -->
                     </div>
                     <!-- Why Choose Box End -->
                 </div>
@@ -602,102 +645,197 @@
     </div>
     <!-- Why Choose Us Sevtion End -->
 
-        <div class="what-we-do">
-            <div class="container">
-                <div class="row section-row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Why Choose Us</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Why Choose Diet Solver?</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="section-copy wow fadeInUp" data-wow-delay="0.2s">With over 15 years of expertise, we don't just focus on weight loss; we focus on building a lifestyle you can sustain for life.</p>
-                    </div>
-                </div>
-                <div class="feature-stack">
-                    <div class="why-card wow fadeInUp">
-                        <div class="icon-box"><i class="fas fa-calendar-check"></i></div>
-                        <h3>Experience Since 2009</h3>
-                        <p>15+ years of hands-on coaching. We know what works for sustainable transformation.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="icon-box"><i class="fas fa-user-check"></i></div>
-                        <h3>Personalized Approach</h3>
-                        <p>Customized guidance based on your body type and lifestyle. No one-size-fits-all plans.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="icon-box"><i class="fas fa-microscope"></i></div>
-                        <h3>Science-Backed Nutrition</h3>
-                        <p>Evidence-based nutritional strategies combined with globally recognized research.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="icon-box"><i class="fas fa-infinity"></i></div>
-                        <h3>Sustainable Results</h3>
-                        <p>Not quick fixes. We focus on long-term lifestyle changes and habit building for life.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon-box"><i class="fas fa-heart-pulse"></i></div>
-                        <h3>Complete Wellness</h3>
-                        <p>Weight management, heart health, immunity, and skin health under one platform.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="icon-box"><i class="fas fa-clipboard-check"></i></div>
-                        <h3>Accountability System</h3>
-                        <p>Regular follow-ups, progress tracking, and mentoring ensure you stay consistent.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="icon-box"><i class="fas fa-users"></i></div>
-                        <h3>Supportive Community</h3>
-                        <p>You are not alone. Our positive wellness community keeps you inspired and motivated.</p>
-                    </div>
-                    <div class="why-card wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="icon-box"><i class="fas fa-laptop-medical"></i></div>
-                        <h3>Online & Offline</h3>
-                        <p>Seamless support from anywhere in India or abroad via our structured online system.</p>
-                    </div>
-                </div>
-                <div class="section-btn wow fadeInUp" data-wow-delay="0.8s" style="margin-top:40px;">
-                    <a href="book-appointment.html" class="btn-default">Start Your Journey</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="our-programs bg-section">
-            <div class="container">
-                <div class="row section-row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">How It Works</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Your Personalised Path to Better Health</h2>
+    <!-- Healing Section Start -->
+    <div class="what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Healing Image 1 Start -->
+                    <div class="what-we-do-image-1">
+                        <figure class="image-anime reveal">
+                            <img src="images/about-us-image-2.jpg" alt="">
+                        </figure>
+                    </div>
+                    <!-- Healing Image 1 End -->
+                </div>
+
+                <div class="col-lg-8">
+                    <!-- Healing Content Start -->
+                    <div class="what-we-do-content">
+                        <div class="row section-row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Section Title Start -->
+                                <div class="section-title">
+                                    <h3 class="wow fadeInUp">DietSolver Approach</h3>
+                                    <h2 class="text-anime-style-3" data-cursor="-opaque">Healing is not complicated... it's just misunderstood.</h2>
+                                </div>
+                                <!-- Section Title End -->
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <!-- Section Content Button Start -->
+                                <div class="section-content-btn">
+                                    <!-- Section Title Content Start -->
+                                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
+                                        <p>At DietSolver, we focus on what actually works. No crash diets, just real food and sustainable habits.</p>
+                                    </div>
+                                    <!-- Section Title Content End -->
+                
+                                    <!-- Section Button Start -->
+                                    <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
+                                        <a href="contact.html" class="btn-default">Start Healing</a>
+                                    </div>
+                                    <!-- Section Button End -->
+                                </div>   
+                                <!-- Section Content Button End -->
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <!-- Healing List Start -->
+                                <div class="what-we-do-list">
+                                    <!-- Healing List Item Start -->
+                                    <div class="what-we-list-item wow fadeInUp">
+                                        <div class="icon-box">
+                                            <i class="fas fa-bolt"></i> 
+                                        </div>
+                                        <div class="what-we-do-list-content">
+                                            <h3>Root Cause Healing</h3>
+                                            <p>We don't suppress symptoms. We find and fix the root cause.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Healing List Item End -->
+                                    
+                                    <!-- Healing List Item Start -->
+                                    <div class="what-we-list-item wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="icon-box">
+                                            <i class="fas fa-shield-heart"></i>
+                                        </div>
+                                        <div class="what-we-do-list-content">
+                                            <h3>Sustainable Habits</h3>
+                                            <p>No crash diets. Build habits that last a lifetime.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Healing List Item End -->
+                                    
+                                    <!-- Healing List Item Start -->
+                                    <div class="what-we-list-item wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="icon-box">
+                                            <i class="fas fa-apple-whole"></i>
+                                        </div>
+                                        <div class="what-we-do-list-content">
+                                            <h3>Real Food, Real Results</h3>
+                                            <p>Simple, practical nutrition — no pills, no powders.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Healing List Item End -->
+                                </div>
+                                <!-- Healing List End -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- Healing Image 2 Start -->
+                                <div class="what-we-do-image-2">
+                                    <figure class="image-anime reveal">
+                                        <img src="images/about-us-image-1.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <!-- Healing Image 2 End -->
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <p class="section-copy wow fadeInUp" data-wow-delay="0.2s">Our three-step approach ensures your journey is personalised, sustainable, and empowering.</p>
-                    </div>
-                </div>
-                <div class="steps-grid">
-                    <div class="step-card-alt wow fadeInUp">
-                        <div class="step-number">01</div>
-                        <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
-                        <h3>Take Your Health Assessment</h3>
-                        <p>Answer a few simple questions about your lifestyle, eating habits, and wellness goals. This quick assessment helps us understand your unique needs so we can guide you in the right direction.</p>
-                    </div>
-                    <div class="step-card-alt wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="step-number">02</div>
-                        <div class="icon-box"><i class="fas fa-utensils"></i></div>
-                        <h3>Get Your Personalised Plan</h3>
-                        <p>Based on your results, we'll create a tailored nutrition and wellness plan designed just for you — with easy-to-follow guidance, meal suggestions, and lifestyle tips.</p>
-                    </div>
-                    <div class="step-card-alt wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="step-number">03</div>
-                        <div class="icon-box"><i class="fas fa-chart-line"></i></div>
-                        <h3>Achieve Results & Get Support</h3>
-                        <p>Start your journey with confidence and see real results. You'll have continuous support, progress tracking, and expert advice to keep you motivated and on track.</p>
-                    </div>
+                    <!-- Healing Content End -->
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Healing Section End -->
+
+        <!-- How It Work Section Start -->
+    <div class="how-it-work bg-section dark-section">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">how it work</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Your Personalised Path to Better Health</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+                
+                <div class="col-lg-6">
+                    <!-- Section Title Content Start -->
+                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
+                        <p>Our three-step approach ensures your journey is personalised, sustainable, and empowering.</p>
+                    </div>
+                    <!-- Section Title Content End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- how It Work Steps Start -->
+                    <div class="how-it-work-steps">
+                        <!-- How Work Step Item Start -->
+                        <div class="how-work-step-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-how-it-work-1.svg" alt="">
+
+                                <div class="how-work-no">
+                                    <h3>1</h3>
+                                </div>
+                            </div>
+                            <div class="how-work-content">
+                                <h3>Take Your Health Assessment</h3>
+                                <p>Answer a few simple questions about your lifestyle, eating habits, and wellness goals. This quick assessment helps us understand your unique needs so we can guide you in the right direction.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Step Item End -->
+                        
+                        <!-- How Work Step Item Start -->
+                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="images/icon-how-it-work-2.svg" alt="">
+
+                                <div class="how-work-no">
+                                    <h3>2</h3>
+                                </div>
+                            </div>
+                            <div class="how-work-content">
+                                <h3>Get Your Personalised Plan</h3>
+                                <p>Based on your results, we'll create a tailored nutrition and wellness plan designed just for you — with easy-to-follow guidance, meal suggestions, and lifestyle tips.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Step Item End -->
+                        
+                        <!-- How Work Step Item Start -->
+                        <div class="how-work-step-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="images/icon-how-it-work-3.svg" alt="">
+
+                                <div class="how-work-no">
+                                    <h3>3</h3>
+                                </div>
+                            </div>
+                            <div class="how-work-content">
+                                <h3>Achieve Results & Get Support</h3>
+                                <p>Start your journey with confidence and see real results. You'll have continuous support, progress tracking, and expert advice to keep you motivated and on track.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Step Item End -->
+                    </div>
+                    <!-- how It Work Steps End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How It Work Section End -->
+
+
+
 
         <div class="book-appointment">
             <div class="container">
@@ -875,25 +1013,71 @@
             </div>
         </div>
 
-        <div class="page-cta-box" style="margin:0 0 100px;">
+        <div style="margin:0 0 100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="page-cta-box wow fadeInUp" style="background-image:none;">
+                        <div class="page-cta-box wow fadeInUp bg-section dark-section" style="background-image:none;">
                             <div class="page-cta-box-info">
                                 <h3>Start Today</h3>
                                 <h2>Ready to Transform Your Health?</h2>
-                                <p>Start your personalised wellness journey today. Book your FREE consultation with Dr. Anjani — no commitment, no cost.</p>
+                                <p style="color: white;">Start your personalised wellness journey today. Book your FREE consultation with Dr. Anjani — no commitment, no cost.</p>
                             </div>
                             <div class="hero-content-btn">
                                 <a href="book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
-                                <a href="https://wa.me/917011626850" target="_blank" class="btn-default" style="margin-left:16px;">Chat on WhatsApp</a>
+                                <a href="https://wa.me/917011626850" target="_blank" class="btn-default btn-highlighted" style="margin-left:16px;">Chat on WhatsApp</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+                <!-- FAQ Section Start -->
+        <div class="our-faqs bg-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">FAQs</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Frequently Asked Questions</h2>
+                            <p class="section-copy centered wow fadeInUp" data-wow-delay="0.2s">Everything you want to know about nutrition & wellness with Diet Solver.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-stack">
+                    <div class="faq-item-alt wow fadeInUp" id="faq-0">
+                        <button class="faq-question" type="button" onclick="toggleFaq(0)" aria-expanded="false">Are the diet plans personalised?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Comprehensive diagnosis of your unique metabolic type and body constitution by our expert team, along with a detailed assessment of medical conditions. Personalised meal planning is done with careful consideration of all individual health aspects. Regular follow-ups with updated meal plans and recipes are provided to maintain variety, taste, and flexibility.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.1s" id="faq-1">
+                        <button class="faq-question" type="button" onclick="toggleFaq(1)" aria-expanded="false">Can I follow a plan if I have specific medical conditions?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Yes, our experts specialise in creating diet plans tailored to a range of medical conditions, including diabetes, hypertension, thyroid disorders, and more. Your plan will be designed in coordination with your health condition.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.2s" id="faq-2">
+                        <button class="faq-question" type="button" onclick="toggleFaq(2)" aria-expanded="false">Will diet plans help with long-term weight management?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Yes, our diet plans are crafted not just for weight loss or gain, but also to build sustainable, healthy eating habits for long-term weight management. We believe real results come from lifestyle changes, not temporary fixes.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.3s" id="faq-3">
+                        <button class="faq-question" type="button" onclick="toggleFaq(3)" aria-expanded="false">Are there any side effects to the diet plans?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Our diets are completely natural and free from side effects, customised to your individual needs and preferences. We follow a kitchen-based approach with no reliance on supplements or packaged foods from the clinic.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.4s" id="faq-4">
+                        <button class="faq-question" type="button" onclick="toggleFaq(4)" aria-expanded="false">How long does it take to see results?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Results may vary based on individual health conditions and how closely the plan is followed, but noticeable improvements are often seen within a few weeks. Significant results typically appear within 60–90 days.</div>
+                    </div>
+                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.5s" id="faq-5">
+                        <button class="faq-question" type="button" onclick="toggleFaq(5)" aria-expanded="false">Is there any guarantee of the results?<i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Results are not guaranteed, as they can vary based on individual body responses, consistency with follow-ups, and underlying medical conditions. However, our 98% client satisfaction rate speaks for itself.</div>
+                    </div>
+                </div>
+                <div class="section-btn text-center wow fadeInUp" data-wow-delay="0.6s" style="margin-top:40px;">
+                    <a href="contact.html" class="btn-default">Ask Us Anything</a>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Section End -->
 
         <div class="our-blog">
             <div class="container">
@@ -949,97 +1133,11 @@
             </div>
         </div>
 
-        <div class="our-faqs bg-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">FAQs</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Frequently Asked Questions</h2>
-                            <p class="section-copy centered wow fadeInUp" data-wow-delay="0.2s">Everything you want to know about nutrition & wellness with Diet Solver.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-stack">
-                    <div class="faq-item-alt wow fadeInUp" id="faq-0">
-                        <button class="faq-question" type="button" onclick="toggleFaq(0)" aria-expanded="false">Are the diet plans personalised?<i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer">Comprehensive diagnosis of your unique metabolic type and body constitution by our expert team, along with a detailed assessment of medical conditions. Personalised meal planning is done with careful consideration of all individual health aspects. Regular follow-ups with updated meal plans and recipes are provided to maintain variety, taste, and flexibility.</div>
-                    </div>
-                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.1s" id="faq-1">
-                        <button class="faq-question" type="button" onclick="toggleFaq(1)" aria-expanded="false">Can I follow a plan if I have specific medical conditions?<i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer">Yes, our experts specialise in creating diet plans tailored to a range of medical conditions, including diabetes, hypertension, thyroid disorders, and more. Your plan will be designed in coordination with your health condition.</div>
-                    </div>
-                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.2s" id="faq-2">
-                        <button class="faq-question" type="button" onclick="toggleFaq(2)" aria-expanded="false">Will diet plans help with long-term weight management?<i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer">Yes, our diet plans are crafted not just for weight loss or gain, but also to build sustainable, healthy eating habits for long-term weight management. We believe real results come from lifestyle changes, not temporary fixes.</div>
-                    </div>
-                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.3s" id="faq-3">
-                        <button class="faq-question" type="button" onclick="toggleFaq(3)" aria-expanded="false">Are there any side effects to the diet plans?<i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer">Our diets are completely natural and free from side effects, customised to your individual needs and preferences. We follow a kitchen-based approach with no reliance on supplements or packaged foods from the clinic.</div>
-                    </div>
-                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.4s" id="faq-4">
-                        <button class="faq-question" type="button" onclick="toggleFaq(4)" aria-expanded="false">How long does it take to see results?<i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer">Results may vary based on individual health conditions and how closely the plan is followed, but noticeable improvements are often seen within a few weeks. Significant results typically appear within 60–90 days.</div>
-                    </div>
-                    <div class="faq-item-alt wow fadeInUp" data-wow-delay="0.5s" id="faq-5">
-                        <button class="faq-question" type="button" onclick="toggleFaq(5)" aria-expanded="false">Is there any guarantee of the results?<i class="fas fa-chevron-down"></i></button>
-                        <div class="faq-answer">Results are not guaranteed, as they can vary based on individual body responses, consistency with follow-ups, and underlying medical conditions. However, our 98% client satisfaction rate speaks for itself.</div>
-                    </div>
-                </div>
-                <div class="section-btn text-center wow fadeInUp" data-wow-delay="0.6s" style="margin-top:40px;">
-                    <a href="contact.html" class="btn-default">Ask Us Anything</a>
-                </div>
-            </div>
-        </div>
+
+    </div>
     </main>
 
-    <footer class="site-footer-alt">
-        <div class="container">
-            <div class="main-footer-box" style="padding:100px 0 0;">
-                <div class="footer-grid-alt">
-                    <div>
-                        <img src="images/logo.svg" alt="DietSolver" style="max-width:180px; margin-bottom:24px;">
-                        <p>Diet Solvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
-                    </div>
-                    <div>
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="services/weight-loss.html">Weight Loss & Management</a></li>
-                            <li><a href="services/diabetes-diet.html">Diabetes Management</a></li>
-                            <li><a href="services/pcos-pcod.html">PCOS / PCOD</a></li>
-                            <li><a href="services/custom-diet.html">Diet for Women</a></li>
-                            <li><a href="services/pre-wedding-diet.html">Pre-Wedding Diet</a></li>
-                            <li><a href="services/sports-nutrition.html">Sports Nutrition</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Get In Touch</h3>
-                        <ul>
-                            <li>2007, O Tower, Ajnara Homes, Noida Extension</li>
-                            <li><a href="tel:+917011626850">+91 70116 26850</a></li>
-                            <li><a href="mailto:anjani78m@gmail.com">anjani78m@gmail.com</a></li>
-                            <li><a href="mailto:dietitiananjnai@gmail.com">dietitiananjnai@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-bottom-alt">
-                    <p>Copyright © 2025 DietSolver. All Rights Reserved. Design and Managed by <a href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">Advertising India</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+ <div id="footer-placeholder"></div>
 <!-- 
     <div class="floating-actions">
         <a href="https://wa.me/917011626850" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -1064,6 +1162,7 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/function.js"></script>
+    <script src="/components.js"></script>
     <script>
         function toggleFaq(index) {
             const item = document.getElementById('faq-' + index);
