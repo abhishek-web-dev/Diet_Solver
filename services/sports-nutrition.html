@@ -103,6 +103,25 @@
         .timing-label { display: inline-block; font-size: 11px; font-weight: 800; color: #1a5cbf; background: #e8f0fc; padding: 4px 10px; border-radius: 50px; margin-bottom: 10px; text-transform: uppercase; }
 
         ul li a { color: white; }
+
+        /* Overrides for single image layout in About Us section */
+        .about-us-images {
+            padding: 0 !important;
+            max-width: 100% !important;
+        }
+        .about-us-img-1 {
+            transform: none !important;
+        }
+        .about-us-img-1 img {
+            aspect-ratio: 1 / 1.5 !important;
+            height: auto !important;
+            max-height: 650px;
+            object-fit: cover !important;
+        }
+        .about-us-images .hero-experience-box {
+            right: 30px !important;
+            bottom: -30px !important;
+        }
     </style>
 </head>
 
@@ -154,7 +173,7 @@
                                 </figure>
                             </div>
                             <div class="hero-experience-box" style="background-color:#0e3a6e !important;">
-                                <h2>100%</h2>
+                                <h2><span class="counter">100</span>%</h2>
                                 <p>Supplement-Free Results</p>
                             </div>
                         </div>

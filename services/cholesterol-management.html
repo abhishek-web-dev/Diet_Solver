@@ -99,6 +99,25 @@
         .strat-icon { font-size: 32px; color: #0e8a95; margin-bottom: 15px; }
 
         ul li a { color: white; }
+
+        /* Overrides for single image layout in About Us section */
+        .about-us-images {
+            padding: 0 !important;
+            max-width: 100% !important;
+        }
+        .about-us-img-1 {
+            transform: none !important;
+        }
+        .about-us-img-1 img {
+            aspect-ratio: 1 / 1.5 !important;
+            height: auto !important;
+            max-height: 650px;
+            object-fit: cover !important;
+        }
+        .about-us-images .hero-experience-box {
+            right: 30px !important;
+            bottom: -30px !important;
+        }
     </style>
 </head>
 
@@ -150,7 +169,7 @@
                                 </figure>
                             </div>
                             <div class="hero-experience-box" style="background-color:#0e8a95 !important;">
-                                <h2>100%</h2>
+                                <h2><span class="counter">100</span>%</h2>
                                 <p>Heart-Healthy Focus</p>
                             </div>
                         </div>
