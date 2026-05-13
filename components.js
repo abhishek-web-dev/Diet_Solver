@@ -11,7 +11,7 @@ const DIET_NAVBAR = `
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="${basePath}index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${basePath}about.html">About Us</a></li>
                                 <li class="nav-item submenu"><a class="nav-link" href="${basePath}services.html">Services</a>
                                     <ul>
