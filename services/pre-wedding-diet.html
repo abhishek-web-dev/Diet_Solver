@@ -115,6 +115,45 @@
             right: 30px !important;
             bottom: -30px !important;
         }
+
+        /* Glow Food Cards Styling */
+        .glow-food-card {
+            background: #ffffff;
+            border: 1px solid #f2e1e9;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            height: calc(100% - 30px);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(124, 45, 82, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .glow-food-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(124, 45, 82, 0.1);
+            border-color: #7c2d52;
+        }
+        .glow-emoji {
+            font-size: 40px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .glow-food-card h4 {
+            color: #7c2d52;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .glow-food-card p {
+            margin: 0;
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -123,7 +162,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="../images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="../images/loader.png" alt=""></div>
         </div>
     </div>
     <div id="navbar-placeholder"></div>
@@ -141,10 +180,10 @@
                             <div class="section-title">
                                 <h3 class="wow fadeInUp" data-wow-delay="0.2s">Pre-Wedding Diet Programme</h3>
                                 <h1 class="text-anime-style-3" data-cursor="-opaque">Glow From Within. Look Your Best on Your Big Day.</h1>
-                                <p class="wow fadeInUp" data-wow-delay="0.4s">A personalised pre-wedding nutrition programme for brides and grooms. Achieve glowing skin, sustained energy, and a healthy weight without crash diets.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin: auto;">A personalised pre-wedding nutrition programme for brides and grooms. Achieve glowing skin, sustained energy, and a healthy weight without crash diets.</p>
                             </div>
                             <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="hero-content-btn">
+                                <div class="hero-content-btn" style="margin: auto;">
                                     <a href="../contact.html?service=Pre-Wedding+Diet" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 </div>
                             </div>
@@ -162,7 +201,7 @@
                         <div class="about-us-images">
                             <div class="about-us-img-1">
                                 <figure class="image-anime reveal">
-                                    <img src="../img/wedding.png" alt="Pre-Wedding Diet Program">
+                                    <img src="../img/wedding.jpg" alt="Pre-Wedding Diet Program">
                                 </figure>
                             </div>
                             <div class="hero-experience-box" style="background-color:#b8456e !important;">

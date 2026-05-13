@@ -247,17 +247,39 @@
         }
 
         /* Fix for service-item icons in services-list */
+        .services-list .service-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100% - 30px);
+            padding: 40px 30px;
+            background: #ffffff;
+            border: 1px solid #d6e9dc !important;
+            transition: all 0.3s ease;
+        }
         .services-list .service-item .icon-box {
             background-color: #1a5c2e;
             border: none;
             width: 70px;
             height: 70px;
             transition: all 0.4s ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .services-list .service-item .icon-box i {
             color: #ffffff !important;
             font-size: 28px !important;
             transition: all 0.4s ease-in-out;
+        }
+        .services-list .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(26, 92, 46, 0.1);
         }
         .services-list .service-item:hover .icon-box {
             background-color: #ffffff;
@@ -267,7 +289,7 @@
         }
         .services-list .service-item:hover h3,
         .services-list .service-item:hover p {
-            color: #ffffff !important;
+            color: #1e1e1e !important;
         }
     </style>
 </head>
@@ -277,7 +299,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="../images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="../images/loader.png" alt=""></div>
         </div>
     </div>
     <div id="navbar-placeholder"></div>
@@ -295,10 +317,10 @@
                             <div class="section-title">
                                 <h3 class="wow fadeInUp" data-wow-delay="0.2s">Weight Loss Programme</h3>
                                 <h1 class="text-anime-style-3" data-cursor="-opaque">Lose Weight for Good — Without Starving Once.</h1>
-                                <p class="wow fadeInUp" data-wow-delay="0.4s">A science-backed, fully personalised weight loss programme built around your body, your lifestyle, and the Indian food you already love. Real results, real food, zero compromises.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin: auto;">A science-backed, fully personalised weight loss programme built around your body, your lifestyle, and the Indian food you already love. Real results, real food, zero compromises.</p>
                             </div>
-                            <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="hero-content-btn">
+                            <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s" >
+                                <div class="hero-content-btn" style="margin: auto;">
                                     <a href="../contact.html?service=Weight+Loss" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 </div>
                             </div>
@@ -316,7 +338,7 @@
                         <div class="about-us-images">
                             <div class="about-us-img-1">
                                 <figure class="image-anime reveal">
-                                    <img src="../img/weight_loss.png" alt="Weight Loss Program">
+                                    <img src="../img/weight_loss.jpg" alt="Weight Loss Program">
                                 </figure>
                             </div>
                             <div class="hero-experience-box">

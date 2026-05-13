@@ -66,13 +66,21 @@
 
     .contact-info-item {
         background: #f9fdfa;
-        border: 1px solid #e1eee5;
+        border: 1px solid #e1eee5 !important;
         border-radius: 20px;
-        padding: 30px;
+        padding: 30px !important;
         display: flex;
+        align-items: center;
         gap: 20px;
         margin-bottom: 30px;
         transition: all 0.3s ease;
+        width: 100% !important;
+    }
+
+    .contact-info-list {
+        padding: 0 !important;
+        background: transparent !important;
+        display: block !important;
     }
 
     .contact-info-item:hover {
@@ -97,12 +105,18 @@
         filter: brightness(0) invert(1);
     }
 
+    .contact-info-content {
+        flex: 1;
+    }
+
     .contact-info-content h3 {
-        font-size: 18px;
+        font-size: 16px;
         color: #1a5c2e;
-        margin-bottom: 8px;
+        margin-top: 0;
+        margin-bottom: 5px;
         text-transform: uppercase;
         letter-spacing: 1px;
+        font-weight: 700;
     }
 
     .contact-info-content p, .contact-info-content a {
@@ -110,6 +124,7 @@
         color: #444;
         font-weight: 500;
         text-decoration: none;
+        line-height: 1.5;
     }
 
     .contact-form {
@@ -163,12 +178,16 @@
     .trust-badge h4 {
         font-size: 18px;
         margin-bottom: 5px;
+        color: white;
     }
 
     .trust-badge p {
         font-size: 14px;
         opacity: 0.8;
         margin: 0;
+    }
+    .contact-info-item:last-child {
+        margin-bottom: 0;
     }
   </style>
 </head>
@@ -177,7 +196,7 @@
   <div class="preloader">
     <div class="loading-container">
       <div class="loading"></div>
-      <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+      <div id="loading-icon"><img src="images/loader.png" alt=""></div>
     </div>
   </div>
   <div id="navbar-placeholder"></div>
@@ -195,7 +214,7 @@
               <div class="section-title">
                 <h3 class="wow fadeInUp" data-wow-delay="0.2s">Get in Touch</h3>
                 <h1 class="text-anime-style-3" data-cursor="-opaque">Start Your Health Journey Today</h1>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Book a free consultation with Dr. Anjani or reach out to
+                <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin: auto;">Book a free consultation with Dr. Anjani or reach out to
                   our clinic for any queries. We're here to guide you toward a healthier lifestyle.</p>
               </div>
             </div>
@@ -205,9 +224,9 @@
     </div>
 
     <!-- Contact & Booking Content -->
-    <div class="page-contact-us" style="padding: 100px 0 0;">
+    <div class="page-contact-us" style="padding: 100px 0;">
       <div class="container">
-        <div class="row">
+        <div class="row" style="display: flex; align-items: flex-start;">
           <div class="col-lg-5">
             <div class="contact-us-content wow fadeInUp">
               <div class="section-title">
@@ -388,13 +407,7 @@
           <div
             style="width:100%;height:450px;background:#e1eee5;border-radius:30px;display:flex;align-items:center;justify-content:center;border:1px solid #e1eee5;overflow:hidden"
             class="wow fadeInUp">
-            <div style="text-align:center;color:#666">
-              <i class="fas fa-map-marker-alt" style="font-size:3rem;color:#1a5c2e;display:block;margin-bottom:15px"></i>
-              <strong style="display:block;font-size:1.2rem;color:#1a5c2e">DietSolver Clinic</strong>
-              <p style="margin:10px 0 20px;">2007, O Tower, Ajnara Homes, Noida Extension</p>
-              <a href="https://maps.google.com/?q=Ajnara+Homes+Noida+Extension" target="_blank" class="btn-default"
-                style="padding: 12px 30px;"><i class="fas fa-directions"></i> Get Directions</a>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.7108246392054!2d77.44395737579268!3d28.60845077567788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefef4f3b80f1%3A0x10a6b997ddb143b0!2sDietSolvers%20By%20Dietitian%20Anjani!5e0!3m2!1sen!2sin!4v1778673265812!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>

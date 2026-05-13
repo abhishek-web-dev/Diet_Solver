@@ -91,12 +91,78 @@
             background: #fff;
             border: 1px solid #b8e8ec;
             border-radius: 15px;
-            padding: 24px;
+            padding: 40px 30px;
             height: 100%;
             transition: all 0.3s ease;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .strat-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(13, 92, 99, 0.08); }
-        .strat-icon { font-size: 32px; color: #0e8a95; margin-bottom: 15px; }
+        .strat-icon { 
+            font-size: 36px; 
+            color: #0e8a95; 
+            margin-bottom: 20px;
+            width: 70px;
+            height: 70px;
+            background: #f0fbfc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .strat-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #0d5c63;
+        }
+
+        /* Fix for service-item icons in services-list */
+        .services-list .service-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100% - 30px);
+            padding: 40px 30px;
+            background: #ffffff;
+            border: 1px solid #b8e8ec !important;
+            transition: all 0.3s ease;
+        }
+        .services-list .service-item .icon-box {
+            background-color: #0e8a95;
+            border: none;
+            width: 70px;
+            height: 70px;
+            transition: all 0.4s ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .services-list .service-item .icon-box i {
+            color: #ffffff !important;
+            font-size: 28px !important;
+            transition: all 0.4s ease-in-out;
+        }
+        .services-list .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(13, 92, 99, 0.1);
+        }
+        .services-list .service-item:hover .icon-box {
+            background-color: #ffffff;
+        }
+        .services-list .service-item:hover .icon-box i {
+            color: #0e8a95 !important;
+        }
+        .services-list .service-item:hover h3,
+        .services-list .service-item:hover p {
+            color: #1e1e1e !important;
+        }
 
         ul li a { color: white; }
 
@@ -126,7 +192,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="../images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="../images/loader.png" alt=""></div>
         </div>
     </div>
     <div id="navbar-placeholder"></div>
@@ -144,10 +210,10 @@
                             <div class="section-title">
                                 <h3 class="wow fadeInUp" data-wow-delay="0.2s">Cholesterol Management</h3>
                                 <h1 class="text-anime-style-3" data-cursor="-opaque">Lower LDL Naturally — Protect Your Heart with Every Meal.</h1>
-                                <p class="wow fadeInUp" data-wow-delay="0.4s">A heart-healthy nutrition programme designed to improve your lipid profile. Lower bad cholesterol (LDL) and raise good cholesterol (HDL) using science-backed Indian foods.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin: auto;">A heart-healthy nutrition programme designed to improve your lipid profile. Lower bad cholesterol (LDL) and raise good cholesterol (HDL) using science-backed Indian foods.</p>
                             </div>
                             <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="hero-content-btn">
+                                <div class="hero-content-btn" style="margin: auto;">
                                     <a href="../contact.html?service=Cholesterol+Management" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 </div>
                             </div>
@@ -165,7 +231,7 @@
                         <div class="about-us-images">
                             <div class="about-us-img-1">
                                 <figure class="image-anime reveal">
-                                    <img src="../img/cholestrol.png" alt="Cholesterol Management Program">
+                                    <img src="../img/cholestrol.jpg" alt="Cholesterol Management Program">
                                 </figure>
                             </div>
                             <div class="hero-experience-box" style="background-color:#0e8a95 !important;">
@@ -283,33 +349,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row services-list">
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item wow fadeInUp" style="background:#fff; padding:30px; border-radius:15px; margin-bottom:20px;">
+                        <div class="service-item wow fadeInUp">
                             <div class="icon-box"><i class="fas fa-seedling"></i></div>
-                            <h3>Flaxseeds</h3>
-                            <p>Rich in Omega-3 fatty acids and fibre. Perfect for morning smoothies.</p>
+                            <div class="service-item-content">
+                                <h3>Flaxseeds</h3>
+                                <p>Rich in Omega-3 fatty acids and fibre. Perfect for morning smoothies.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.1s" style="background:#fff; padding:30px; border-radius:15px; margin-bottom:20px;">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.1s">
                             <div class="icon-box"><i class="fas fa-adjust"></i></div>
-                            <h3>Walnuts</h3>
-                            <p>The best nut for heart health. Helps improve arterial function.</p>
+                            <div class="service-item-content">
+                                <h3>Walnuts</h3>
+                                <p>The best nut for heart health. Helps improve arterial function.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s" style="background:#fff; padding:30px; border-radius:15px; margin-bottom:20px;">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon-box"><i class="fas fa-apple-alt"></i></div>
-                            <h3>Garlic</h3>
-                            <p>A natural vasodilator that helps lower blood pressure and cholesterol.</p>
+                            <div class="service-item-content">
+                                <h3>Garlic</h3>
+                                <p>A natural vasodilator that helps lower blood pressure and cholesterol.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="service-item wow fadeInUp" data-wow-delay="0.3s" style="background:#fff; padding:30px; border-radius:15px; margin-bottom:20px;">
+                        <div class="service-item wow fadeInUp" data-wow-delay="0.3s">
                             <div class="icon-box"><i class="fas fa-bowl-rice"></i></div>
-                            <h3>Oats</h3>
-                            <p>The king of soluble fibre. One of the fastest ways to drop LDL.</p>
+                            <div class="service-item-content">
+                                <h3>Oats</h3>
+                                <p>The king of soluble fibre. One of the fastest ways to drop LDL.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

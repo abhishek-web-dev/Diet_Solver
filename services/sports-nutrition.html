@@ -122,6 +122,52 @@
             right: 30px !important;
             bottom: -30px !important;
         }
+
+        /* Fix for service-item icons in services-list */
+        .services-list .service-item .icon-box {
+            background-color: #1a5cbf;
+            border: none;
+            width: 70px;
+            height: 70px;
+            transition: all 0.4s ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .services-list .service-item .icon-box i {
+            color: #ffffff !important;
+            font-size: 28px !important;
+            transition: all 0.4s ease-in-out;
+        }
+        .services-list .service-item:hover .icon-box {
+            background-color: #ffffff;
+        }
+        .services-list .service-item:hover .icon-box i {
+            color: #1a5cbf !important;
+        }
+        .services-list .service-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100% - 30px);
+            padding: 40px 30px;
+            background: #ffffff;
+            border: 1px solid #e8f0fc !important;
+            transition: all 0.3s ease;
+        }
+        .services-list .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(26, 92, 191, 0.1);
+        }
+        .services-list .service-item:hover h3,
+        .services-list .service-item:hover p {
+            color: #1e1e1e !important;
+        }
     </style>
 </head>
 
@@ -130,7 +176,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="../images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="../images/loader.png" alt=""></div>
         </div>
     </div>
     <div id="navbar-placeholder"></div>
@@ -148,10 +194,10 @@
                             <div class="section-title">
                                 <h3 class="wow fadeInUp" data-wow-delay="0.2s">Sports Nutrition Programme</h3>
                                 <h1 class="text-anime-style-3" data-cursor="-opaque">Fuel Your Performance. Accelerate Your Recovery.</h1>
-                                <p class="wow fadeInUp" data-wow-delay="0.4s">A high-performance nutrition programme for athletes, gym-goers, and fitness enthusiasts. Build muscle, lose fat, and hit your peak potential with supplement-free Indian food.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin: auto;">A high-performance nutrition programme for athletes, gym-goers, and fitness enthusiasts. Build muscle, lose fat, and hit your peak potential with supplement-free Indian food.</p>
                             </div>
                             <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="hero-content-btn">
+                                <div class="hero-content-btn" style="margin: auto;">
                                     <a href="../contact.html?service=Sports+Nutrition" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 </div>
                             </div>
@@ -169,7 +215,7 @@
                         <div class="about-us-images">
                             <div class="about-us-img-1">
                                 <figure class="image-anime reveal">
-                                    <img src="../img/sport.png" alt="Sports Nutrition Program">
+                                    <img src="../img/sport.jpg" alt="Sports Nutrition Program">
                                 </figure>
                             </div>
                             <div class="hero-experience-box" style="background-color:#0e3a6e !important;">
@@ -307,33 +353,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row services-list">
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item wow fadeInUp">
                             <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
-                            <h3>Macro Mapping</h3>
-                            <p>Custom protein, carb, and fat targets based on your training volume.</p>
+                            <div class="service-item-content">
+                                <h3>Macro Mapping</h3>
+                                <p>Custom protein, carb, and fat targets based on your training volume.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon-box"><i class="fas fa-clock"></i></div>
-                            <h3>Timing Guides</h3>
-                            <p>Exact instructions on when to eat relative to your workout times.</p>
+                            <div class="service-item-content">
+                                <h3>Timing Guides</h3>
+                                <p>Exact instructions on when to eat relative to your workout times.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
                             <div class="icon-box"><i class="fas fa-utensils"></i></div>
-                            <h3>Kitchen Protein</h3>
-                            <p>Learn how to hit 100g+ protein using only whole Indian foods.</p>
+                            <div class="service-item-content">
+                                <h3>Kitchen Protein</h3>
+                                <p>Learn how to hit 100g+ protein using only whole Indian foods.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
                             <div class="icon-box"><i class="fas fa-vial"></i></div>
-                            <h3>Micronutrient Focus</h3>
-                            <p>Optimising iron, B12, and Vitamin D for endurance and strength.</p>
+                            <div class="service-item-content">
+                                <h3>Micronutrient Focus</h3>
+                                <p>Optimising iron, B12, and Vitamin D for endurance and strength.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
