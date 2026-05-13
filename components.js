@@ -28,11 +28,11 @@ const DIET_NAVBAR = `
                                 <li class="nav-item"><a class="nav-link" href="${basePath}gallery.html">Gallery</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${basePath}blog.html">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${basePath}contact.html">Contact</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="${basePath}book-appointment.html">Book Free Consultation</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="${basePath}contact.html">Book Free Consultation</a></li>
                             </ul>
                         </div>
                         <div class="header-btn">
-                            <a href="${basePath}book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                            <a href="${basePath}contact.html" class="btn-default btn-highlighted">Book Free Consultation</a>
                         </div>
                     </div>
                     <div class="navbar-toggle"></div>

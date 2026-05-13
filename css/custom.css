@@ -4897,6 +4897,8 @@ header.main-header .header-sticky.active .main-menu ul li a{
 		margin-left: 50px;
 		margin-right: 50px;
 		max-width: 100%;
+				margin-bottom: 10px;
+
 	}
 }
 
@@ -4907,6 +4909,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
 		margin-left: 15px;
 		margin-right: 15px;
 		border-radius: 30px;
+		margin-bottom: 10px;
 	}
 
 	.intro-video.bg-section.dark-section::before{

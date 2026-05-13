@@ -115,6 +115,32 @@
 
         ul li a { color: white; }
 
+        /* Fix for 3 items in How It Works section */
+        @media (min-width: 992px) {
+            .how-it-work-steps {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                justify-content: center !important;
+                gap: 30px !important;
+            }
+            .how-work-step-item {
+                flex: 1 1 0 !important;
+                width: 100% !important;
+                max-width: 33.333% !important;
+                margin: 0 !important;
+            }
+        }
+        /* Make Journey icons white and bigger */
+        .how-it-work .icon-box i {
+            color: #ffffff !important;
+            font-size: 36px !important;
+            transition: all 0.4s ease-in-out;
+        }
+        /* Change icon color on hover to be visible against white background */
+        .how-work-step-item:hover .icon-box i {
+            color: #1a5c2e !important;
+        }
+
         /* Overrides for single image layout in About Us section */
         .about-us-images {
             padding: 0 !important;
@@ -163,7 +189,7 @@
                             </div>
                             <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="hero-content-btn">
-                                    <a href="../book-appointment.html?service=PCOS+Management" class="btn-default btn-highlighted">Book Free Consultation</a>
+                                    <a href="../contact.html?service=PCOS+Management" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +361,7 @@
         </div>
 
         <!-- Journey Section -->
-        <div class="how-it-work" style="padding: 100px 0;">
+        <div class="how-it-work bg-section dark-section">
             <div class="container">
                 <div class="row section-row align-items-center">
                     <div class="col-lg-6">
@@ -449,7 +475,7 @@
                                 <p style="color: white;">Book your FREE PCOS consultation with Dr. Anjani today. Start your journey toward hormonal health.</p>
                             </div>
                             <div class="hero-content-btn">
-                                <a href="../book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                                <a href="../contact.html" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 <a href="https://wa.me/917011626850" target="_blank" class="btn-default btn-highlighted" style="margin-left:16px;">WhatsApp Us</a>
                             </div>
                         </div>

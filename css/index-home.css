@@ -156,6 +156,7 @@
         linear-gradient(180deg, rgba(200, 223, 160, 0.1) 0%, rgba(255, 251, 233, 0.03) 100%);
     filter: blur(2px);
     z-index: 0;
+    margin: -25px;
 }
 
 .home-page .hero-image::after {

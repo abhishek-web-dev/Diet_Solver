@@ -201,6 +201,32 @@
 
         ul li a { color: white; }
 
+        /* Fix for 3 items in How It Works section */
+        @media (min-width: 992px) {
+            .how-it-work-steps {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                justify-content: center !important;
+                gap: 30px !important;
+            }
+            .how-work-step-item {
+                flex: 1 1 0 !important;
+                width: 100% !important;
+                max-width: 33.333% !important;
+                margin: 0 !important;
+            }
+        }
+        /* Make Journey icons white and bigger */
+        .how-it-work .icon-box i {
+            color: #ffffff !important;
+            font-size: 36px !important;
+            transition: all 0.4s ease-in-out;
+        }
+        /* Change icon color on hover to be visible against white background */
+        .how-work-step-item:hover .icon-box i {
+            color: #1a5c2e !important;
+        }
+
         /* Overrides for single image layout in About Us section */
         .about-us-images {
             padding: 0 !important;
@@ -218,6 +244,30 @@
         .about-us-images .hero-experience-box {
             right: 30px !important;
             bottom: -30px !important;
+        }
+
+        /* Fix for service-item icons in services-list */
+        .services-list .service-item .icon-box {
+            background-color: #1a5c2e;
+            border: none;
+            width: 70px;
+            height: 70px;
+            transition: all 0.4s ease-in-out;
+        }
+        .services-list .service-item .icon-box i {
+            color: #ffffff !important;
+            font-size: 28px !important;
+            transition: all 0.4s ease-in-out;
+        }
+        .services-list .service-item:hover .icon-box {
+            background-color: #ffffff;
+        }
+        .services-list .service-item:hover .icon-box i {
+            color: #1a5c2e !important;
+        }
+        .services-list .service-item:hover h3,
+        .services-list .service-item:hover p {
+            color: #ffffff !important;
         }
     </style>
 </head>
@@ -249,7 +299,7 @@
                             </div>
                             <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="hero-content-btn">
-                                    <a href="../book-appointment.html?service=Weight+Loss" class="btn-default btn-highlighted">Book Free Consultation</a>
+                                    <a href="../contact.html?service=Weight+Loss" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 </div>
                             </div>
                         </div>
@@ -383,7 +433,7 @@
                         <div class="page-cta-box wow fadeInUp" data-wow-delay="1s" style="padding: 30px; height: 100%;">
                             <h3>Start Your Journey</h3>
                             <p style="color:white; font-size: 14px; margin-bottom: 20px;">Ready to clear the confusion and start losing weight the right way?</p>
-                            <a href="../book-appointment.html" class="btn-default" style="width: 100%; text-align: center;">Book Consultation</a>
+                            <a href="../contact.html" class="btn-default" style="width: 100%; text-align: center;">Book Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -629,7 +679,7 @@
                                 <p style="color: white;">Book your FREE weight loss consultation with Dr. Anjani today. Start your journey toward a healthier you.</p>
                             </div>
                             <div class="hero-content-btn">
-                                <a href="../book-appointment.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                                <a href="../contact.html" class="btn-default btn-highlighted">Book Free Consultation</a>
                                 <a href="https://wa.me/917011626850" target="_blank" class="btn-default btn-highlighted" style="margin-left:16px;">WhatsApp Us</a>
                             </div>
                         </div>

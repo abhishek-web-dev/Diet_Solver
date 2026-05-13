@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1" />
   <title>Blog | DietSolver – Nutrition Tips & Health Insights</title>
   <meta name="description"
     content="Explore DietSolver's blog for expert nutrition tips, diet advice, healthy lifestyle guidance and insights from Dr. Anjani — best dietician in Noida Extension." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.dietsolver.in/blog.html" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/slicknav.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -23,122 +24,297 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/mousecursor.css">
   <link href="css/custom.css" rel="stylesheet" media="screen">
-  <link href="css/template-bridge.css" rel="stylesheet" media="screen">
+  <link href="css/index-home.css" rel="stylesheet" media="screen">
+  <style>
+    .main-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0;
+      right: 0;
+      z-index: 1030;
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      padding-top: 130px;
+    }
+
+    .hero {
+      padding: 100px 0;
+      background-color: #042e32 !important;
+      background: #042e32 !important;
+    }
+
+    .bg-section.dark-section::before {
+      background: none !important;
+    }
+
+    .breadcrumb {
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 8px;
+      align-items: center;
+      color: white;
+      background: transparent;
+      padding: 0;
+    }
+
+    .breadcrumb a {
+      color: white;
+    }
+
+    /* Template Blog Meta Styling */
+    .post-item-content p {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .post-meta {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #1a5c2e;
+      font-weight: 500;
+    }
+
+    .post-meta i {
+      margin-right: 5px;
+    }
+
+    ul li a {
+      color: white;
+    }
+  </style>
 </head>
 
-<body>
+<body class="home-page">
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+    </div>
+  </div>
   <div id="navbar-placeholder"></div>
+
   <main>
-    <section class="page-hero" style="background-image: url('img/blog_banner.jpg'); background-size: cover; background-position: center; position: relative;">
-      
-      <div style="position: absolute; inset: 0; background: linear-gradient(
-  to right,
-  rgba(30, 110, 80, 0.95) 0%,
-  rgba(59, 155, 110, 0.7) 55%,
-  rgba(59, 155, 110, 0.1) 100%
-);"></div>
-      <div class="container" style="position: relative; z-index: 1; color: #fff;">
-        <nav class="breadcrumb"><a href="index.html" style="color: #fff;">Home</a><i class="fas fa-chevron-right"></i><span>Blog</span></nav>
-        <div class="page-hero-inner fade-up">
-          <span class="section-label">News & Insights</span>
-          <h1 style="color: #fff;">Expert Nutritional<br><span style="color: #fff;">Guidance & Tips</span></h1>
-          <p class="page-hero-desc">Discover expert nutritional guidance from Dr. Anjani. Explore personalised meal plan
-            tips, wellness strategies, and the latest nutrition information to empower your health journey.</p>
-        </div>
-      </div>
-    </section>
-    <section class="section" style="background:var(--off-white)">
+    <!-- Page Title Section -->
+    <div class="hero bg-section dark-section">
       <div class="container">
-        <div class="blog-grid">
-          <article class="blog-card fade-up" style="--delay:0s">
-            <div class="blog-thumb"><img src="img/nutrition.jpg" alt="Dietician Charges"
-                onerror="this.parentElement.innerHTML='<div class=\'blog-thumb-ph blog-ph-1\'>🥗</div>'" /></div>
-            <div class="blog-body"><span class="blog-cat">Nutrition Tips</span>
-              <h3>What is the charge of a dietician?</h3>
-              <p>A dietician is a healthcare professional who specialises in providing expert advice on nutrition and
-                diet to help people achieve optimal health. Understanding costs helps you plan your wellness journey.
-              </p>
-              <div class="blog-meta"><span><i class="fas fa-calendar-alt"></i> January 2025</span><span><i
-                    class="fas fa-clock"></i> 4 min read</span></div>
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="hero-content text-center">
+              <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Blog</span>
+              </nav>
+              <div class="section-title">
+                <h3 class="wow fadeInUp" data-wow-delay="0.2s">News & Insights</h3>
+                <h1 class="text-anime-style-3" data-cursor="-opaque">Expert Nutritional Guidance & Tips</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Discover expert nutritional guidance from Dr. Anjani.
+                  Explore personalised meal plan tips, wellness strategies, and the latest nutrition information.</p>
+              </div>
             </div>
-          </article>
-          <article class="blog-card fade-up" style="--delay:.1s">
-            <div class="blog-thumb"><img src="img/nutrition_02.jpg" alt="Weight Loss Dietitian"
-                onerror="this.parentElement.innerHTML='<div class=\'blog-thumb-ph blog-ph-2\'>⚖️</div>'" /></div>
-            <div class="blog-body"><span class="blog-cat">Weight Management</span>
-              <h3>Can a dietitian help me lose weight?</h3>
-              <p>Your dietitian can help make sure you don't lose too much muscle mass but still lose the unwanted fat
-                through balanced, personalised meal plans and expert guidance.</p>
-              <div class="blog-meta"><span><i class="fas fa-calendar-alt"></i> February 2025</span><span><i
-                    class="fas fa-clock"></i> 5 min read</span></div>
-            </div>
-          </article>
-          <article class="blog-card fade-up" style="--delay:.2s">
-            <div class="blog-thumb"><img src="img/nutrition_03.png" alt="Best Dietitian Noida"
-                onerror="this.parentElement.innerHTML='<div class=\'blog-thumb-ph blog-ph-3\'>🏥</div>'" /></div>
-            <div class="blog-body"><span class="blog-cat">Noida</span>
-              <h3>Best Dietitian Nutritionists In Noida</h3>
-              <p>Based at 2007, O Tower, Ajnara Homes, Noida Extension — Dr. Anjani serves hundreds of clients locally
-                and across India with personalised nutrition plans.</p>
-              <div class="blog-meta"><span><i class="fas fa-calendar-alt"></i> March 2025</span><span><i
-                    class="fas fa-clock"></i> 3 min read</span></div>
-            </div>
-          </article>
-          <article class="blog-card fade-up" style="--delay:0s">
-            <div class="blog-thumb"><img src="img/banner_01.jpg" alt="Listening to body"
-                onerror="this.parentElement.innerHTML='<div class=\'blog-thumb-ph blog-ph-1\'>🧘</div>'" /></div>
-            <div class="blog-body"><span class="blog-cat">Wellness</span>
-              <h3>Listening to Your Body for Lasting Wellness</h3>
-              <p>Explore the principles of intuitive eating — a holistic approach that encourages individuals to trust
-                their body's hunger and fullness cues for sustainable health.</p>
-              <div class="blog-meta"><span><i class="fas fa-calendar-alt"></i> April 2025</span><span><i
-                    class="fas fa-clock"></i> 6 min read</span></div>
-            </div>
-          </article>
-          <article class="blog-card fade-up" style="--delay:.1s">
-            <div class="blog-thumb"><img src="img/banner_02.jpg" alt="Superfoods immunity"
-                onerror="this.parentElement.innerHTML='<div class=\'blog-thumb-ph blog-ph-2\'>🥦</div>'" /></div>
-            <div class="blog-body"><span class="blog-cat">Immunity</span>
-              <h3>Top 5 Superfoods to Boost Your Immunity Naturally</h3>
-              <p>Delve into the world of superfoods and their role in enhancing the immune system. Nutrient-rich foods
-                that can help fortify your body's natural defence system.</p>
-              <div class="blog-meta"><span><i class="fas fa-calendar-alt"></i> May 2025</span><span><i
-                    class="fas fa-clock"></i> 5 min read</span></div>
-            </div>
-          </article>
-          <article class="blog-card fade-up" style="--delay:.2s">
-            <div class="blog-thumb"><img src="img/banner_03.jpg" alt="Nutrition labels"
-                onerror="this.parentElement.innerHTML='<div class=\'blog-thumb-ph blog-ph-3\'>📊</div>'" /></div>
-            <div class="blog-body"><span class="blog-cat">Education</span>
-              <h3>Decoding Nutrition Labels: Making Informed Food Choices</h3>
-              <p>Nutrition labels can be confusing. This post breaks down how to read and understand food labels,
-                empowering you to make healthier choices at the grocery store.</p>
-              <div class="blog-meta"><span><i class="fas fa-calendar-alt"></i> June 2025</span><span><i
-                    class="fas fa-clock"></i> 7 min read</span></div>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="cta-banner">
+    </div>
+
+    <!-- Page Blog Section -->
+    <div class="page-blog">
       <div class="container">
-        <div class="cta-content fade-up">
-          <h2>Have a Nutrition Question?</h2>
-          <p>Book a FREE one-on-one consultation with Dr. Anjani and get personalised answers and a tailored diet plan.
-          </p>
-          <div class="cta-btns"><a href="book-appointment.html" class="btn btn-white"><i
-                class="fas fa-calendar-check"></i> Book Free Consultation</a><a href="contact.html"
-              class="btn btn-ghost"><i class="fas fa-phone"></i> Contact Us</a></div>
+        <div class="row">
+          <!-- Post 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="post-item wow fadeInUp">
+              <div class="post-featured-image">
+                <a href="#" data-cursor-text="View">
+                  <figure class="image-anime">
+                    <img src="img/nutrition.jpg" alt="Dietician Charges">
+                  </figure>
+                </a>
+              </div>
+              <div class="post-item-body">
+                <div class="post-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Jan 2025</span>
+                  <span><i class="fas fa-clock"></i> 4 min read</span>
+                </div>
+                <div class="post-item-content">
+                  <h3><a href="#">What is the charge of a dietician?</a></h3>
+                  <p>A dietician is a healthcare professional who specialises in providing expert advice on nutrition
+                    and diet to help people achieve optimal health.</p>
+                </div>
+                <div class="post-item-btn">
+                  <a href="#" class="readmore-btn">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="post-featured-image">
+                <a href="#" data-cursor-text="View">
+                  <figure class="image-anime">
+                    <img src="img/nutrition_02.jpg" alt="Weight Loss Dietitian">
+                  </figure>
+                </a>
+              </div>
+              <div class="post-item-body">
+                <div class="post-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Feb 2025</span>
+                  <span><i class="fas fa-clock"></i> 5 min read</span>
+                </div>
+                <div class="post-item-content">
+                  <h3><a href="#">Can a dietitian help me lose weight?</a></h3>
+                  <p>Your dietitian can help make sure you don't lose too much muscle mass but still lose the unwanted
+                    fat through balanced meal plans.</p>
+                </div>
+                <div class="post-item-btn">
+                  <a href="#" class="readmore-btn">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="post-featured-image">
+                <a href="#" data-cursor-text="View">
+                  <figure class="image-anime">
+                    <img src="img/nutrition_03.png" alt="Best Dietitian Noida">
+                  </figure>
+                </a>
+              </div>
+              <div class="post-item-body">
+                <div class="post-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Mar 2025</span>
+                  <span><i class="fas fa-clock"></i> 3 min read</span>
+                </div>
+                <div class="post-item-content">
+                  <h3><a href="#">Best Dietitian Nutritionists In Noida</a></h3>
+                  <p>Based at Noida Extension — Dr. Anjani serves hundreds of clients locally and across India with
+                    personalised nutrition plans.</p>
+                </div>
+                <div class="post-item-btn">
+                  <a href="#" class="readmore-btn">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="post-item wow fadeInUp">
+              <div class="post-featured-image">
+                <a href="#" data-cursor-text="View">
+                  <figure class="image-anime">
+                    <img src="img/banner_01.jpg" alt="Listening to body">
+                  </figure>
+                </a>
+              </div>
+              <div class="post-item-body">
+                <div class="post-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Apr 2025</span>
+                  <span><i class="fas fa-clock"></i> 6 min read</span>
+                </div>
+                <div class="post-item-content">
+                  <h3><a href="#">Listening to Your Body for Lasting Wellness</a></h3>
+                  <p>Explore the principles of intuitive eating — a holistic approach that encourages trusting your
+                    body's hunger cues.</p>
+                </div>
+                <div class="post-item-btn">
+                  <a href="#" class="readmore-btn">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="post-featured-image">
+                <a href="#" data-cursor-text="View">
+                  <figure class="image-anime">
+                    <img src="img/banner_02.jpg" alt="Superfoods immunity">
+                  </figure>
+                </a>
+              </div>
+              <div class="post-item-body">
+                <div class="post-meta">
+                  <span><i class="fas fa-calendar-alt"></i> May 2025</span>
+                  <span><i class="fas fa-clock"></i> 5 min read</span>
+                </div>
+                <div class="post-item-content">
+                  <h3><a href="#">Top 5 Superfoods to Boost Your Immunity Naturally</a></h3>
+                  <p>Delve into the world of superfoods and their role in enhancing the immune system with nutrient-rich
+                    foods.</p>
+                </div>
+                <div class="post-item-btn">
+                  <a href="#" class="readmore-btn">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="post-featured-image">
+                <a href="#" data-cursor-text="View">
+                  <figure class="image-anime">
+                    <img src="img/banner_03.jpg" alt="Nutrition labels">
+                  </figure>
+                </a>
+              </div>
+              <div class="post-item-body">
+                <div class="post-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Jun 2025</span>
+                  <span><i class="fas fa-clock"></i> 7 min read</span>
+                </div>
+                <div class="post-item-content">
+                  <h3><a href="#">Decoding Nutrition Labels: Informed Food Choices</a></h3>
+                  <p>Nutrition labels can be confusing. This post breaks down how to read and understand food labels
+                    properly.</p>
+                </div>
+                <div class="post-item-btn">
+                  <a href="#" class="readmore-btn">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- CTA Section -->
+    <div style="margin:0 0 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-cta-box wow fadeInUp bg-section dark-section" style="background-image:none;">
+              <div class="page-cta-box-info">
+                <h3>Start Today</h3>
+                <h2>Your Transformation Story Starts Here</h2>
+                <p style="color: white;">Join 5000+ clients who have transformed their health with Dr. Anjani's personalised nutrition plans.</p>
+              </div>
+              <div class="hero-content-btn">
+                <a href="contact.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                <a href="https://wa.me/917011626850" target="_blank" class="btn-default btn-highlighted" style="margin-left:16px;">WhatsApp Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+
   <div id="footer-placeholder"></div>
-  <div class="float-btns"><a href="https://wa.me/917011626850" class="float-btn float-wa" target="_blank"><i
-        class="fab fa-whatsapp"></i></a><a href="tel:+917011626850" class="float-btn float-call"><i
-        class="fas fa-phone"></i></a></div>
-  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
-  <script src="components.js"></script>
+
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/circle-progress.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -156,7 +332,7 @@
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/function.js"></script>
-  <script src="js/main.js"></script>
+  <script src="components.js"></script>
 </body>
 
 </html>
