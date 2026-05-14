@@ -5,7 +5,7 @@ const DIET_NAVBAR = `
         <div class="header-sticky">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="${basePath}">
+                    <a class="navbar-brand" href="${basePath || '/'}">
                         <img src="${basePath}img/logo.png" alt="DietSolvers Logo">
                     </a>
                     <div class="collapse navbar-collapse main-menu">
