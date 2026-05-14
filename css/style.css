@@ -214,66 +214,66 @@ body{
     padding-left: 0px;
 }
 
-.btn-default{
-	position: relative;
+.btn-default {
+    position: relative;
     font-family: var(--accent-font);
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 1em;
-	text-transform: capitalize;
-	background: var(--accent-color);
-	color: var(--primary-color);
-	border-radius: 50px;
-	padding: 18px 30px;
-	border: none;
-	overflow: hidden;
-	transition: all 0.4s ease-in-out;
-	z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: capitalize;
+    background: var(--accent-color);
+    color: var(--primary-color) !important;
+    border-radius: 14px;
+    padding: 18px 34px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
 }
 
-.btn-default:hover{
-	color: var(--white-color);
+.btn-default:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    color: var(--primary-color) !important;
+    background: #ffffff; /* Clean white hover for secondary buttons */
 }
 
+/* Modern Highlighted Button (Primary CTA) */
+.btn-default.btn-highlighted {
+    background: linear-gradient(135deg, #f5991a 0%, #f17947 100%);
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 10px 24px rgba(241, 121, 71, 0.25);
+}
+
+.btn-default.btn-highlighted:hover {
+    background: linear-gradient(135deg, #f17947 0%, #f5991a 100%);
+    box-shadow: 0 15px 35px rgba(241, 121, 71, 0.35);
+    color: #ffffff !important;
+}
+
+/* Remove old sliding animations */
 .btn-default::after,
-.btn-default::before{
-	content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-	bottom: 0;
-    width: 0;
-    height: 100%;    
-	background: var(--accent-secondary-color);
-	transform: skew(15deg);
-    transition: all 0.4s ease-in-out;
-    z-index: -1;
+.btn-default::before {
+    display: none !important;
 }
 
-.btn-default::before{
-	left: -10px;
-}
-   
-.btn-default::after{
-	right: -10px;
+.home-page .btn-default.btn-highlighted {
+    background: linear-gradient(135deg, #f5991a 0%, #f17947 100%);
+    color: #ffffff !important;
+    box-shadow: 0 12px 30px rgba(241, 121, 71, 0.28);
 }
 
-.btn-default:hover::after,
-.btn-default:hover::before{
-	width: 60%;
+.home-page .btn-default.btn-highlighted:hover {
+    box-shadow: 0 18px 45px rgba(241, 121, 71, 0.35);
 }
 
-.btn-default.btn-highlighted:hover{
-    color: var(--primary-color);
-}
-
-.btn-default.btn-highlighted::after,
-.btn-default.btn-highlighted::before{
-    background: var(--white-color);
-}
-
-.readmore-btn{
+.readmore-btn {
 	position: relative;
 	font-family: var(--accent-font);
 	font-weight: 700;
@@ -6867,14 +6867,15 @@ header.main-header .header-sticky.active .main-menu ul li a{
 }
 
 .home-page .btn-default.btn-highlighted {
-    background: linear-gradient(135deg, var(--brand-cream) 0%, #f7d979 18%, var(--brand-orange) 100%);
-    color: #1f2328;
-    box-shadow: 0 18px 36px rgba(245, 153, 26, 0.24);
+    background: linear-gradient(135deg, #f5991a 0%, #f17947 100%);
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 12px 28px rgba(241, 121, 71, 0.28);
 }
 
 .home-page .btn-default.btn-highlighted::after,
 .home-page .btn-default.btn-highlighted::before {
-    background: var(--brand-cream);
+    display: none !important;
 }
 /* 
 .home-page .hero.bg-section.dark-section {
@@ -7739,5 +7740,161 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
     .hero-content p {
         font-size: 14px !important;
+    }
+}
+
+/* ===================================================
+   Mobile Hamburger Menu Styling
+   =================================================== */
+@media only screen and (max-width: 991px) {
+    .navbar > .container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        height: 80px !important;
+    }
+
+    .navbar-toggle {
+        display: block !important;
+        z-index: 1050;
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px !important;
+        order: 2 !important;
+    }
+
+    .slicknav_menu {
+        display: block !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .slicknav_btn {
+        background: #fffbe9 !important; /* Brand Cream */
+        border-radius: 8px !important;
+        margin: 0 !important;
+        padding: 10px !important;
+        display: block !important;
+        float: none !important;
+        width: 44px !important;
+        height: 44px !important;
+        border: 1px solid rgba(6, 42, 34, 0.1) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    }
+
+    .slicknav_icon {
+        margin: 0 !important;
+        width: 24px !important;
+        height: 18px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        position: relative !important;
+    }
+
+    .slicknav_icon .slicknav_icon-bar {
+        background-color: #062a22 !important; /* Hero Forest */
+        width: 100% !important;
+        height: 3px !important; /* Thicker bars */
+        display: block !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border-radius: 2px !important;
+    }
+
+    .navbar-brand {
+        order: 1 !important;
+    }
+
+    .navbar-brand img {
+        max-width: 180px !important;
+        height: auto !important;
+    }
+
+    .main-menu {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .navbar-brand img {
+            max-width: 140px !important;
+        }
+    }
+}
+
+/* Fixed Mobile Nav Styles */
+.slicknav_nav {
+    position: fixed !important;
+    top: 90px !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    border-top: 1px solid rgba(0,0,0,0.05) !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12) !important;
+    max-height: calc(100vh - 90px) !important;
+    overflow-y: auto !important;
+    z-index: 1000 !important;
+    display: none; /* Initially hidden, SlickNav toggles this */
+}
+
+.slicknav_nav.slicknav_open {
+    display: block !important;
+}
+
+.slicknav_nav a {
+    color: #062a22 !important;
+    font-size: 16px !important;
+    padding: 18px 25px !important;
+    text-transform: capitalize !important;
+    border-bottom: 1px solid rgba(0,0,0,0.03) !important;
+    font-weight: 600 !important;
+}
+
+.slicknav_nav a:hover {
+    background: #f8fcf0 !important;
+    color: #1a5c2e !important;
+}
+
+
+/* ===================================================
+   Sub-menu (Internal Service Links) Separation
+   =================================================== */
+/* Mobile Menu Sub-links */
+.slicknav_nav ul {
+    margin-left: 25px !important;
+    background: rgba(26, 92, 46, 0.03) !important; /* Extremely subtle green group */
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+    border-left: 3px solid #a9ca39 !important; /* Brand Lime indicator */
+    border-radius: 0 10px 10px 0;
+}
+
+.slicknav_nav ul li a {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-bottom: none !important;
+}
+
+/* Footer Service Links Separation */
+.footer-grid-alt h3 + ul {
+    margin-top: 20px !important;
+}
+
+.footer-grid-alt ul li {
+    margin-bottom: 10px !important;
+}
+
+@media only screen and (min-width: 992px) {
+    /* Desktop Dropdown spacing */
+    .main-menu ul ul {
+        padding: 15px 0 !important;
+    }
+    
+    .main-menu ul ul li a {
+        padding: 10px 25px !important;
+        font-size: 14px;
     }
 }
