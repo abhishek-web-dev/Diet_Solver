@@ -25,19 +25,6 @@
     <link rel="stylesheet" href="../css/mousecursor.css">
     <link href="../css/style.css" rel="stylesheet" media="screen">
     <style>
-        .main-header {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0;
-            right: 0;
-            z-index: 1030;
-            background-color: #ffffff !important;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-        }
-        body {
-            padding-top: 130px;
-        }
-        
         .hero {
             padding: 100px 0;
             background-color: #071e40 !important;
@@ -46,19 +33,6 @@
 
         .bg-section.dark-section::before {
             background: none !important;
-        }
-        
-        .breadcrumb {
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 8px;
-            align-items: center;
-            color: white;
-            background: transparent;
-            padding: 0;
-        }
-        .breadcrumb a {
-            color: white;
         }
 
         .highlight-box {
@@ -101,22 +75,8 @@
         .timing-icon { font-size: 32px; color: #1a5cbf; margin-bottom: 15px; }
         .timing-label { display: inline-block; font-size: 11px; font-weight: 800; color: #1a5cbf; background: #e8f0fc; padding: 4px 10px; border-radius: 50px; margin-bottom: 10px; text-transform: uppercase; }
 
-        ul li a { color: white; }
 
         /* Overrides for single image layout in About Us section */
-        .about-us-images {
-            padding: 0 !important;
-            max-width: 100% !important;
-        }
-        .about-us-img-1 {
-            transform: none !important;
-        }
-        .about-us-img-1 img {
-            aspect-ratio: 1 / 1.5 !important;
-            height: auto !important;
-            max-height: 650px;
-            object-fit: cover !important;
-        }
         .about-us-images .hero-experience-box {
             right: 30px !important;
             bottom: -30px !important;
@@ -463,6 +423,7 @@
     <script src="../js/wow.min.js"></script>
     <script src="../components.js"></script>
     <script src="../js/function.js"></script>
+    <script>
         function toggleFaq(index) {
             const item = document.getElementById('faq-' + index);
             const isOpen = item.classList.contains('open');

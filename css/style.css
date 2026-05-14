@@ -4962,14 +4962,14 @@ header.main-header .header-sticky.active .main-menu ul li a{
 	}
 
 	.bg-section{
-		width: 100%;
-		margin-left: 0px;
-		margin-right: 0px;
-		border-radius: 0;
+		width: calc(100% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+		border-radius: 30px;
 	}
 
 	.bg-section.dark-section::before{
-		border-radius: 0;
+		border-radius: 30px;
 	}
 	
 	.section-row{
@@ -5010,9 +5010,14 @@ header.main-header .header-sticky.active .main-menu ul li a{
         margin-top: 10px;
 	}
     
+    .what-we-do .section-title,
+    .what-we-do .section-title-content,
+    .what-we-do .section-btn {
+        text-align: center !important;
+    }
+
 	.hero{
         padding: 130px 0 0;
-		margin: 0;
 	}
 
 	.hero.hero-bg-image{
@@ -5049,7 +5054,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
 	}
 
 	.hero-experience-box h2{
-		font-size: 32px;
+		font-size: 25px;
 		width: calc(32% - 5px);
 	}
 
@@ -5107,9 +5112,9 @@ header.main-header .header-sticky.active .main-menu ul li a{
 		padding: 50px 0;
 	}
 
-	.service-item,
 	.page-cta-box{
-		padding: 30px;
+		padding: 35px;
+        border-radius: 30px;
 	}
 
 	.service-item .icon-box{
@@ -5146,11 +5151,17 @@ header.main-header .header-sticky.active .main-menu ul li a{
 		padding: 50px 0;
 	}
 
-	.what-we-do-image-1{
+	.what-we-do-image-1,
+    .what-we-do-image-2{
 		margin-bottom: 30px;
+        width: 100%;
+        max-width: 55%;
+        margin-left: auto;
+        margin-right: auto;
 	}
 
-	.what-we-do-image-1 img{
+	.what-we-do-image-1 img,
+    .what-we-do-image-2 img{
 		aspect-ratio: 1 / 0.8;
 	}
 
@@ -5222,7 +5233,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
 	}
 
 	.intro-video.bg-section.dark-section::before{
-        border-radius: 0;
+        border-radius: 30px;
     }
 
 	.intro-video.bg-section.dark-section{
@@ -7559,9 +7570,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
         padding: 4px 0;
     }
 
-    .home-page .navbar-brand img {
-        width: 168px;
-    }
+/* Removed conflicting overrides */
 
     .info-strip,
     .compact-cards,
@@ -7749,68 +7758,50 @@ header.main-header .header-sticky.active .main-menu ul li a{
 @media only screen and (max-width: 991px) {
     .navbar > .container {
         display: flex !important;
-        justify-content: space-between !important;
+        flex-direction: row !important;
         align-items: center !important;
-        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
         height: 80px !important;
+        padding: 0 15px !important;
+    }
+
+    .navbar-brand {
+        margin: 0 !important;
+        display: block !important;
+        text-align: left !important;
+        order: 1 !important;
+    }
+
+    .navbar-brand img {
+        width: 220px !important;
+        max-width: 220px !important;
+        height: auto !important;
     }
 
     .navbar-toggle {
         display: block !important;
-        z-index: 1050;
-        width: 44px !important;
-        height: 44px !important;
-        min-width: 44px !important;
         order: 2 !important;
+        margin: 0 !important;
     }
 
     .slicknav_menu {
         display: block !important;
         background: transparent !important;
-        padding: 0 !important;
         margin: 0 !important;
+        padding: 0 !important;
+        position: relative !important;
+        width: 44px !important;
     }
 
     .slicknav_btn {
-        background: #fffbe9 !important; /* Brand Cream */
+        background: #f1f5f9 !important;
         border-radius: 8px !important;
-        margin: 0 !important;
-        padding: 10px !important;
-        display: block !important;
-        float: none !important;
         width: 44px !important;
         height: 44px !important;
-        border: 1px solid rgba(6, 42, 34, 0.1) !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
-    }
-
-    .slicknav_icon {
-        margin: 0 !important;
-        width: 24px !important;
-        height: 18px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-between !important;
-        position: relative !important;
-    }
-
-    .slicknav_icon .slicknav_icon-bar {
-        background-color: #062a22 !important; /* Hero Forest */
-        width: 100% !important;
-        height: 3px !important; /* Thicker bars */
+        padding: 10px !important;
         display: block !important;
         margin: 0 !important;
-        box-shadow: none !important;
-        border-radius: 2px !important;
-    }
-
-    .navbar-brand {
-        order: 1 !important;
-    }
-
-    .navbar-brand img {
-        max-width: 180px !important;
-        height: auto !important;
+        float: right !important;
     }
 
     .main-menu {
@@ -7819,7 +7810,8 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
     @media only screen and (max-width: 480px) {
         .navbar-brand img {
-            max-width: 140px !important;
+            width: 180px !important;
+            max-width: 180px !important;
         }
     }
 }
@@ -7898,3 +7890,192 @@ header.main-header .header-sticky.active .main-menu ul li a{
         font-size: 14px;
     }
 }
+
+/* ===================================================
+   Custom Consolidated Overrides & Responsive Fixes
+   =================================================== */
+
+.main-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+@media only screen and (max-width: 991px) {
+    .main-header {
+        left: 15px !important;
+        right: 15px !important;
+        width: auto !important;
+        top: 0 !important;
+        border-radius: 0 0 20px 20px !important;
+    }
+}
+
+body {
+    padding-top: 130px;
+}
+
+.why-choose-item {
+    margin-bottom: 12px !important;
+    padding: 12px 16px !important;
+}
+
+.why-choose-item .icon-box {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+}
+
+.why-choose-item .icon-box img {
+    max-width: 22px !important;
+}
+
+.why-choose-item .icon-box i {
+    font-size: 20px !important;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+
+.why-choose-item:hover .icon-box i {
+    color: #ffffff;
+}
+
+.why-choose-item-content h3 {
+    font-size: 16px !important;
+    margin-bottom: 2px !important;
+}
+
+.why-choose-item-content p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.what-we-list-item .icon-box {
+    transition: all 0.4s ease-in-out;
+}
+
+.what-we-list-item .icon-box::before {
+    display: none;
+}
+
+.what-we-list-item .icon-box i {
+    font-size: 24px;
+    color: #1a5c2e;
+    transition: all 0.4s ease-in-out;
+}
+
+.what-we-list-item:hover .icon-box {
+    background-color: #1a5c2e;
+}
+
+.what-we-list-item:hover .icon-box i {
+    color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .how-it-work-steps {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+    .how-work-step-item {
+        flex: 1 1 0 !important;
+        width: 100% !important;
+        max-width: 33.333% !important;
+        margin: 0 !important;
+    }
+}
+
+.hero-experience-box {
+    background-color: #1a5c2e !important;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.hero-experience-box:hover {
+    background-color: #000000 !important;
+}
+
+.about-us-images {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.about-us-img-1 {
+    transform: none !important;
+}
+
+.about-us-img-1 img {
+    aspect-ratio: 1 / 1.5 !important;
+    height: auto !important;
+    max-height: 650px;
+    object-fit: cover !important;
+}
+
+.about-us-images .hero-experience-box {
+    right: 30px !important;
+    bottom: -30px !important;
+}
+
+
+/* Breadcrumb & Hero Overrides for Subpages */
+.breadcrumb {
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 8px;
+    align-items: center;
+    color: white;
+    background: transparent;
+    padding: 0;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+.breadcrumb i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+/* Counter Section Styling */
+.counter-section {
+    padding: 80px 0;
+}
+
+.counter-box h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.counter-box h2 span {
+    display: inline;
+}
+
+.counter-box p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dark-section .counter-box h2,
+.dark-section .counter-box p,
+.dark-section .counter-box h2 span {
+    color: #ffffff;
+}
+
+
+/* Footer Link Styling */
+.main-footer ul li a {
+    color: white !important;
+}
+
+.main-footer ul li a:hover {
+    color: var(--accent-color) !important;
+}
+

@@ -25,19 +25,6 @@
     <link rel="stylesheet" href="../css/mousecursor.css">
     <link href="../css/style.css" rel="stylesheet" media="screen">
     <style>
-        .main-header {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0;
-            right: 0;
-            z-index: 1030;
-            background-color: #ffffff !important;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-        }
-        body {
-            padding-top: 130px;
-        }
-        
         .hero {
             padding: 100px 0;
             background-color: #7a3010 !important;
@@ -48,19 +35,6 @@
             background: none !important;
         }
         
-        .breadcrumb {
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 8px;
-            align-items: center;
-            color: white;
-            background: transparent;
-            padding: 0;
-        }
-        .breadcrumb a {
-            color: white;
-        }
-
         .section-label {
             display: inline-block;
             font-size: .75rem;
@@ -135,53 +109,6 @@
         .meal-row:last-child { border-bottom: none; }
         .meal-label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #a04820; min-width: 80px; }
         .meal-text { font-size: 14px; color: #444; }
-
-        ul li a { color: white; }
-
-        /* Fix for 3 items in How It Works section */
-        @media (min-width: 992px) {
-            .how-it-work-steps {
-                display: flex !important;
-                flex-wrap: nowrap !important;
-                justify-content: center !important;
-                gap: 30px !important;
-            }
-            .how-work-step-item {
-                flex: 1 1 0 !important;
-                width: 100% !important;
-                max-width: 33.333% !important;
-                margin: 0 !important;
-            }
-        }
-        /* Make Journey icons white and bigger */
-        .how-it-work .icon-box i {
-            color: #ffffff !important;
-            font-size: 36px !important;
-            transition: all 0.4s ease-in-out;
-        }
-        /* Change icon color on hover to be visible against white background */
-        .how-work-step-item:hover .icon-box i {
-            color: #1a5c2e !important;
-        }
-
-        /* Overrides for single image layout in About Us section */
-        .about-us-images {
-            padding: 0 !important;
-            max-width: 100% !important;
-        }
-        .about-us-img-1 {
-            transform: none !important;
-        }
-        .about-us-img-1 img {
-            aspect-ratio: 1 / 1.5 !important;
-            height: auto !important;
-            max-height: 650px;
-            object-fit: cover !important;
-        }
-        .about-us-images .hero-experience-box {
-            right: 30px !important;
-            bottom: -30px !important;
-        }
     </style>
 </head>
 
@@ -546,6 +473,7 @@
     <script src="../js/wow.min.js"></script>
     <script src="../components.js"></script>
     <script src="../js/function.js"></script>
+    <script>
         function toggleFaq(index) {
             const item = document.getElementById('faq-' + index);
             const isOpen = item.classList.contains('open');

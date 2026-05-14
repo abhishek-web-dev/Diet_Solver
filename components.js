@@ -50,7 +50,7 @@ const DIET_FOOTER = `
                 <div class="footer-grid-alt">
                     <div>
                         <img src="${basePath}img/logo-footer.png" alt="DietSolver" style="max-width:260px; margin-bottom:24px;">
-                        <p style="color: white;">Diet Solvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
+                        <p style="color: white;">DietSolvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
                     </div>
                     <div style="line-height: 20px;">
                         <h3 style="color: white;">Quick Links</h3>
