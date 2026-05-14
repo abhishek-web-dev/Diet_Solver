@@ -1980,6 +1980,13 @@ header.main-header .header-sticky.active .main-menu ul li a{
 /***      12. How It Work css     ***/
 /************************************/
 
+.how-it-work .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .how-it-work{
 	padding: 100px 0 260px;
 }
@@ -7620,5 +7627,117 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
     .home-page .hero-image::before {
         inset: 12% 6% 22% 6%;
+    }
+}
+
+/* ===================================================
+   Responsive adjustments for 1000px - 1350px
+   =================================================== */
+@media only screen and (max-width: 1350px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .section-title h1 {
+        font-size: 62px !important;
+        line-height: 1.1 !important;
+    }
+
+    .section-title h2 {
+        font-size: 40px !important;
+    }
+
+    .main-menu .nav-menu-wrapper {
+        margin: 0 10px;
+    }
+
+    .main-menu ul li a {
+        padding: 15px 10px !important;
+        font-size: 15px;
+    }
+
+    .header-btn .btn-default {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .navbar-brand img {
+        max-width: 180px;
+    }
+
+    .hero {
+        padding: 110px 0 60px;
+    }
+
+    .hero-image {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .stats-chip {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .footer-grid-alt {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .about-us-images {
+        max-width: 90% !important;
+    }
+
+    .why-choose-item-content h3 {
+        font-size: 15px !important;
+    }
+
+    .why-choose-item-content p {
+        font-size: 13px !important;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .section-title h1 {
+        font-size: 42px !important;
+    }
+
+    .section-title h2 {
+        font-size: 28px !important;
+    }
+
+    .main-menu ul li a {
+        font-size: 12px;
+        padding: 15px 5px !important;
+    }
+
+    .stats-chip {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .why-choose-item-content h3 {
+        font-size: 12px !important;
+    }
+
+    .why-choose-item-content p {
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    .service-item h3 {
+        font-size: 16px;
+    }
+
+    .service-item p {
+        font-size: 12px;
+    }
+
+    .hero-content p {
+        font-size: 14px !important;
     }
 }
