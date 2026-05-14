@@ -6,7 +6,7 @@ const DIET_NAVBAR = `
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="${basePath}">
-                        <img src="${basePath}img/logo.png" alt="DietSolver Logo">
+                        <img src="${basePath}img/logo.png" alt="DietSolvers Logo">
                     </a>
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
@@ -49,7 +49,7 @@ const DIET_FOOTER = `
             <div class="main-footer-box" style="padding:100px 0 0;">
                 <div class="footer-grid-alt">
                     <div>
-                        <img src="${basePath}img/logo-footer.png" alt="DietSolver" style="max-width:260px; margin-bottom:24px;">
+                        <img src="${basePath}img/logo-footer.png" alt="DietSolvers" style="max-width:260px; margin-bottom:24px;">
                         <p style="color: white;">DietSolvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
                     </div>
                     <div style="line-height: 20px;">
@@ -86,7 +86,7 @@ const DIET_FOOTER = `
                     </div>
                 </div>
                 <div class="footer-bottom-alt">
-                    <p style="color: white;">Copyright © 2025 DietSolver. All Rights Reserved. Design and Managed by <a style="color: white; text-decoration: underline;"  href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">Advertising India</a></p>
+                    <p style="color: white;">Copyright © 2025 DietSolvers. All Rights Reserved. Design and Managed by <a style="color: white; text-decoration: underline;"  href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">Advertising India</a></p>
                 </div>
             </div>
         </div>

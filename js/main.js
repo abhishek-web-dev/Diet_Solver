@@ -1,4 +1,4 @@
-/* DietSolver — Main JS */
+/* DietSolvers — Main JS */
 (function() {
   'use strict';
 
