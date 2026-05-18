@@ -13,6 +13,7 @@ const DIET_NAVBAR = `
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${basePath}about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${basePath}programs.html">Programs</a></li>
                                 <li class="nav-item submenu"><a class="nav-link" href="${basePath}services.html">Services</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="${basePath}services/weight-loss.html">Weight Loss & Management</a></li>
@@ -28,11 +29,11 @@ const DIET_NAVBAR = `
                                 <li class="nav-item"><a class="nav-link" href="${basePath}gallery.html">Gallery</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${basePath}blog.html">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${basePath}contact.html">Contact</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="${basePath}contact.html">Book Free Consultation</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="${basePath}contact.html">Book Consultation</a></li>
                             </ul>
                         </div>
                         <div class="header-btn">
-                            <a href="${basePath}contact.html" class="btn-default btn-highlighted">Book Free Consultation</a>
+                            <a href="${basePath}contact.html" class="btn-default btn-highlighted">Book Consultation</a>
                         </div>
                     </div>
                     <div class="navbar-toggle"></div>
@@ -50,13 +51,14 @@ const DIET_FOOTER = `
                 <div class="footer-grid-alt">
                     <div>
                         <img src="${basePath}img/logo-footer.png" alt="DietSolvers" style="max-width:260px; margin-bottom:24px;">
-                        <p style="color: white;">DietSolvers is a comprehensive programme designed to address weight loss and effective weight management through personalised, science-backed nutrition strategies.</p>
+                        <p ">DietSolvers is a comprehensive lifestyle disease reversal and weight management programme designed to support natural healing through personalised, science-backed nutrition and sustainable daily habit transformation.</p>
                     </div>
                     <div style="line-height: 20px;">
-                        <h3 style="color: white;">Quick Links</h3>
+                        <h3 ">Quick Links</h3>
                         <ul>
                             <li><a href="${basePath}index.html">Home</a></li>
                             <li><a href="${basePath}about.html">About Us</a></li>
+                            <li><a href="${basePath}programs.html">Programs</a></li>
                             <li><a href="${basePath}services.html">Services</a></li>
                             <li><a href="${basePath}career.html">Career</a></li>
                             <li><a href="${basePath}gallery.html">Gallery</a></li>
@@ -65,7 +67,7 @@ const DIET_FOOTER = `
                         </ul>
                     </div>
                     <div style="line-height: 20px;">
-                        <h3 style="color: white;">Services</h3>
+                        <h3 ">Services</h3>
                         <ul>
                             <li><a href="${basePath}services/weight-loss.html">Weight Loss & Management</a></li>
                             <li><a href="${basePath}services/diabetes-diet.html">Diabetes Management</a></li>
@@ -76,9 +78,9 @@ const DIET_FOOTER = `
                         </ul>
                     </div>
                     <div style="line-height: 20px;">
-                        <h3 style="color: white;">Get In Touch</h3>
+                        <h3 ">Get In Touch</h3>
                         <ul>
-                            <li style="color: white;">2007, O Tower, Ajnara Homes, Noida Extension</li>
+                            <li ">2007, O Tower, Ajnara Homes, Noida Extension</li>
                             <li><a href="tel:+917011626850">+91 70116 26850</a></li>
                             <li><a href="mailto:anjani78m@gmail.com">anjani78m@gmail.com</a></li>
                             <li><a href="mailto:dietitiananjnai@gmail.com">dietitiananjnai@gmail.com</a></li>
@@ -86,7 +88,7 @@ const DIET_FOOTER = `
                     </div>
                 </div>
                 <div class="footer-bottom-alt">
-                    <p style="color: white;">Copyright © 2025 DietSolvers. All Rights Reserved. Design and Managed by <a style="color: white; text-decoration: underline;"  href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">Advertising India</a></p>
+                    <p ">Copyright © 2025 DietSolvers. All Rights Reserved. Design and Managed by <a style="color: black; text-decoration: underline;"  href="https://lso360seoplugin.com/" target="_blank" rel="noopener noreferrer">Advertising India</a></p>
                 </div>
             </div>
         </div>

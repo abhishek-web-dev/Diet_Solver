@@ -1,57 +1,9 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Healix - Health Coach HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
-/* INDEX
-----------------------------------------------------------------------------------------
-01. Global Variables
-02. General css
-03. Header css
-04. Hero css
-05. About Us css
-06. Our Service css
-07. What We Do css
-08. Why Choose Us css
-09. Our Expertise css
-10. Intro Video css
-11. Our Programs css
-12. How It Work css
-13. Book Appointment css
-14. Our FAQs css
-15. Our Testimonial css
-16. Our Blog css
-17. Footer css
-18. About Us Page css
-19. Services Page css
-20. Service Single css
-21. Blog Archive css
-22. Blog Single css
-23. Programs Page css
-24. Program Single css
-25. Team Page css
-26. Team Single css
-27. Testimonial Page css
-28. Image Gallery css
-29. Video Gallery css
-30. FAQs Page css
-31. Contact Us Page css
-32. Book Appoiment Page css
-33. 404 Error Page css
-34. Responsive css
--------------------------------------------------------------------------------------- */
-
-/************************************/
-/*** 	 01. Global Variables	  ***/
-/************************************/
-
 :root{
 	--primary-color				: #1E1E1E;
 	--secondary-color			: #EAEEF1;
-	--text-color				: #828283;
-	--accent-color				: #F9D67B;
-	--accent-secondary-color	: #014E4E;
+	--text-color				: #000000;
+	--accent-color				: #f59919;
+	--accent-secondary-color	: #c8dfa0;
 	--white-color				: #FFFFFF;
 	--divider-color				: #F1F1F1;
 	--dark-divider-color		: #FFFFFF1A;
@@ -67,7 +19,7 @@
 body{
 	position: relative;
 	font-family: var(--default-font);
-	font-size: 16px;
+	font-size: 19px;
 	font-weight: 400;
 	line-height: 1em;
 	color: var(--text-color);
@@ -279,7 +231,7 @@ body{
 	font-weight: 700;
 	line-height: normal;
 	text-transform: capitalize;
-	color: var(--accent-secondary-color);
+	color: black;
 	padding-right: 30px;
 	transition: all 0.3s ease-in-out;
 }
@@ -378,7 +330,7 @@ body{
 
 .bg-section.dark-section{
 	position: relative;
-	background: url('../images/hero-bg-gradiant-shape.png'), var(--accent-secondary-color);
+	background: var(--accent-secondary-color);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -391,7 +343,7 @@ body{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: radial-gradient(38.51% 48.25% at 50.45% 50.9%, rgba(1, 78, 78, 0) 0.01%, #014E4E 100%);
+	/* background: radial-gradient(38.51% 48.25% at 50.45% 50.9%, rgba(1, 78, 78, 0) 0.01%, #014E4E 100%); */
 	border-radius: 50px;
 	height: 100%;
 	width: 100%;
@@ -438,7 +390,7 @@ body{
     font-weight: 600;
 	line-height: 1.4em;
     text-transform: capitalize;
-    color: var(--accent-secondary-color);
+    color: black;
     background: url('../images/icon-sub-heading.svg') no-repeat;
     background-position: left top;
     background-size: 22px auto;
@@ -448,7 +400,7 @@ body{
 }
 
 .section-title h1{
-	font-size: 74px;
+	font-size: 50px;
     font-weight: 700;
 	margin-bottom: 0;
 	cursor: none;
@@ -471,7 +423,7 @@ body{
 .bg-section.dark-section .section-title h3,
 .bg-section.dark-section .section-title h2,
 .bg-section.dark-section .section-title h1{
-	color: var(--white-color);
+	color: #1a5c2e;
 }
 
 .help-block.with-errors ul{
@@ -561,7 +513,7 @@ header.main-header .header-sticky.active{
 
 .main-menu ul li a{
     font-family: var(--accent-font);
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	line-height: 1.2em;
 	padding: 15px 15px !important;
@@ -974,11 +926,11 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
 .contact-now-box-content h3{
     font-size: 20px;
-	color: var(--white-color);
+	color: black;
 }
 
 .contact-now-box-content h3 a{
-    color: inherit;
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1211,7 +1163,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
 .about-us-images .hero-experience-box:hover h2,
 .about-us-images .hero-experience-box:hover p{
-	color: var(--white-color);
+	color: var(--white-color) !important;
 }
 
 .about-us-body{
@@ -1431,7 +1383,7 @@ header.main-header .header-sticky.active .main-menu ul li a{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: var(--primary-color);
+	/* background: var(--primary-color); */
 	opacity: 50%;
 	width: 100%;
 	height: 100%;
@@ -1450,13 +1402,13 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
 .page-cta-box-info h3{
 	font-size: 20px;
-	color: var(--white-color);
+	color: #1E1E1E;
 	margin-bottom: 10px;
 }
 
 .page-cta-box-info h2{
 	font-size: 30px;
-	color: var(--white-color);
+	color: rgb(0, 0, 0);
 }
 
 .section-footer-text{
@@ -1659,12 +1611,12 @@ header.main-header .header-sticky.active .main-menu ul li a{
 
 .why-choose-item-content h3{
 	font-size: 20px;
-	color: var(--white-color);
+	color: #000000;
 	margin-bottom: 10px;
 }
 
 .why-choose-item-content p{
-	color: var(--white-color);
+	color: #1a5c2e;
 	margin-bottom: 0;
 }
 
@@ -2064,14 +2016,14 @@ header.main-header .header-sticky.active .main-menu ul li a{
 }
 
 .how-work-content h3{
-	font-size: 20px;
+	font-size: 23px;
 	text-transform: capitalize;
-	color: var(--white-color);
+	color: #1a5c2e;
 	margin-bottom: 5px;
 }
 
 .how-work-content p{
-	color: var(--white-color);
+	color: #1a5c2e;
 	margin: 0;
 }
 
@@ -6940,23 +6892,23 @@ header.main-header .header-sticky.active .main-menu ul li a{
 }
 
 .home-page .stats-chip:nth-child(1) {
-    border-color: rgba(169, 202, 57, 0.3);
-    color: #e3f0bb;
+    border-color: rgba(52, 55, 43, 0.3);
+    color: black;
 }
 
 .home-page .stats-chip:nth-child(2) {
-    border-color: rgba(200, 223, 160, 0.32);
+    border-color: rgb(70 74 65 / 32%);
     color: var(--brand-mint);
 }
 
 .home-page .stats-chip:nth-child(3) {
-    border-color: rgba(245, 153, 26, 0.34);
-    color: #ffd896;
+    border-color: rgb(54 50 46 / 34%);
+    color: #000000;
 }
 
 .home-page .stats-chip:nth-child(4) {
     border-color: rgba(7, 128, 184, 0.36);
-    color: #8bcdf0;
+    color: #000000;
 }
 
 .home-page .contact-now-box .icon-box {
@@ -7406,53 +7358,153 @@ header.main-header .header-sticky.active .main-menu ul li a{
     grid-template-columns: repeat(3, 1fr);
 }
 
-.testimonial-card-alt .metric-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin: 24px 0 20px;
+/* New Testimonial Card Alt Design */
+.testimonial-card-alt {
+    background: #ffffff;
+    border: 1px solid rgba(26, 92, 46, 0.08);
+    border-radius: 28px;
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
 }
 
-.metric-box {
-    padding: 16px;
-    border-radius: 18px;
-    background: rgba(13, 96, 78, 0.06);
+.testimonial-card-alt::before {
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 24px;
+    color: rgba(26, 92, 46, 0.05);
+    transition: all 0.4s ease;
 }
 
-.metric-box span {
-    display: block;
-    font-size: 0.85rem;
-    color: var(--text-color);
-    margin-bottom: 6px;
+.testimonial-card-alt:hover::before {
+    color: rgba(26, 92, 46, 0.1);
+    transform: rotate(-10deg) scale(1.1);
 }
 
-.result-badge {
-    display: inline-block;
-    padding: 10px 16px;
-    border-radius: 999px;
-    background: rgba(241, 121, 71, 0.12);
-    color: var(--accent-color);
-    font-size: 0.9rem;
-    font-weight: 700;
-    margin-bottom: 18px;
+.testimonial-card-alt:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(26, 92, 46, 0.08) !important;
+    border-color: rgba(26, 92, 46, 0.15);
 }
 
-.testimonial-author {
+.testimonial-card-alt .testimonial-author {
+    order: 1;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-.testimonial-avatar {
-    width: 52px;
-    height: 52px;
+.testimonial-card-alt .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    background: #1a5c2e;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: var(--primary-color);
-    color: var(--white-color);
+}
+
+.testimonial-card-alt .testimonial-author strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.testimonial-card-alt .testimonial-author p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    color: #1a5c2e;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.testimonial-card-alt > p {
+    order: 2;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-card-alt .metric-row {
+    order: 3;
+    background: #f8fbf9;
+    border-radius: 18px;
+    padding: 15px;
+    margin: 0 0 20px 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.testimonial-card-alt .metric-box {
+    padding: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonial-card-alt .metric-box span {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+.testimonial-card-alt .metric-box:first-child span {
+    background: #ffebeb;
+    color: #c03020;
+}
+
+.testimonial-card-alt .metric-box:last-child span {
+    background: #e8f5ee;
+    color: #1a5c2e;
+}
+
+.testimonial-card-alt .metric-box strong {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.testimonial-card-alt .result-badge {
+    order: 4;
+    display: block;
+    width: 100%;
+    background: #e8f5ee;
+    color: #1a5c2e;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
     font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 0;
+    border: 1px dashed rgba(26, 92, 46, 0.2);
+}
+
+
+@media only screen and (max-width: 575px) {
+    .testimonial-card-alt .metric-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 .blog-card-alt figure {
@@ -7976,12 +8028,12 @@ body {
 }
 
 .why-choose-item-content h3 {
-    font-size: 16px !important;
+    font-size: 20px !important;
     margin-bottom: 2px !important;
 }
 
 .why-choose-item-content p {
-    font-size: 13px !important;
+    font-size: 17px !important;
     line-height: 1.4 !important;
 }
 
@@ -8068,6 +8120,12 @@ body {
     color: white;
 }
 
+.home-page .breadcrumb,
+.home-page .breadcrumb a,
+.home-page .breadcrumb i {
+    color: #1a5c2e !important;
+}
+
 .breadcrumb i {
     font-size: 12px;
     margin: 0 5px;
@@ -8097,16 +8155,51 @@ body {
 .dark-section .counter-box h2,
 .dark-section .counter-box p,
 .dark-section .counter-box h2 span {
-    color: #ffffff;
+    color: #000000;
 }
 
 
 /* Footer Link Styling */
 .main-footer ul li a {
-    color: white !important;
+    color: black !important;
 }
 
 .main-footer ul li a:hover {
     color: var(--accent-color) !important;
+}
+
+.font22{
+	font-size: 22px !important;
+}
+/* Hero background color update for index.html */
+.home-page .hero.bg-section.dark-section {
+    background: #c8dfa0 !important;
+}
+
+.home-page .hero.bg-section.dark-section::before {
+    background: none !important;
+}
+
+.home-page .hero.bg-section.dark-section .section-title h1,
+.home-page .hero.bg-section.dark-section .section-title h3,
+.home-page .hero.bg-section.dark-section .section-title p,
+.home-page .hero.bg-section.dark-section .section-title h1 span,
+.home-page .hero.bg-section.dark-section .section-title p strong,
+.home-page .hero.bg-section.dark-section .trusted-client-review p,
+.home-page .hero.bg-section.dark-section .contact-now-box-content p,
+.home-page .hero.bg-section.dark-section .contact-now-box-content h3 a,
+.home-page .hero.bg-section.dark-section .hero-experience-box h2,
+.home-page .hero.bg-section.dark-section .hero-experience-box p,
+.home-page .hero.bg-section.dark-section .stats-chip {
+    color: #1a5c2e !important;
+}
+
+.home-page .hero.bg-section.dark-section .hero-content-body p {
+    color: #1a5c2e !important;
+}
+
+.home-page .hero.bg-section.dark-section .stats-chip {
+    border-color: rgba(26, 92, 46, 0.2) !important;
+    background: rgba(26, 92, 46, 0.05) !important;
 }
 

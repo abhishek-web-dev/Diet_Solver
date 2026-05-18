@@ -74,7 +74,7 @@
     if (bmi < 18.5) { cat = 'Underweight'; msg = 'A weight gain nutrition plan could help.'; col = '#1565C0'; bg = '#E3F2FD'; }
     else if (bmi < 25) { cat = '✓ Normal Weight'; msg = 'Great! Maintain your healthy lifestyle.'; col = '#2E7D32'; bg = '#E8F5E9'; }
     else if (bmi < 30) { cat = 'Overweight'; msg = 'A weight management plan can help you reach your goals.'; col = '#E65100'; bg = '#FBE9E7'; }
-    else { cat = 'Obese'; msg = 'Consult Dr. Anjani for a personalised programme.'; col = '#B71C1C'; bg = '#FFEBEE'; }
+    else { cat = 'Obese'; msg = 'Consult Dt. Anjani for a personalised programme.'; col = '#B71C1C'; bg = '#FFEBEE'; }
     document.getElementById('bmiVal').textContent = bmi;
     const catEl = document.getElementById('bmiCat');
     catEl.textContent = cat; catEl.style.color = col;

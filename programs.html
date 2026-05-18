@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Programs | DietSolvers – Holistic Lifestyle Transformation</title>
+  <meta name="description"
+    content="Explore DietSolvers' holistic lifestyle transformation programs — Reclaim90, NutriFit180, and NutriFitWellbeing360 for sustainable health reversal." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.dietsolver.in/programs.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/slicknav.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/mousecursor.css">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <style>
+    /* Light Theme Styles matching site aesthetic */
+    .programs-section {
+        background-color: #ffffff;
+        color: var(--primary-color);
+        padding: 100px 0;
+        font-family: var(--default-font);
+    }
+    .e-con-inner {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .programs-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .programs-header h2 {
+        color: var(--primary-color);
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .programs-header p {
+        color: #666666;
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .program-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .program-card-container {
+        background: #f9fdfa;
+        border: 1px solid #e1eee5;
+        border-radius: 20px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .program-card-container:hover {
+        transform: translateY(-10px);
+        border-color: var(--accent-secondary-color);
+        box-shadow: 0 20px 40px rgba(26, 92, 46, 0.08);
+    }
+
+    .recommended-badge {
+        background: var(--accent-secondary-color);
+        color: var(--primary-color);
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        animation: rotateIn 1s ease;
+    }
+
+    .program-price {
+        font-size: 42px;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin-bottom: 5px;
+    }
+    .price-subtext {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 25px;
+        margin-top: 7px;
+    }
+
+    .program-badge {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+        object-fit: contain;
+    }
+
+    .program-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+    }
+
+    .program-tagline {
+        font-style: italic;
+        color: #555;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .elementor-icon-list-items {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+        text-align: left;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .elementor-icon-list-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 12px;
+        font-size: 18px;
+        color: #444;
+    }
+    .elementor-icon-list-icon {
+        margin-right: 12px;
+        margin-top: 2px;
+        color: #1a5c2e;
+    }
+    .elementor-icon-list-icon svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+    }
+
+    .program-ideal-for {
+        font-size: 16px;
+        background: #f0f7f2;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        width: 100%;
+        line-height: 1.5;
+    }
+    .program-ideal-for strong {
+        color: #1a5c2e;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .btn-get-started {
+        background-color: #1a5c2e;
+        color: #fff;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+    }
+    .btn-get-started:hover {
+        background-color: var(--primary-color);
+        transform: scale(1.02);
+        color: #fff;
+    }
+
+    @media (max-width: 991px) {
+        .program-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 767px) {
+        .program-grid {
+            grid-template-columns: 1fr;
+        }
+        .programs-header h2 {
+            font-size: 32px;
+        }
+    }
+
+    @keyframes rotateIn {
+        from { transform: rotate3d(0, 0, 1, -200deg); opacity: 0; }
+        to { transform: translate3d(0, 0, 0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body class="home-page">
+  <div class="preloader">
+      <div class="loading-container">
+          <div class="loading"></div>
+          <div id="loading-icon"><img src="images/loader.png" alt=""></div>
+      </div>
+  </div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="programs-section">
+      <div class="e-con-inner">
+        <!-- Header -->
+        <div class="programs-header">
+            <h2 class="wow fadeInUp">Programs</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.2s">Join the world's fastest growing program for experts, coaches, and creators.</p>
+        </div>
+
+        <div class="program-grid">
+            <!-- Silver Card -->
+            <div class="program-card-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="recommended-badge">Recommended</div>
+                <div class="program-price">21,999/-</div>
+                <div class="price-subtext">(One Time Fee)</div>
+                <div class="program-image-space" style="margin: 20px 0;">
+                    <!-- img space -->
+                    <img src="/img/silver.png" alt="Silver Badge" class="program-badge">
+                </div>
+                <div class="program-title">Silver – Reclaim90</div>
+                <div class="program-tagline">Reverse. Restore. Rebuild.</div>
+                
+                <div class="program-ideal-for">
+                    <strong>Ideal For:</strong>
+                    Individuals ready to reverse early-stage lifestyle disorders like diabetes, thyroid imbalance, PCOS, or fatigue.
+                </div>
+
+                <ul class="elementor-icon-list-items">
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">12 guided lifestyle coaching sessions</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Personalized therapeutic meal plans</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Habit & Fitness implementation</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Stress & Mindset reprogramming</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Emotional release & Journaling</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Peer connect & Social accountability</span>
+                    </li>
+                </ul>
+
+                <a href="contact.html" class="btn-get-started wow bounceIn">Get Started</a>
+            </div>
+
+            <!-- Gold Card -->
+            <div class="program-card-container wow fadeInUp" data-wow-delay="0.3s">
+                <div class="program-price">36,999/-</div>
+                <div class="price-subtext">+ GST (One Time Fee)</div>
+                <div class="program-image-space" style="margin: 20px 0;">
+                    <!-- img space -->
+                    <img src="/img/gold.png" alt="Gold Badge" class="program-badge">
+                </div>
+                <div class="program-title">Gold – NutriFit180</div>
+                <div class="program-tagline">Stabilize. Strengthen. Sustain.</div>
+                
+                <div class="program-ideal-for">
+                    <strong>Ideal For:</strong>
+                    Those seeking long-term stability, hormonal balance, and emotional equilibrium through a structured system.
+                </div>
+
+                <ul class="elementor-icon-list-items">
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Everything in Silver +</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">24 live bi-weekly coaching sessions</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Advanced body optimization MPESS</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Targeted therapeutic plans</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Customized yoga & fitness</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Mindset mastery — habit loops</span>
+                    </li>
+                </ul>
+
+                <a href="contact.html" class="btn-get-started wow bounceIn">Get Started</a>
+            </div>
+
+            <!-- Diamond Card -->
+            <div class="program-card-container wow fadeInUp" data-wow-delay="0.5s">
+                <div class="program-price">70,999/-</div>
+                <div class="price-subtext">+ GST (Annual Subscription)</div>
+                <div class="program-image-space" style="margin: 20px 0;">
+                    <!-- img space -->
+                    <img src="/img/diamond.png" alt="Diamond Badge" class="program-badge">
+                </div>
+                <div class="program-title">Diamond – Wellbeing360</div>
+                <div class="program-tagline">Master. Evolve. Thrive.</div>
+                
+                <div class="program-ideal-for">
+                    <strong>Ideal For:</strong>
+                    Individuals committed to mastering lifelong wellbeing, reversing chronic disorders, and living with vitality.
+                </div>
+
+                <ul class="elementor-icon-list-items">
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Everything in Gold +</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">48+ live 1:1 sessions (Weekly)</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Full MPESS mastery — Harmony</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Deep emotional & mental mastery</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Spiritual growth immersion</span>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Annual wellness retreat access</span>
+                    </li>
+                </ul>
+
+                <a href="contact.html" class="btn-get-started wow bounceIn">Get Started</a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/circle-progress.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/validator.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/parallaxie.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/magiccursor.js"></script>
+  <script src="js/SplitText.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="components.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>
